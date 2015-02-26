@@ -1,0 +1,208 @@
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pdb
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pri
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Live.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zxing.winrt.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.dll
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.pdb
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml.intermediate
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles.intermediate
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles.intermediate
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles.intermediate
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt.intermediate
+C:\Users\jrichec\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pdb
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pri
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Live.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zxing.winrt.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.csprojResolveAssemblyReference.cache
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.dll
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.pdb
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\Programming\UniversalApp\MesLectures\ShareClass\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pdb
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pri
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Live.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\zxing.winrt.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.csprojResolveAssemblyReference.cache
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.pdb
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml.intermediate
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles.intermediate
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles.intermediate
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles.intermediate
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt.intermediate
+D:\OneDrive\My apps\UniversalApp\MesLectures\ShareClass\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pri
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Live.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\zxing.winrt.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.csprojResolveAssemblyReference.cache
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\ShareClass\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pdb
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ShareClass.pri
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Live.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Newtonsoft.Json.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\zxing.winrt.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.OData.xml
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.dll
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\ShareClass.pdb
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\priconfig.xml.intermediate
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\layout.resfiles.intermediate
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\resources.resfiles.intermediate
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\pri.resfiles.intermediate
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\qualifiers.txt.intermediate
+C:\UniversalApp\MesLectures\ShareClass\obj\Debug\MultipleQualifiersPerDimensionFound.txt

@@ -1,0 +1,240 @@
+﻿<Page
+    x:Class="MesLectures.HubPage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="using:MesLectures.Common"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style x:Key="HorizontalScrollViewerStyle" TargetType="ScrollViewer">
+            <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Enabled" />
+            <Setter Property="ScrollViewer.VerticalScrollMode" Value="Disabled" />
+            <Setter Property="ScrollViewer.ZoomMode" Value="Disabled" />
+        </Style>
+        
+        <!-- Grid-appropriate 160 by 250 pixel item template as seen in section 4 -->
+        <DataTemplate x:Key="Standard160X250ItemTemplate">
+            <Grid HorizontalAlignment="Left" Width="160" Height="250">
+                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                    <Image Source="{Binding Image}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+                </Border>
+                <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                    <TextBlock Text="{Binding Title}" FontSize="14" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}"  Height="40" Margin="15,0,15,0"/>
+                    <TextBlock Text="{Binding Author}" FontSize="13" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" TextWrapping="NoWrap" Margin="15,0,15,10"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <!-- Grid-appropriate for the Last Book -->
+        <DataTemplate x:Key="LastBook">
+  
+                        <RichTextBlock IsTextSelectionEnabled="False">
+                <Paragraph LineStackingStrategy="MaxHeight">
+                    <InlineUIContainer>
+                        <Image x:Name="image" Loaded="FrameworkElement_OnLoaded" Height="Auto" Stretch="Uniform" Source="{Binding Image}" AutomationProperties.Name="{Binding Title}"/>
+                    </InlineUIContainer>
+                    <!--</Paragraph>
+                            <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
+                                <Run FontSize="32" FontWeight="Light" Text="{Binding Author}"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run x:Uid="Book_Editor" FontWeight="SemiLight" FontSize="16" Text="" Foreground="#A08F7F"/>
+                                <Run FontWeight="Normal" FontSize="20" Text="{Binding Editor}"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run x:Uid="Book_ReadingDate" FontWeight="SemiLight" FontSize="16" Text="" Foreground="#A08F7F"/>
+                                <Run FontWeight="Normal" FontSize="20" Text="{Binding  Date }" />
+                                <LineBreak/>
+                                <LineBreak/>
+                                <InlineUIContainer>
+                                    <Image x:Name="imageEtoile" Width="90" Height="27" Source="{Binding LikeStars}"/>
+                                </InlineUIContainer>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run x:Uid="Book_Summary" FontWeight="SemiLight" FontSize="16" Text="" Foreground="#A08F7F"/>
+                                <Run FontWeight="Normal"  FontSize="18" Text="{Binding Summary}"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run x:Uid="Book_MyOpinion" FontWeight="SemiLight" FontSize="16" Text="" Foreground="#A08F7F"/>
+                                <Run FontWeight="Normal"  FontSize="18" Text="{Binding MyOpinion}"/>
+                                <LineBreak/>
+                                <LineBreak/>
+                                <Run x:Uid="Book_Story" FontWeight="SemiLight" FontSize="16" Text="" Foreground="#A08F7F"/>
+                                <Run FontWeight="Normal" FontSize="18" Text="{Binding Story}"/> -->
+                </Paragraph>
+                </RichTextBlock>
+
+
+                        
+        </DataTemplate>
+
+        
+        <!-- Style for the text  -->
+        <Style x:Key="BasicTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#A08F7F"/>
+            <Setter Property="FontSize" Value="{StaticResource ControlContentThemeFontSize}"/>
+            <Setter Property="FontFamily" Value="{StaticResource ContentControlThemeFontFamily}"/>
+            <Setter Property="TextTrimming" Value="WordEllipsis"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Typography.StylisticSet20" Value="True"/>
+            <Setter Property="Typography.DiscretionaryLigatures" Value="True"/>
+            <Setter Property="Typography.CaseSensitiveForms" Value="True"/>
+        </Style>
+        <Style x:Key="BaselineTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BasicTextStyle}">
+            <Setter Property="LineHeight" Value="20"/>
+            <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+            <!-- Aligne correctement le texte sur sa ligne de base -->
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TranslateTransform X="-1" Y="4"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="HeaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource BaselineTextStyle}">
+            <Setter Property="FontSize" Value="56"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="LineHeight" Value="40"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TranslateTransform X="-2" Y="8"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="PageHeaderTextStyle" TargetType="TextBlock" BasedOn="{StaticResource HeaderTextStyle}">
+            <Setter Property="TextWrapping" Value="NoWrap"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Setter Property="Margin" Value="0,0,30,40"/>
+        </Style>
+        
+    </Page.Resources>
+
+    <!--
+    This grid acts as a root panel for the page.
+  -->
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/background.jpg" Stretch="None" />
+        </Grid.Background>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Hub>
+            <Hub.Header>
+                <!-- Page title -->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="PageTitle" FontFamily="Lucida Calligraphy" x:Uid="Header" Style="{StaticResource PageHeaderTextStyle}" Grid.Column="1" 
+                        VerticalAlignment="Top" IsHitTestVisible="false"/>
+                </Grid>
+            </Hub.Header>
+
+            <!-- SECTION 1 -->
+            <HubSection Width="100" Margin="0,0,80,0" Background="#A08F7F" />
+
+            <!-- SECTION 2 -->
+            <HubSection DataContext="{Binding LastBook}">
+                <HubSection.Header>
+                    <TextBlock Text="Dernière lecture" Foreground="Black" />
+                </HubSection.Header>
+                <DataTemplate>
+                        <GridView
+                        x:Name="itemGridView"
+                        ItemsSource="{Binding Items}"
+                        AutomationProperties.AutomationId="ItemGridView"
+                        AutomationProperties.Name="Items In Group"
+                        ItemTemplate="{StaticResource LastBook}"
+                        SelectionMode="None"
+                        IsSwipeEnabled="false"
+                        IsItemClickEnabled="True"
+                        ItemClick="BookClick">
+                    </GridView>
+                </DataTemplate>
+             </HubSection>
+
+            <!-- SECTION 3 -->
+            <HubSection Width="520">
+                <HubSection.Header>
+                    <TextBlock Text="SECTION 3" Foreground="Black" />
+                </HubSection.Header>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10"
+                                   x:Uid="ItemTitle" Text="Item Title" />
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1"
+                                   x:Uid="Section2UnderTitle" Text="Quisque in porta lorem dolor amet sed consectetuer ising elit, sed diam non my nibh uis mod wisi quip."/>
+                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Grid.Row="2" Margin="0,20,0,0"
+                                   x:Uid="ItemSubTitle" Text="Item Sub Title"/>
+                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
+                                   x:Uid="LongText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper."/>
+                    </Grid>
+                </DataTemplate>
+            </HubSection>
+
+            <!-- SECTION 4 -->
+            <HubSection IsHeaderInteractive="True" DataContext="{Binding Groups}" d:DataContext="{Binding Groups[3]}"
+                        x:Uid="Section3Header" Header="Section 4" Padding="40,40,40,32">
+                <DataTemplate>
+                    <GridView
+                        x:Name="itemGridView"
+                        ItemsSource="{Binding Items}"
+                        Margin="-9,-14,0,0"
+                        AutomationProperties.AutomationId="ItemGridView"
+                        AutomationProperties.Name="Items In Group"
+                        ItemTemplate="{StaticResource Standard160X250ItemTemplate}"
+                        SelectionMode="None"
+                        IsSwipeEnabled="false"
+                        IsItemClickEnabled="True"
+                        ItemClick="BookClick">
+                    </GridView>
+                </DataTemplate>
+            </HubSection>
+
+            <!-- SECTION 5 -->
+            <HubSection x:Uid="Section4Header" Header="Section 5">
+                <DataTemplate>
+                    <!-- width of 400 -->
+                    <StackPanel Orientation="Vertical">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="5"/>
+                                <ColumnDefinition Width="130"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="270"/>
+                                <RowDefinition Height="95"/>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Source="Assets/MediumGray.png" Grid.ColumnSpan="5" Margin="0,0,0,10" Stretch="Fill" />
+                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Stretch="Fill"/>
+                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Grid.Column="2" Stretch="Fill"/>
+                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Grid.Column="4" Stretch="Fill"/>
+                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="2" Grid.ColumnSpan="5"  Margin="0,15,0,0"
+                                       x:Uid="DescriptionHeader" Text="Description text:"/>
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" Grid.ColumnSpan="5"
+                                       x:Uid="LongText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper."/>
+                        </Grid>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

@@ -1,0 +1,272 @@
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zxing.winrt.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Live.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pdb
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pri
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.i.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.i.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.i.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.i.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xaml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xaml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xaml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xaml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xbf
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xbf
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xbf
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xbf
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.exe
+D:\OneDrive\My apps\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\App.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\HubPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\SectionPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ItemPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.xr.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.exe
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\resources.pri
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.build.appxrecipe
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zxing.winrt.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Live.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pri
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.i.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.i.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.i.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.i.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xaml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xaml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xaml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xaml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xbf
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.exe
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.pdb
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\en-US\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\de\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\es\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\fr\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\it\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ja\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ko\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ru\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\zh-Hans\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\zh-Hant\Microsoft.Data.OData.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\en-US\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\de\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\es\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\fr\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\it\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ja\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ko\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ru\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\zh-Hans\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\zh-Hant\System.Data.Services.Client.resw
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.csproj.GenerateResource.Cache
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData.pri
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\qualifiers.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client.pri
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\qualifiers.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\priconfig.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\priconfig.xml.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\layout.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\layout.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\resources.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\resources.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\pri.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\pri.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\qualifiers.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\layout.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\layout.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\Resources.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\Resources.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\pri.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\pri.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\priconfig.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\priconfig.xml.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\layout.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\layout.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\Resources.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\Resources.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\pri.resfiles
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\pri.resfiles.intermediate
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\priconfig.xml
+C:\Users\jrichec.EUROPE\Dropbox\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\priconfig.xml.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\App.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\HubPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\SectionPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ItemPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.xr.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.exe
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.pdb
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\resources.pri
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\MesLectures.WindowsPhone.build.appxrecipe
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zxing.winrt.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Live.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Newtonsoft.Json.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pdb
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ShareClass.pri
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.OData.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\Microsoft.Data.Services.Client.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.i.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.g.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.i.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.g.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.i.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.g.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.i.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.g.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xaml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xaml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xaml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xaml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\App.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\HubPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\SectionPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ItemPage.xbf
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.exe
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.pdb
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\en-US\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\de\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\es\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\fr\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\it\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ja\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ko\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\ru\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\zh-Hans\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\zh-Hant\Microsoft.Data.OData.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\en-US\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\de\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\es\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\fr\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\it\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ja\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ko\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\ru\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\zh-Hans\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\zh-Hant\System.Data.Services.Client.resw
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MesLectures.WindowsPhone.csproj.GenerateResource.Cache
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData.pri
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\qualifiers.txt
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client.pri
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\qualifiers.txt
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\priconfig.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\priconfig.xml.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\layout.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\layout.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\resources.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\resources.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\pri.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\pri.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\qualifiers.txt
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\layout.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\layout.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\Resources.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\Resources.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\pri.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\pri.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\priconfig.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.OData\priconfig.xml.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\layout.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\layout.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\Resources.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\Resources.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\pri.resfiles
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\pri.resfiles.intermediate
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\priconfig.xml
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\obj\Debug\Microsoft.Data.Services.Client\priconfig.xml.intermediate

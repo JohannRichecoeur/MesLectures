@@ -1,0 +1,10 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\universalapp\packages\microsoft.data.odata.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\microsoft.data.odata.dll" HashGuid="4e84b0db-d22a-61af-6343-dd7cc7f44046" />
+    <ReferenceAssembly PathName="c:\users\jrichec.europe\dropbox\programming\universalapp\packages\microsoft.data.services.client.5.6.2\lib\portable-net45+wp8+win8+wpa\microsoft.data.services.client.dll" HashGuid="71520100-581c-d133-4755-96bac8a746c8" />
+    <ReferenceAssembly PathName="c:\universalapp\meslectures\shareclass\bin\debug\shareclass.dll" HashGuid="3573c8b9-2e06-bcbf-2609-b924596f4cea" />
+    <ReferenceAssembly PathName="c:\users\jrichec.europe\dropbox\programming\windows 8\meslectures\packages\telerik.core.dll" HashGuid="95a7e9c3-cd08-12c1-a14b-3da0d57b3a65" />
+    <ReferenceAssembly PathName="c:\users\jrichec.europe\dropbox\programming\windows 8\meslectures\packages\telerik.ui.xaml.input.dll" HashGuid="34adf037-7953-d8ab-3728-dc0575df13a4" />
+    <ReferenceAssembly PathName="c:\users\jrichec.europe\dropbox\programming\windows 8\meslectures\packages\telerik.ui.xaml.primitives.dll" HashGuid="97e6839d-1c60-a7a4-30f5-55972f440f8e" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

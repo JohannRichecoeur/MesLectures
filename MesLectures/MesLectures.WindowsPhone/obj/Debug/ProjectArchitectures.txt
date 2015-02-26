@@ -1,0 +1,2 @@
+C:\UniversalApp\MesLectures\MesLectures\MesLectures.WindowsPhone\MesLectures.WindowsPhone.csproj;neutral
+C:\UniversalApp\MesLectures\ShareClass\ShareClass.csproj;neutral

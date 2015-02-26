@@ -1,0 +1,8 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\universalapp\meslectures\meslectures\meslectures.windowsphone\obj\debug\intermediatexaml\meslectures.windowsphone.exe" HashGuid="ddc2a29c-93e1-4115-08ab-e03803613d91" />
+    <ReferenceAssembly PathName="c:\universalapp\packages\microsoft.data.odata.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\microsoft.data.odata.dll" HashGuid="4e84b0db-d22a-61af-6343-dd7cc7f44046" />
+    <ReferenceAssembly PathName="c:\users\jrichec.europe\dropbox\programming\windows 8\meslectures\packages\microsoft.data.services.client.5.6.2\lib\portable-net45+wp8+win8+wpa\microsoft.data.services.client.dll" HashGuid="71520100-581c-d133-4755-96bac8a746c8" />
+    <ReferenceAssembly PathName="c:\universalapp\meslectures\shareclass\bin\debug\shareclass.dll" HashGuid="3573c8b9-2e06-bcbf-2609-b924596f4cea" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>
