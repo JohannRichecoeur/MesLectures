@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MesLectures/MesLectures.Windows/bin/Debug
+/MesLectures/MesLectures.Windows/obj/Debug
+/MesLectures/MesLectures.WindowsPhone/bin/Debug
+/MesLectures/MesLectures.WindowsPhone/obj/Debug
+/MesLectures/MesLectures.ShareClass/bin/Debug
+/MesLectures/MesLectures.ShareClass/obj/Debug
+*.user
+/MesLectures.v12.suo
