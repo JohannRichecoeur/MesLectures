@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Core.BindingExpressionHelper">
+            <summary>
+            Provides methods that allow getting property values without reflection.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.BindingExpressionHelper.ToUntypedFunc``2(System.Func{``0,``1})">
+            <summary>
+            Converts typed to untyped func.
+            </summary>
+            <typeparam name="T">The input parameter type of the func.</typeparam>
+            <typeparam name="TResult">Return type of the func.</typeparam>
+            <param name="func">That that will be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Core.BindingExpressionHelper.CreateGetValueFunc(System.Type,System.String)">
+            <summary>
+            Returns a Func that will return the value of the property, specified by the provided propertyPath.
+            </summary>
+            <param name="itemType">The type of the instance which property will be returned.</param>
+            <param name="propertyPath">The path of the property which value will be returned.</param>
+        </member>
+        <member name="T:Telerik.Core.WeakReferenceList`1">
+            <summary>
+            Wraps instances of type T in WeakReference and stores them in a List.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Core.WeakReferenceList`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Core.WeakReferenceList`1"/> class.
+            </summary>
+            <param name="cleanNonAlive">True to remove any non-alive instances automatically, false otherwise.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Core.WeakReferenceList`1"/> class.
+            </summary>
+            <param name="cleanNonAlive">True to remove any non-alive instances automatically, false otherwise.</param>
+            <param name="trackResurrection">True to track object resurrection, false otheriwse.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.Add(`0)">
+            <summary>
+            Adds the specified value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.Insert(System.Int32,`0)">
+            <summary>
+            Inserts an item at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.IndexOf(`0)">
+            <summary>
+            Gets the index of the specified value within the list.
+            </summary>
+            <param name="value">The value to check for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.Remove(`0)">
+            <summary>
+            Removes the specified value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.Clear">
+            <summary>
+            Clears the list.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.RemoveAt(System.Int32)">
+            <summary>
+            Removes the value at the specified index.
+            </summary>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.CleanNonAlive">
+            <summary>
+            Cleans all targets that are no longer alive.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.GetEnumerator">
+            <summary>
+            Gets the enumerator that iterates through all items.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Core.WeakReferenceList`1.InsertCore(System.Int32,`0)">
+            <summary>
+            Core insert implementation. Allows inheritors to provide their own implementation.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:Telerik.Core.WeakReferenceList`1.AutoCleanNonAlive">
+            <summary>
+            Determines whether the list will automatically remove any containednon-alive weak reference.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.WeakReferenceList`1.TrackResurrection">
+            <summary>
+            Determines the WeakReference.TrackRessurection property for all T instances added.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.WeakReferenceList`1.Count">
+            <summary>
+            Gets the count of the list.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.WeakReferenceList`1.List">
+            <summary>
+            Gets the internal List used to store all instances.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.WeakReferenceList`1.Item(System.Int32)">
+            <summary>
+            Gets or sets the item at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="T:Telerik.Core.DynamicHelper">
+            <summary>
+            Encapsulates helper methods to generate Dynamic methods using System.Reflection.Emit.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.DynamicHelper.CreatePropertyValueGetter(System.Type,System.String)">
+            <summary>
+            Generates a untyped function to allow retrieving property values for instances of the specified type without using reflection.
+            </summary>
+            <param name="type"></param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Core.LocalizationManager">
+            <summary>
+            Represents a singleton class that manages application string resources.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.LocalizationManager.GetString(System.String)">
+            <summary>
+            Gets the localized version of the string, associated with the specified key. 
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Telerik.Core.LocalizationManager.GlobalResourceMap">
+            <summary>
+            Gets or sets the <see cref="T:Windows.ApplicationModel.Resources.Core.ResourceMap"/> instance that contains localized versions for all keys in each Telerik assembly.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.LocalizationManager.DefaultResourceMap">
+            <summary>
+            Gets the <see cref="T:Windows.ApplicationModel.Resources.Core.ResourceMap"/> instance provided by the associated assembly.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.LocalizationManager.UserResourceMap">
+            <summary>
+            Gets or sets the user-defined <see cref="T:Windows.ApplicationModel.Resources.Core.ResourceMap"/> instance used to look-up localizable resources within the associated assembly.
+            </summary>
+        </member>
+        <member name="P:Telerik.Core.LocalizationManager.StringLoader">
+            <summary>
+            Gets or sets the <see cref="T:Telerik.Core.IStringResourceLoader"/> instance used to provide code-based localization per assembly.
+            </summary>
+        </member>
+        <member name="T:Telerik.Core.IStringResourceLoader">
+            <summary>
+            Represents a custom loader that may be used to look-up strings through code.
+            </summary>
+        </member>
+        <member name="M:Telerik.Core.IStringResourceLoader.GetString(System.String)">
+            <summary>
+            Retrieves a localized version of the string associated with the specified key.
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
