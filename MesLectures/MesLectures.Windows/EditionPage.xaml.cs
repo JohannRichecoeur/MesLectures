@@ -2,24 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MesLectures.Common;
 using MesLectures.DataModel;
 using ShareClass;
 using Windows.Storage;
 using Windows.Storage.Streams;
-using Windows.UI;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Navigation;
 
 namespace MesLectures
 {
     public sealed partial class EditionPage
     {
+        private NavigationHelper navigationHelper;
+        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
         private static StorageFile localePictureFile;
         private Popup catalogPopup;
         private Popup isbnSearchPopup;
@@ -33,20 +36,33 @@ namespace MesLectures
             this.AppBarCancelButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Cancel"));
             this.AppBarSearchButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Search"));
 
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += this.NavigationHelperLoadState;
+
             Window.Current.SizeChanged += this.WindowSizeChanged;
             this.SetDisplay();
+        }
+
+        public NavigationHelper NavigationHelper
+        {
+            get { return this.navigationHelper; }
+        }
+
+        public ObservableDictionary DefaultViewModel
+        {
+            get { return this.defaultViewModel; }
         }
 
         public static Uri BingUri { get; set; }
 
         public static bool FromBing { get; set; }
 
-        protected override void LoadState(object navigationParameter, Dictionary<string, object> pageState)
+        private async void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
-            DatePicker.Value = DateTime.Now;
-            DatePicker.SelectorFormat = "m y";
-            DatePicker.SelectorHeader = Settings.GetRessource("DetailBook_DatePickerHeader");
-            DatePicker.Background = new SolidColorBrush(Color.FromArgb(255, 160, 143, 127));
+            //DatePickerForUser.Value = DateTime.Now;
+            //DatePickerForUser.SelectorFormat = "m y";
+            //DatePickerForUser.SelectorHeader = Settings.GetRessource("DetailBook_DatePickerHeader");
+            //DatePickerForUser.Background = new SolidColorBrush(Color.FromArgb(255, 160, 143, 127));
             AppBar.IsOpen = true;
             AppBar.IsSticky = true;
 
@@ -54,15 +70,11 @@ namespace MesLectures
             {
                 Settings.CurrentBook = new Book() { Title = "", Author = "", Editor = "", Like = 1, MyOpinion = "", Summary = "", Story = "", Id = this.GetNewId() };
                 this.isNewBook = true;
-                if (pageState != null && pageState.ContainsKey("SelectedItem"))
-                {
-                    navigationParameter = pageState["SelectedItem"];
-                }
 
-                if (navigationParameter != null)
+                if (e.NavigationParameter != null)
                 {
-                    var loadedUniqueId = (int)navigationParameter;
-                    foreach (Book b in Settings.BookList.Where(b => b.Id == loadedUniqueId))
+
+                    foreach (Book b in Settings.BookList.Where(b => b.Id == (int)e.NavigationParameter))
                     {
                         Settings.CurrentBook = b;
                         break;
@@ -108,7 +120,7 @@ namespace MesLectures
             this.SummaryBox.Text = Settings.GetRessource("DetailBook_Summary");
             this.MyOpinionBox.Text = Settings.GetRessource("DetailBook_MyOpinion");
             this.StoryBox.Text = Settings.GetRessource("DetailBook_Story");
-            this.DatePicker.Header = Settings.GetRessource("DetailBook_DatePickerHeader");
+            //this.DatePickerForUser.Header = Settings.GetRessource("DetailBook_DatePickerHeader");
 
             var pageHeight = Window.Current.Bounds.Height;
             var pageWidth = Window.Current.Bounds.Width;
@@ -130,7 +142,7 @@ namespace MesLectures
             ImageEtoile3.Margin = new Thickness(0, 140, 140, 0);
             ImageEtoile4.Margin = new Thickness(0, 140, 100, 0);
             ImageEtoile5.Margin = new Thickness(0, 140, 60, 0);
-            DatePicker.Margin = new Thickness(0, 60, 60, 0);
+            // DatePickerForUser.Margin = new Thickness(0, 60, 60, 0);
 
             var h = pageHeight - 200;
             SummaryBox.Margin = new Thickness(ImageBox.MaxWidth + 80, 200, 0, 0);
@@ -189,7 +201,7 @@ namespace MesLectures
             AuthorBox.Text = Settings.CurrentBook.Author;
             EditorBox.Text = Settings.CurrentBook.Editor;
             this.ModifyStar(Settings.CurrentBook.Like.ToString());
-            DatePicker.Value = Settings.CurrentBook.Date;
+            // DatePickerForUser.Value = Settings.CurrentBook.Date;
             SummaryBox.Text = Settings.CurrentBook.Summary;
             MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
             StoryBox.Text = Settings.CurrentBook.Story;
@@ -213,7 +225,7 @@ namespace MesLectures
                 AuthorBox.Text = Settings.CurrentBook.Author;
                 EditorBox.Text = Settings.CurrentBook.Editor;
                 this.ModifyStar(Settings.CurrentBook.Like.ToString());
-                DatePicker.Value = Settings.CurrentBook.Date;
+                // DatePickerForUser.Value = Settings.CurrentBook.Date;
                 SummaryBox.Text = Settings.CurrentBook.Summary;
                 MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
                 StoryBox.Text = Settings.CurrentBook.Story;
@@ -244,11 +256,11 @@ namespace MesLectures
             Settings.CurrentBook.Title = TitleBox.Text;
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
-            var dateTime = this.DatePicker.Value;
-            if (dateTime != null)
-            {
-                Settings.CurrentBook.Date = (DateTime)dateTime;
-            }
+            ////var dateTime = this.DatePickerForUser.Value;
+            ////if (dateTime != null)
+            ////{
+            ////    Settings.CurrentBook.Date = (DateTime)dateTime;
+            ////}
 
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
@@ -264,7 +276,7 @@ namespace MesLectures
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
             Settings.CurrentBook.Like = Settings.CurrentBook.Like;
-            Settings.CurrentBook.Date = DatePicker.Value ?? DateTime.Now;
+            // Settings.CurrentBook.Date = DatePickerForUser.Value ?? DateTime.Now;
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
             Settings.CurrentBook.Story = StoryBox.Text;
@@ -530,5 +542,29 @@ namespace MesLectures
                                         };
             }*/
         }
+
+        #region NavigationHelper registration
+
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// 
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
+        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+    
     }
 }

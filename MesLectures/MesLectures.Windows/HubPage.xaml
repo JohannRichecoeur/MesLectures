@@ -124,7 +124,7 @@
                 <EntranceThemeTransition/>
             </TransitionCollection>
         </Grid.ChildrenTransitions>
-        <Hub>
+        <Hub SectionHeaderClick="Hub_SectionHeaderClick">
             <Hub.Header>
                 <!-- Page title -->
                 <Grid>
@@ -138,28 +138,9 @@
             </Hub.Header>
 
             <!-- SECTION 1 -->
-            <HubSection Width="100" Margin="0,0,80,0" Background="#A08F7F" />
+            <HubSection Width="100" Margin="0,0,80,0" Background="#A08F7F"/>
 
-            <!-- SECTION 2 -->
-            <HubSection DataContext="{Binding LastBook}">
-                <HubSection.Header>
-                    <TextBlock Text="Dernière lecture" Foreground="Black" />
-                </HubSection.Header>
-                <DataTemplate>
-                        <GridView
-                        x:Name="itemGridView"
-                        ItemsSource="{Binding Items}"
-                        AutomationProperties.AutomationId="ItemGridView"
-                        AutomationProperties.Name="Items In Group"
-                        ItemTemplate="{StaticResource LastBook}"
-                        SelectionMode="None"
-                        IsSwipeEnabled="false"
-                        IsItemClickEnabled="True"
-                        ItemClick="BookClick">
-                    </GridView>
-                </DataTemplate>
-             </HubSection>
-
+            
             <!-- SECTION 3 -->
             <HubSection Width="520">
                 <HubSection.Header>

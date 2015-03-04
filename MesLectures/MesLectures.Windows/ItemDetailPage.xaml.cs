@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using MesLectures.Common;
 using MesLectures.DataModel;
 using ShareClass;
 using Windows.ApplicationModel.DataTransfer;
@@ -12,6 +12,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.UI.Xaml.Navigation;
 
 namespace MesLectures
 {
@@ -20,6 +21,9 @@ namespace MesLectures
         private static TypedEventHandler<DataTransferManager, DataRequestedEventArgs> handler;
         private static double leftColumWidth;
 
+        private NavigationHelper navigationHelper;
+        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
         public ItemDetailPage()
         {
             this.InitializeComponent();
@@ -27,49 +31,48 @@ namespace MesLectures
             this.AppBarEditButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Edit"));
             this.AppBarDiscardButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Delete"));
 
-            // Sharing data
-            if (handler != null)
-            {
-                DataTransferManager.GetForCurrentView().DataRequested -= handler;
-            }
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += this.NavigationHelperLoadState;
 
-            handler = this.ShareItem;
-            DataTransferManager.GetForCurrentView().DataRequested += handler;
+            // Sharing data
+            //if (handler != null)
+            //{
+            //    DataTransferManager.GetForCurrentView().DataRequested -= handler;
+            //}
+
+            //handler = this.ShareItem;
+            //DataTransferManager.GetForCurrentView().DataRequested += handler;
         }
 
-        protected override async void LoadState(object navigationParameter, Dictionary<string, object> pageState)
+        public NavigationHelper NavigationHelper
+        {
+            get { return this.navigationHelper; }
+        }
+
+        public ObservableDictionary DefaultViewModel
+        {
+            get { return this.defaultViewModel; }
+        }
+
+        private async void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
             await BookDataSource.FillData();
-
-            if (pageState != null && pageState.ContainsKey("SelectedItem"))
-            {
-                navigationParameter = pageState["SelectedItem"];
-            }
 
             if (Settings.ComingFromSearch == true)
             {
                 Settings.ComingFromSearch = false;
-                BookDataItem item = BookDataSource.GetItemFromSearch((int)navigationParameter);
+                BookDataItem item = BookDataSource.GetItemFromSearch((int)e.NavigationParameter);
                 this.DefaultViewModel["Group"] = BookDataSource.SearchDataGroup;
                 this.DefaultViewModel["Items"] = BookDataSource.SearchDataGroup.Items;
                 this.FlipView.SelectedItem = item;
             }
             else
             {
-                var parameters = ((string)navigationParameter).Split('-');
+                var parameters = ((string)e.NavigationParameter).Split('-');
                 var item = BookDataSource.GetItem(short.Parse(parameters[0]), short.Parse(parameters[1]));
                 this.DefaultViewModel["Group"] = item.Group;
                 this.DefaultViewModel["Items"] = item.Group.Items;
                 this.FlipView.SelectedItem = item;
-            }
-        }
-
-        protected override void SaveState(Dictionary<string, object> pageState)
-        {
-            var selectedItem = (BookDataItem)this.FlipView.SelectedItem;
-            if (selectedItem != null)
-            {
-                pageState["SelectedItem"] = selectedItem.Id + "-" + selectedItem.Group.GroupId;
             }
         }
 
@@ -81,7 +84,7 @@ namespace MesLectures
                 var selectedItem = (BookDataItem)this.FlipView.SelectedItem;
                 if (selectedItem != null)
                 {
-                    //this.Frame.Navigate(typeof(EditionPage), selectedItem.Id);
+                    this.Frame.Navigate(typeof(EditionPage), selectedItem.Id);
                 }
             }
             else
@@ -196,5 +199,35 @@ namespace MesLectures
         {
             leftColumWidth = ((Image)sender).ActualWidth;
         }
+
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
+            this.navigationHelper.GoBack();
+        }
+
+
+        #region NavigationHelper registration
+
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// 
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
+        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+    
     }
 }

@@ -1,4 +1,4 @@
-﻿<common:LayoutAwarePage
+﻿<Page
     x:Class="MesLectures.ItemDetailPage"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -58,7 +58,7 @@
     -->
     <Grid 
         Style="{StaticResource LayoutRootStyle}"
-        DataContext="{Binding Group}"
+        DataContext="{Binding Group}" 
         d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}" Background="White">
 
         <Grid.RowDefinitions>
@@ -66,11 +66,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!--
-            Le reste de la page n'est constitué que d'un grand FlipView affichant les détails
-            d'un élément à la fois, et permettant à l'utilisateur de parcourir tous les éléments d'un groupe
-            donné
-        -->
         <FlipView  SelectionChanged="FlipViewSelectionChanged1"
             x:Name="FlipView"
             AutomationProperties.AutomationId="ItemsFlipView"
@@ -87,16 +82,15 @@
 
             <FlipView.ItemTemplate>
                 <DataTemplate>
-                    <UserControl x:Name="userControl" Loaded="StartLayoutUpdates" Unloaded="StopLayoutUpdates">
+                    <UserControl x:Name="userControl">
                         <ScrollViewer x:Name="scrollViewer" Style="{StaticResource HorizontalScrollViewerStyle}" Foreground="Black">
-                            <!-- Le contenu est autorisé à se trouver dans autant de colonnes que nécessaire -->
                             <common:RichTextColumns Margin="117,0,0,100">
-                                <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" IsTextSelectionEnabled="False">
+                            <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" IsTextSelectionEnabled="False">
                                     <Paragraph LineStackingStrategy="MaxHeight">
                                         <InlineUIContainer>
                                             <Image x:Name="image" Loaded="FrameworkElement_OnLoaded" Height="Auto" Stretch="Uniform" Source="{Binding Image}" AutomationProperties.Name="{Binding Title}"/>
                                         </InlineUIContainer>
-                                    </Paragraph>
+                                </Paragraph>
                                     <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
                                         <Run FontSize="32" FontWeight="Light" Text="{Binding Author}"/>
                                         <LineBreak/>
@@ -110,7 +104,7 @@
                                         <LineBreak/>
                                         <LineBreak/>
                                         <InlineUIContainer Foreground="Black">
-                                            <Image x:Name="imageEtoile" Width="90" Height="27" Source="{Binding LikeStars}" Visibility="Visible"/>
+                                            <Image x:Name="ImageEtoile" Width="90" Height="27" Source="{Binding LikeStars}" Visibility="Visible"/>
                                         </InlineUIContainer>
                                         <LineBreak/>
                                         <LineBreak/>
@@ -127,8 +121,6 @@
                                     </Paragraph>
                                 </RichTextBlock>
 
-
-                                <!-- Des colonnes supplémentaires sont créées à partir de ce modèle -->
                                 <common:RichTextColumns.ColumnTemplate>
                                     <DataTemplate>
                                         <RichTextBlockOverflow Name="OtherColumn" Loaded="OtherColumn_OnLoaded" Margin="40,0,0,0">
@@ -138,6 +130,7 @@
                                         </RichTextBlockOverflow>
                                     </DataTemplate>
                                 </common:RichTextColumns.ColumnTemplate>
+                                
                             </common:RichTextColumns>
                         </ScrollViewer>
                     </UserControl>
@@ -155,4 +148,4 @@
             <TextBlock x:Name="PageTitle" VerticalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" IsHitTestVisible="false"/>
         </Grid>
     </Grid>
-</common:LayoutAwarePage>
+</Page>

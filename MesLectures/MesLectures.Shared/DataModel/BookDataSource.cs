@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
-using Windows.Data.Json;
-using Windows.Storage;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
-
 using ShareClass;
+using Windows.Storage;
 
 namespace MesLectures.DataModel
 {
@@ -132,10 +128,7 @@ namespace MesLectures.DataModel
 
                 foreach (Book b in bookListByDate)
                 {
-                    if (b != bookListByDate[0])
-                    {
-                        group1.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group1));
-                    }
+                    group1.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group1));
                 }
 
                 bookDataSource.AllGroups.Add(group1);
