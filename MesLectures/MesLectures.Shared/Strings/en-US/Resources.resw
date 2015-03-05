@@ -292,17 +292,8 @@
   <data name="SharedBook_Summary" xml:space="preserve">
     <value>Summary: </value>
   </data>
-  <data name="Title_LastReadings" xml:space="preserve">
-    <value>Last Readings</value>
-  </data>
-  <data name="Title_SortedByAuthor" xml:space="preserve">
-    <value>Sorted by author A to Z</value>
-  </data>
-  <data name="Title_SortedByTitle" xml:space="preserve">
-    <value>Sorted by title A to Z</value>
-  </data>
-  <data name="Title_TopRated" xml:space="preserve">
-    <value>Top Rated</value>
+  <data name="Title_HeaderSection" xml:space="preserve">
+    <value>All my readings</value>
   </data>
   <data name="Welcome_Text" xml:space="preserve">
     <value>You don't have created any book for now, start create one using the "Add" button at the right bottom</value>

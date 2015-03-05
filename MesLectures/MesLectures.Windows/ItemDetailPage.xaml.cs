@@ -21,8 +21,8 @@ namespace MesLectures
         private static TypedEventHandler<DataTransferManager, DataRequestedEventArgs> handler;
         private static double leftColumWidth;
 
-        private NavigationHelper navigationHelper;
-        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private readonly NavigationHelper navigationHelper;
+        private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         public ItemDetailPage()
         {

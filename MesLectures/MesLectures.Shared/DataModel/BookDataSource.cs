@@ -106,73 +106,21 @@ namespace MesLectures.DataModel
             if (Settings.BookList.Count == 0)
             {
                 // Retrieve book list from user folder
-                Settings.BookList = await Settings.ReadFileForBookList();
-
-                if (Settings.BookList == null)
-                {
-                    Settings.BookList = new List<Book>();
-                }
+                Settings.BookList = await Settings.ReadFileForBookList() ?? new List<Book>();
             }
 
             if (Settings.BookList.Count != 0)
             {
-                var bookListByDate = Settings.BookList.OrderByDescending(x => x.Date).ToList();
-                var bookListByLike = Settings.BookList.OrderByDescending(x => x.Like).ToList();
-                var bookListByTitle = Settings.BookList.OrderBy(x => x.Title).ToList();
-                var bookListByAuthor = Settings.BookList.OrderBy(x => x.Author).ToList();
-
-                // 1.Last Readings
                 var group1 = new BookDataGroup(
                     1,
-                    Settings.GetRessource("Title_LastReadings"));
+                    Settings.GetRessource("Title_HeaderSection"));
 
-                foreach (Book b in bookListByDate)
+                foreach (Book b in Settings.BookList.OrderByDescending(x => x.Date).ToList())
                 {
                     group1.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group1));
                 }
 
                 bookDataSource.AllGroups.Add(group1);
-
-                // 50.Last Book
-                var group50 = new BookDataGroup(
-                    50,
-                    Settings.GetRessource("Title_LastReadings"));
-
-                group50.Items.Add(new BookDataItem(bookListByDate[0].Id, bookListByDate[0].Title, bookListByDate[0].Author, (await GetBookImage(bookListByDate[0])).Path, bookListByDate[0].Summary, "Assets/" + bookListByDate[0].Like + "etoiles.jpg", bookListByDate[0].Editor, bookListByDate[0].MyOpinion, bookListByDate[0].Story, bookListByDate[0].Date, group50));
-                bookDataSource.AllGroups.Add(group50);
-
-                // 2.Top Rated
-                var group2 = new BookDataGroup(
-                    2,
-                    Settings.GetRessource("Title_TopRated"));
-                foreach (Book b in bookListByLike)
-                {
-                    group2.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group2));
-                }
-
-                bookDataSource.AllGroups.Add(group2);
-
-                // 3. Sorted by title A > Z
-                var group3 = new BookDataGroup(
-                    3,
-                    Settings.GetRessource("Title_SortedByTitle"));
-                foreach (Book b in bookListByTitle)
-                {
-                    group3.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group3));
-                }
-
-                bookDataSource.AllGroups.Add(group3);
-
-                // 4. Sorted by author A > Z
-                var group4 = new BookDataGroup(
-                    4,
-                    Settings.GetRessource("Title_SortedByAuthor"));
-                foreach (Book b in bookListByAuthor)
-                {
-                    group4.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group4));
-                }
-
-                bookDataSource.AllGroups.Add(group4);
             }
         }
 
@@ -183,7 +131,7 @@ namespace MesLectures.DataModel
             // Set the default image to each book
             try
             {
-                // imageDebutFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/default.jpg"));
+                imageDebutFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/default.jpg"));
             
                 // Search for a specific picture for each book
                 imageDebutFile = await Settings.LocalFolder.GetFileAsync(b.ImagePath);

@@ -141,10 +141,10 @@
             <HubSection Width="100" Margin="0,0,80,0" Background="#A08F7F"/>
 
             
-            <!-- SECTION 3 -->
+            <!-- SECTION 2 -->
             <HubSection Width="520">
                 <HubSection.Header>
-                    <TextBlock Text="SECTION 3" Foreground="Black" />
+                    <TextBlock Text="SECTION 2" Foreground="Black" />
                 </HubSection.Header>
                 <DataTemplate>
                     <Grid>
@@ -166,13 +166,13 @@
                 </DataTemplate>
             </HubSection>
 
-            <!-- SECTION 4 -->
+            <!-- SECTION 3 -->
             <HubSection IsHeaderInteractive="True" DataContext="{Binding Groups}" d:DataContext="{Binding Groups[3]}"
-                        x:Uid="Section3Header" Header="Section 4" Padding="40,40,40,32">
+                        x:Uid="Section3Header" Header="{Binding Title}" Padding="40,40,40,32">
                 <DataTemplate>
                     <GridView
                         x:Name="itemGridView"
-                        ItemsSource="{Binding Items}"
+                        ItemsSource="{Binding TopItems}"
                         Margin="-9,-14,0,0"
                         AutomationProperties.AutomationId="ItemGridView"
                         AutomationProperties.Name="Items In Group"
@@ -185,8 +185,8 @@
                 </DataTemplate>
             </HubSection>
 
-            <!-- SECTION 5 -->
-            <HubSection x:Uid="Section4Header" Header="Section 5">
+            <!-- SECTION 4 -->
+            <HubSection x:Uid="Section4Header" Header="Section 4">
                 <DataTemplate>
                     <!-- width of 400 -->
                     <StackPanel Orientation="Vertical">

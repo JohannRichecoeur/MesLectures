@@ -141,6 +141,7 @@
     <Content Include="Assets\4etoiles.jpg" />
     <Content Include="Assets\5etoiles.jpg" />
     <Content Include="Assets\background.jpg" />
+    <Content Include="Assets\default.jpg" />
     <Content Include="Assets\etoile.jpg" />
     <Content Include="Assets\etoileContour.jpg" />
     <Content Include="Assets\Logo.scale-100.png" />

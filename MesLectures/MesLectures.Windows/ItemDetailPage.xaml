@@ -145,7 +145,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button Style="{StaticResource NavigationBackButtonNormalStyle}" Click="GoBack" VerticalAlignment="Center" Grid.Column="0" Margin="36,0,36,0"/>
-            <TextBlock x:Name="PageTitle" VerticalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" IsHitTestVisible="false"/>
+            <TextBlock x:Name="PageTitle" VerticalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="WrapWholeWords" Grid.Column="1"/>
         </Grid>
     </Grid>
 </Page>
