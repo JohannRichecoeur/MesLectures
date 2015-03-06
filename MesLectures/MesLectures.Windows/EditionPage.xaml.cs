@@ -43,6 +43,10 @@ namespace MesLectures
             this.SetDisplay();
         }
 
+        public static Uri BingUri { get; set; }
+
+        public static bool FromBing { get; set; }
+
         public NavigationHelper NavigationHelper
         {
             get { return this.navigationHelper; }
@@ -52,17 +56,11 @@ namespace MesLectures
         {
             get { return this.defaultViewModel; }
         }
-
-        public static Uri BingUri { get; set; }
-
-        public static bool FromBing { get; set; }
-
-        private async void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
+        
+        private void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
-            //DatePickerForUser.Value = DateTime.Now;
-            //DatePickerForUser.SelectorFormat = "m y";
-            //DatePickerForUser.SelectorHeader = Settings.GetRessource("DetailBook_DatePickerHeader");
-            //DatePickerForUser.Background = new SolidColorBrush(Color.FromArgb(255, 160, 143, 127));
+            DatePickerForUser.Date = new DateTimeOffset(DateTime.Now);
+            
             AppBar.IsOpen = true;
             AppBar.IsSticky = true;
 
@@ -120,8 +118,7 @@ namespace MesLectures
             this.SummaryBox.Text = Settings.GetRessource("DetailBook_Summary");
             this.MyOpinionBox.Text = Settings.GetRessource("DetailBook_MyOpinion");
             this.StoryBox.Text = Settings.GetRessource("DetailBook_Story");
-            //this.DatePickerForUser.Header = Settings.GetRessource("DetailBook_DatePickerHeader");
-
+            
             var pageHeight = Window.Current.Bounds.Height;
             var pageWidth = Window.Current.Bounds.Width;
 
@@ -142,7 +139,7 @@ namespace MesLectures
             ImageEtoile3.Margin = new Thickness(0, 140, 140, 0);
             ImageEtoile4.Margin = new Thickness(0, 140, 100, 0);
             ImageEtoile5.Margin = new Thickness(0, 140, 60, 0);
-            // DatePickerForUser.Margin = new Thickness(0, 60, 60, 0);
+            DatePickerForUser.Margin = new Thickness(0, 80, 60, 0);
 
             var h = pageHeight - 200;
             SummaryBox.Margin = new Thickness(ImageBox.MaxWidth + 80, 200, 0, 0);
@@ -201,7 +198,7 @@ namespace MesLectures
             AuthorBox.Text = Settings.CurrentBook.Author;
             EditorBox.Text = Settings.CurrentBook.Editor;
             this.ModifyStar(Settings.CurrentBook.Like.ToString());
-            // DatePickerForUser.Value = Settings.CurrentBook.Date;
+            DatePickerForUser.Date = Settings.CurrentBook.Date;
             SummaryBox.Text = Settings.CurrentBook.Summary;
             MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
             StoryBox.Text = Settings.CurrentBook.Story;
@@ -225,7 +222,7 @@ namespace MesLectures
                 AuthorBox.Text = Settings.CurrentBook.Author;
                 EditorBox.Text = Settings.CurrentBook.Editor;
                 this.ModifyStar(Settings.CurrentBook.Like.ToString());
-                // DatePickerForUser.Value = Settings.CurrentBook.Date;
+                DatePickerForUser.Date = Settings.CurrentBook.Date;
                 SummaryBox.Text = Settings.CurrentBook.Summary;
                 MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
                 StoryBox.Text = Settings.CurrentBook.Story;
@@ -256,11 +253,11 @@ namespace MesLectures
             Settings.CurrentBook.Title = TitleBox.Text;
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
-            ////var dateTime = this.DatePickerForUser.Value;
-            ////if (dateTime != null)
-            ////{
-            ////    Settings.CurrentBook.Date = (DateTime)dateTime;
-            ////}
+            DateTime dateTime = new DateTime(this.DatePickerForUser.Date.Year, this.DatePickerForUser.Date.Month, this.DatePickerForUser.Date.Day);
+            if (dateTime != null)
+            {
+                Settings.CurrentBook.Date = dateTime;
+            }
 
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
@@ -276,7 +273,7 @@ namespace MesLectures
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
             Settings.CurrentBook.Like = Settings.CurrentBook.Like;
-            // Settings.CurrentBook.Date = DatePickerForUser.Value ?? DateTime.Now;
+            Settings.CurrentBook.Date = new DateTime(DatePickerForUser.Date.Year, DatePickerForUser.Date.Month, DatePickerForUser.Date.Day);
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
             Settings.CurrentBook.Story = StoryBox.Text;

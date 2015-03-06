@@ -5,7 +5,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:telerik="using:Telerik.UI.Xaml.Controls.Input"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -46,13 +45,14 @@
         <TextBox x:Name="AuthorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
         <TextBox x:Name="EditorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
 
+        
+        <DatePicker x:Name="DatePickerForUser" HorizontalAlignment="Right" VerticalAlignment="Top" DayVisible="False" MonthFormat="month.full"/>
+        
         <Image x:Name="ImageEtoile5" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoileContour.jpg" Tapped="EtoileTapped"/>
         <Image x:Name="ImageEtoile4" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoileContour.jpg" Tapped="EtoileTapped"/>
         <Image x:Name="ImageEtoile3" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoileContour.jpg" Tapped="EtoileTapped"/>
         <Image x:Name="ImageEtoile2" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoileContour.jpg" Tapped="EtoileTapped"/>
         <Image x:Name="ImageEtoile1" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoile.jpg"        Tapped="EtoileTapped"/>
-
-        <!--<telerik:RadDatePicker x:Name="DatePickerForUser" HorizontalAlignment="Right" DisplayValueFormat="MMMM yyyy" ItemLength="90" />-->
 
         <TextBox x:Name="SummaryBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="101" Width="100" AcceptsReturn="True"                                                                   />
         <TextBox x:Name="MyOpinionBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="145" AcceptsReturn="True" Width="645"                                                                       />
