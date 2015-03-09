@@ -79,8 +79,9 @@ namespace MesLectures
                 var bookDataGroups = BookDataSource.GetGroups("AllGroups");
                 this.dataGroups = bookDataGroups;
                 this.DefaultViewModel["Groups"] = bookDataGroups.First();
-                //itemGridView.SelectedIndex = -1;
             }
+
+            this.FakeButtonForFocus.Focus(FocusState.Programmatic);
 
             // ReSharper disable once CSharpWarnings::CS4014 => we don't want to wauit this method to unblock the navigation
             Settings.GetUserName(this);
@@ -131,6 +132,11 @@ namespace MesLectures
         private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
         {
             leftColumWidth = ((Image)sender).ActualWidth;
+        }
+
+        private void SearchBoxQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+            this.Frame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
         }
     }
 }

@@ -19,6 +19,7 @@ namespace MesLectures
         private BookDataGroup dataGroup;
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private bool searchContext = false;
 
         public SectionPage()
         {
@@ -49,14 +50,27 @@ namespace MesLectures
 
         private async void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
-            this.PageTitle.Text = Settings.GetRessource("Title_HeaderSection");
-
             await BookDataSource.FillData();
-            var bookDataGroup = BookDataSource.GetGroups("AllGroups");
-            this.dataGroup = bookDataGroup.First();
-            this.DefaultViewModel["Groups"] = dataGroup;
-            this.DefaultViewModel["Items"] = dataGroup.Items;
-            // itemGridView.SelectedIndex = -1;
+            
+            if (e.NavigationParameter.ToString().StartsWith("searchValue="))
+            {
+                // Search page context
+                this.searchContext = true;
+                string query = e.NavigationParameter.ToString().Replace("searchValue=", "");
+                this.dataGroup = await BookDataSource.GetSearchResults(query);
+                this.PageTitle.Text = string.Format(Settings.GetRessource("Search_Results"), query);
+                this.PageSubTitle.Text = " / " + this.dataGroup.Items.Count + " " + (this.dataGroup.Items.Count == 1 ? Settings.GetRessource("Settings_Book_1") : Settings.GetRessource("Settings_Book_MoreThanOne"));
+            }
+            else
+            {
+                // All books context
+                this.searchContext = false;
+                this.PageTitle.Text = Settings.GetRessource("Title_HeaderSection");
+                this.dataGroup = BookDataSource.GetGroups("AllGroups").First();
+            }
+            
+            this.DefaultViewModel["Groups"] = this.dataGroup;
+            this.DefaultViewModel["Items"] = this.dataGroup.Items;
         }
 
         private async void ButtonAddClick(object sender, RoutedEventArgs e)
@@ -188,6 +202,11 @@ namespace MesLectures
 
         private void ItemViewClick(object sender, ItemClickEventArgs e)
         {
+            if (this.searchContext)
+            {
+                Settings.ComingFromSearch = true;
+            }
+
             var itemId = ((BookDataItem)e.ClickedItem).Id;
             var groupId = ((BookDataItem)e.ClickedItem).Group.GroupId;
             this.Frame.Navigate(typeof(ItemDetailPage), itemId + "-" + groupId);

@@ -61,7 +61,7 @@ namespace MesLectures
             if (Settings.ComingFromSearch == true)
             {
                 Settings.ComingFromSearch = false;
-                BookDataItem item = BookDataSource.GetItemFromSearch((int)e.NavigationParameter);
+                BookDataItem item = BookDataSource.GetItemFromSearch(short.Parse(((string)e.NavigationParameter).Split('-')[0]));
                 this.DefaultViewModel["Group"] = BookDataSource.SearchDataGroup;
                 this.DefaultViewModel["Items"] = BookDataSource.SearchDataGroup.Items;
                 this.FlipView.SelectedItem = item;

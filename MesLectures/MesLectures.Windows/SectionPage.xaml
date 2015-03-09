@@ -109,7 +109,8 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="BackButton" Margin="39,59,39,0" Click="BackButtonOnClick"
                         Style="{StaticResource NavigationBackButtonNormalStyle}"
@@ -118,7 +119,9 @@
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="PageTitle" x:Uid="Section3Header.Text" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,10,40"/>
+            <TextBlock x:Name="PageSubTitle" x:Uid="Section3Header.Text" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="2" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,0,40"/>
         </Grid>
     </Grid>
 </Page>
