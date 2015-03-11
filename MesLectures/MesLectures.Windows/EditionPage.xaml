@@ -38,12 +38,12 @@
     <Grid Style="{StaticResource LayoutRootStyle}">
 
         <Image x:Name="ImageBox" HorizontalAlignment="Left" Margin="60,80,0,60" VerticalAlignment="Top" Height="Auto" Width="Auto" Source="Assets/default.jpg"/>
-        <Button x:Name="LocalButton" HorizontalAlignment="Left" Margin="60,25,0,0" VerticalAlignment="Top" Width="167" FontSize="12"/>
-        <Button x:Name="BingButton" HorizontalAlignment="Left" Margin="250,25,0,0" VerticalAlignment="Top" Width="167" FontSize="12"/>
+        <Button x:Name="LocalButton" HorizontalAlignment="Left" Margin="60,25,0,0" VerticalAlignment="Top" Width="167" FontSize="12" Click="LocalButtonClick"/>
+        <Button x:Name="BingButton" HorizontalAlignment="Left" Margin="250,25,0,0" VerticalAlignment="Top" Width="167" FontSize="12" Click="BingButtonClick"/>
 
         <TextBox x:Name="TitleBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
-        <TextBox x:Name="AuthorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
-        <TextBox x:Name="EditorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
+        <TextBox x:Name="AuthorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="AuthorBoxFocusChange" LostFocus="AuthorBoxFocusChange"/>
+        <TextBox x:Name="EditorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="EditorBoxFocusChange" LostFocus="EditorBoxFocusChange"/>
 
         
         <DatePicker x:Name="DatePickerForUser" HorizontalAlignment="Right" VerticalAlignment="Top" DayVisible="False" MonthFormat="month.full"/>
@@ -54,9 +54,9 @@
         <Image x:Name="ImageEtoile2" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoileContour.jpg" Tapped="EtoileTapped"/>
         <Image x:Name="ImageEtoile1" HorizontalAlignment="Right" Height="37" VerticalAlignment="Top" Width="42" Source="Assets/etoile.jpg"        Tapped="EtoileTapped"/>
 
-        <TextBox x:Name="SummaryBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="101" Width="100" AcceptsReturn="True"                                                                   />
-        <TextBox x:Name="MyOpinionBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="145" AcceptsReturn="True" Width="645"                                                                       />
-        <TextBox x:Name="StoryBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="271" AcceptsReturn="True" Width="645"                                                               />
+        <TextBox x:Name="SummaryBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="101" Width="100" AcceptsReturn="True" GotFocus="SummaryBoxFocusChange" LostFocus="SummaryBoxFocusChange" />
+        <TextBox x:Name="MyOpinionBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="145" AcceptsReturn="True" Width="645" GotFocus="MyOpinionBoxFocusChange" LostFocus="MyOpinionBoxFocusChange" />
+        <TextBox x:Name="StoryBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="271" AcceptsReturn="True" Width="645" GotFocus="StoryBoxFocusChange" LostFocus="StoryBoxFocusChange" />
     
     </Grid>
 </Page>

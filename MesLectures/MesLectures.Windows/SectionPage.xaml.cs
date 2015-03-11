@@ -4,7 +4,6 @@ using MesLectures.Common;
 using MesLectures.DataModel;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
@@ -27,9 +26,9 @@ namespace MesLectures
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
 
-            this.AppBarAddButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Add"));
-            this.AppBarEditButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Edit"));
-            this.AppBarDiscardButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Delete"));
+            this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
+            this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
+            this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
         }
 
         /// <summary>

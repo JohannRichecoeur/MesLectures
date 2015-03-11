@@ -47,6 +47,7 @@
     <Compile Include="API\QueryExtensions.cs" />
     <Compile Include="Book.cs" />
     <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="ISBN\GoogleResult.cs" />
     <Compile Include="ISBN\IsbnBook.cs" />
     <Compile Include="ISBN\IsbnSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,9 +65,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\..\..\Dropbox\Programming\UniversalApp\packages\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="zxing.winrt">
-      <HintPath>..\..\..\..\Dropbox\Programming\UniversalApp\packages\zxing.winrt.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

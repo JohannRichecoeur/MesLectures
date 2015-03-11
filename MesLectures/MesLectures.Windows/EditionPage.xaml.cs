@@ -9,7 +9,6 @@ using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Automation;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Input;
@@ -32,9 +31,9 @@ namespace MesLectures
         {
             this.InitializeComponent();
 
-            this.AppBarSaveButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Save"));
-            this.AppBarCancelButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Cancel"));
-            this.AppBarSearchButton.SetValue(AutomationProperties.NameProperty, Settings.GetRessource("AppBar_Search"));
+            this.AppBarSaveButton.Label = Settings.GetRessource("AppBar_Save");
+            this.AppBarCancelButton.Label = Settings.GetRessource("AppBar_Cancel");
+            this.AppBarSearchButton.Label = Settings.GetRessource("AppBar_Search");
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
@@ -253,18 +252,13 @@ namespace MesLectures
             Settings.CurrentBook.Title = TitleBox.Text;
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
-            DateTime dateTime = new DateTime(this.DatePickerForUser.Date.Year, this.DatePickerForUser.Date.Month, this.DatePickerForUser.Date.Day);
-            if (dateTime != null)
-            {
-                Settings.CurrentBook.Date = dateTime;
-            }
-
+            Settings.CurrentBook.Date = new DateTime(this.DatePickerForUser.Date.Year, this.DatePickerForUser.Date.Month, this.DatePickerForUser.Date.Day);
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
             Settings.CurrentBook.Story = StoryBox.Text;
             Settings.CurrentImage = ImageBox.Source;
             string search = TitleBox.Text + " " + AuthorBox.Text + " " + EditorBox.Text;
-            //this.Frame.Navigate(typeof(BingImages), search);
+            this.Frame.Navigate(typeof(BingImages), search);
         }
 
         private async Task SaveBook()
@@ -463,9 +457,6 @@ namespace MesLectures
                 AuthorBox.Text = Settings.IsbnBook.Author;
                 AuthorBox.FontStyle = Windows.UI.Text.FontStyle.Normal;
 
-                EditorBox.Text = Settings.IsbnBook.Editor;
-                EditorBox.FontStyle = Windows.UI.Text.FontStyle.Normal;
-
                 if (Settings.IsbnBook.ImageLink != null)
                 {
                     ImageBox.Source = new BitmapImage(new Uri(Settings.IsbnBook.ImageLink));
@@ -475,59 +466,18 @@ namespace MesLectures
 
         private async void SearchButtonClick(object sender, RoutedEventArgs e)
         {
-            /*var md = new MessageDialog(Settings.GetRessource("CreateBook_ByISBN"), Settings.GetRessource("AppTitle"));
-            md.Commands.Add(new UICommand(Settings.GetRessource("CreateBook_Scan")));
-            md.Commands.Add(new UICommand(Settings.GetRessource("CreateBook_EnterISBN")));
-            md.Commands.Add(new UICommand(Settings.GetRessource("CancelButton")));
-            var response = await md.ShowAsync();
-
-            if (response.Label == Settings.GetRessource("CreateBook_Scan"))
-            {
-                var isbn = await IsbnSearch.GetIsbnFromPicture();
-
-                // For test purpose
-                // long isbn = 9780596514822;
-                if (isbn == 0)
-                {
-                    var mdError = new MessageDialog(Settings.GetRessource("CreateBook_BarCodeNotFound"));
-                    mdError.Commands.Add(new UICommand("OK"));
-                    await mdError.ShowAsync();
-                }
-                else
-                {
-                    var mdFind = new MessageDialog(Settings.GetRessource("CreateBook_ISBNFound") + isbn);
-                    mdFind.Commands.Add(new UICommand(Settings.GetRessource("CreateBook_ISBNFoundSearchBook")));
-                    mdFind.Commands.Add(new UICommand(Settings.GetRessource("CancelButton")));
-                    var codeBarreResponse = await mdFind.ShowAsync();
-
-                    if (codeBarreResponse.Label != Settings.GetRessource("CancelButton"))
-                    {
-                        var isbnNumberSearch = new IsbnNumberSearch();
-                        isbnNumberSearch.CloseIsbnRequested += this.IsbnSearchCloseRequested;
-
-                        this.isbnSearchPopup = new Popup();
-                        this.isbnSearchPopup.Child = isbnNumberSearch;
-
-                        this.isbnSearchPopup.IsOpen = true;
-                        await isbnNumberSearch.SearchWithIsbn(isbn);
-                    }
-                }
-            }
-            else if (response.Label == Settings.GetRessource("CreateBook_EnterISBN"))
-            {
-                var isbnNumberSearch = new IsbnNumberSearch();
+            var isbnNumberSearch = new IsbnNumberSearch();
                 isbnNumberSearch.CloseIsbnRequested += this.IsbnSearchCloseRequested;
                 this.isbnSearchPopup = new Popup
                 {
                     Child = isbnNumberSearch,
                     IsOpen = true
                 };
-            }*/
         }
 
         private void IsbnSearchCloseRequested(object sender, EventArgs e)
         {
-         /*   this.isbnSearchPopup.IsOpen = false;
+            this.isbnSearchPopup.IsOpen = false;
             if (Settings.IsbnSearched != 0)
             {
                 var dialog = new IsbnDialog();
@@ -537,7 +487,7 @@ namespace MesLectures
                                             Child = dialog,
                                             IsOpen = true
                                         };
-            }*/
+            }
         }
 
         #region NavigationHelper registration
@@ -562,6 +512,5 @@ namespace MesLectures
         }
 
         #endregion
-    
     }
 }

@@ -77,9 +77,20 @@
         
     </Page.Resources>
 
-    <!--
-    This grid acts as a root panel for the page.
-  -->
+    <!-- AppBar -->
+    <Page.BottomAppBar>
+        <AppBar Name="MyAppBar" Grid.Row="0" Background="#A08F7F">
+            <Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <AppBarButton Icon="Setting" Name="AppBarInfosButton" Click="ButtonInfosClick"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <AppBarButton Icon="Add" Name="AppBarAddButton" Click="ButtonAddClick"/>
+                </StackPanel>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar>
+    
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/background.jpg" Stretch="None" />

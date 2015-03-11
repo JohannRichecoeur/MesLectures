@@ -54,6 +54,8 @@ namespace MesLectures
         public HubPage()
         {
             this.InitializeComponent();
+            this.AppBarInfosButton.Label = Settings.GetRessource("AppBar_Infos");
+            this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
         }
@@ -98,6 +100,34 @@ namespace MesLectures
             var group = section.DataContext;
             this.Frame.Navigate(typeof(SectionPage), ((BookDataGroup)group).GroupId);
 
+        }
+
+        private async void ButtonAddClick(object sender, RoutedEventArgs e)
+        {
+            if (Window.Current.Bounds.Width > 500)
+            {
+                this.Frame.Navigate(typeof(EditionPage));
+            }
+            else
+            {
+                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
+                md.Commands.Add(new UICommand("OK"));
+                await md.ShowAsync();
+            }
+        }
+
+        private async void ButtonInfosClick(object sender, RoutedEventArgs e)
+        {
+            var md = new MessageDialog(Settings.GetRessource("Infos_dev") + " = Jean-Eric Hourchon (jean-eric.hourchon@live.fr) \nVersion = 1.3 ", Settings.GetRessource("AppTitle"));
+            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_sendMail")));
+            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_close")));
+            var response = await md.ShowAsync();
+
+            if (response.Label == Settings.GetRessource("Infos_sendMail"))
+            {
+                var mailto = new Uri("mailto:?to=jean-eric.hourchon@live.fr&subject=" + Settings.GetRessource("AppTitle") + ", Windows 8");
+                await Windows.System.Launcher.LaunchUriAsync(mailto);
+            }
         }
 
         private void BookClick(object sender, ItemClickEventArgs e)
