@@ -6,19 +6,19 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-
-using Windows.UI.Xaml.Controls;
-
-using ShareClass;
-using ShareClass.API;
-using ShareClass.ISBN;
 using Bing;
-using Windows.Storage;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Imaging;
+
+using MesLectures.API;
+using MesLectures.ISBN;
 
 using Microsoft.Live;
 using Newtonsoft.Json.Linq;
+
+
+using Windows.Storage;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace MesLectures
 {

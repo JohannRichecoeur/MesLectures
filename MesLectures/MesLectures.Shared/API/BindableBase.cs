@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace ShareClass.Common
+namespace MesLectures.API
 {
     /// <summary>
     /// Implémentation de <see cref="INotifyPropertyChanged"/> pour simplifier les modèles.

@@ -15,10 +15,10 @@ namespace MesLectures
     /// </summary>
     public sealed partial class SectionPage
     {
-        private BookDataGroup dataGroup;
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private bool searchContext = false;
+        private BookDataGroup dataGroup;
 
         public SectionPage()
         {

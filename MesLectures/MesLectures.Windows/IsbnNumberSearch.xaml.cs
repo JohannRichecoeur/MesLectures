@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using ShareClass.ISBN;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
+
+using MesLectures.ISBN;
 
 namespace MesLectures
 {
@@ -84,7 +85,7 @@ namespace MesLectures
 
                 try
                 {
-                    Settings.IsbnBook = await IsbnSearch.GetBookFromIsbn(isbn);
+                    Settings.IsbnBook = await GoogleResult.GetBookFromIsbn(isbn);
                 }
                 catch (Exception e)
                 { }
@@ -93,7 +94,7 @@ namespace MesLectures
                 {
                     if (Settings.IsbnBook != null)
                     {
-                        Settings.IsbnBook.ImageLink = await GoogleResult.GetGoogleCover(isbn);
+                        Settings.IsbnBook.ImageLink = await GoogleResult.GetGoogleImage(isbn.ToString());
                     }
                 }
                 catch (Exception)

@@ -3,7 +3,6 @@ using System.Globalization;
 using System.Linq;
 using MesLectures.Common;
 using MesLectures.DataModel;
-using ShareClass;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Storage.Streams;

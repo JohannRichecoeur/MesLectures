@@ -1,9 +1,9 @@
 ﻿using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 
-namespace ShareClass.API
+namespace MesLectures.API
 {
-    public class BingImage : Common.BindableBase
+    public class BingImage : BindableBase
     {
         private readonly BitmapImage imageBitmapImage;
         private ImageSource imageSource;

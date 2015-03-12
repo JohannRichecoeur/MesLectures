@@ -12,13 +12,21 @@
     <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)API\BindableBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\BingImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\BingSearchContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\QueryExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Book.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\DateConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\BookDataGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\BookDataItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\BookDataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISBN\GoogleResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISBN\IsbnBook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings.cs" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\background.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\default.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LightGray.png" />

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ShareClass
+namespace MesLectures
 {
     public class Book
     {

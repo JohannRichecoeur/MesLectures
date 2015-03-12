@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using MesLectures.Common;
 using MesLectures.DataModel;
-using ShareClass;
 using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.UI.Popups;

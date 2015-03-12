@@ -1,4 +1,4 @@
-﻿namespace ShareClass.ISBN
+﻿namespace MesLectures.ISBN
 {
     public class IsbnBook
     {

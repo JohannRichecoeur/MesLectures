@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesLectures.Windows", "MesL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesLectures.WindowsPhone", "MesLectures\MesLectures.WindowsPhone\MesLectures.WindowsPhone.csproj", "{B875FA79-E6AD-4147-B849-4ECB14B23FCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareClass", "ShareClass\ShareClass.csproj", "{DBC49569-8C5F-4771-92CB-82BD928674D4}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MesLectures\MesLectures.Shared\MesLectures.Shared.projitems*{900e4bba-e487-415a-956a-cb812f7dc7c8}*SharedItemsImports = 4
@@ -74,16 +72,6 @@ Global
 		{B875FA79-E6AD-4147-B849-4ECB14B23FCE}.Release|x86.ActiveCfg = Release|x86
 		{B875FA79-E6AD-4147-B849-4ECB14B23FCE}.Release|x86.Build.0 = Release|x86
 		{B875FA79-E6AD-4147-B849-4ECB14B23FCE}.Release|x86.Deploy.0 = Release|x86
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Release|ARM.ActiveCfg = Release|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Release|x64.ActiveCfg = Release|Any CPU
-		{DBC49569-8C5F-4771-92CB-82BD928674D4}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +80,5 @@ Global
 		{7FDE13ED-82BB-442D-80AA-1F251E92F4DF} = {8E0A05B6-9602-4432-8CD2-E74E2AB9C605}
 		{900E4BBA-E487-415A-956A-CB812F7DC7C8} = {8E0A05B6-9602-4432-8CD2-E74E2AB9C605}
 		{B875FA79-E6AD-4147-B849-4ECB14B23FCE} = {8E0A05B6-9602-4432-8CD2-E74E2AB9C605}
-		{DBC49569-8C5F-4771-92CB-82BD928674D4} = {8E0A05B6-9602-4432-8CD2-E74E2AB9C605}
 	EndGlobalSection
 EndGlobal

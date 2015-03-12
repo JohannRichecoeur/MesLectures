@@ -2,7 +2,7 @@
 using System.Data.Services.Client;
 using System.Threading.Tasks;
 
-namespace ShareClass.API
+namespace MesLectures.API
 {
     public static class QueryExtensions
     {
