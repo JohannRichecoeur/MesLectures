@@ -59,7 +59,7 @@ namespace MesLectures
                 var md = new MessageDialog(Settings.GetRessource("Welcome_Title") + "\n" + Settings.GetRessource("Welcome_Text"), Settings.GetRessource("AppTitle"));
                 md.Commands.Add(new UICommand("OK"));
                 await md.ShowAsync();
-                // appBar.IsOpen = true;
+                MyAppBar.IsOpen = true;
             }
             else
             {

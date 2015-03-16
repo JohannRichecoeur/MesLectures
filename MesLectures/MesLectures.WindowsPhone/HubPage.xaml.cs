@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using MesLectures.Common;
 using MesLectures.DataModel;
 using Windows.ApplicationModel.Resources;
@@ -16,6 +18,7 @@ namespace MesLectures
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
         private readonly ResourceLoader resourceLoader = ResourceLoader.GetForCurrentView("Resources");
+        private IEnumerable<BookDataGroup> dataGroups;
 
         public HubPage()
         {
@@ -61,9 +64,23 @@ namespace MesLectures
         /// session.  The state will be null the first time a page is visited.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            this.PageTitle.Header = Settings.GetRessource("AppTitle");
+
+            // HACK: copy xml file to isolate storage
+            var folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            var file = await folder.GetFileAsync("data.txt");  
+            
+            // Retrieve book list from Local folder
+            Settings.BookList = await Settings.ReadFileForBookList(file);
+
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
             // var sampleDataGroups = await SampleDataSource.GetGroupsAsync();
             // this.DefaultViewModel["Groups"] = sampleDataGroups;
+
+            await BookDataSource.FillData();
+            var bookDataGroups = BookDataSource.GetGroups("AllGroups");
+            this.dataGroups = bookDataGroups;
+            this.DefaultViewModel["Groups"] = bookDataGroups.First();
         }
 
         /// <summary>

@@ -105,6 +105,7 @@
     <Content Include="Assets\WideLogo.scale-240.png" />
     <Content Include="Assets\HubBackground.theme-dark.png" />
     <Content Include="Assets\HubBackground.theme-light.png" />
+    <Content Include="data.txt" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="HubPage.xaml">

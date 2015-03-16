@@ -1,0 +1,812 @@
+﻿<BookList>
+  <Book>
+    <Title>1984</Title>
+    <Author>George Orwell</Author>
+    <Editor>Gallimard</Editor>
+    <Like>2</Like>
+    <Date>01/10/2009 00:00:00</Date>
+    <Summary>Dans un monde totalitaire, Winston Smith mène une vie la plus droite possible tout en remettant en cause secrètement ce nouveau type de pouvoir qui s'est installé.</Summary>
+    <MyOpinion>Livre très étrange et très déstabilisant. Le totalitarisme est poussé à son extrême et les individus ne pensent plus par eux-mêmes. Livre effrayant de l'avenir tel que le voyait l'auteur dans les années 50.</MyOpinion>
+    <Story>Winston Smith est un homme, la jeune quarantaine, qui travaille dans un des 4 grands ministères de l'état. Il a une vie très rythmée, toujours sous le regard de Big Brother, le chef de cette nouvelle civilisation, et ses télécrans présents partout. Après une révolution, un nouvel état est apparu et dicte des lois très strictes. Ceux qui ne les suivent pas, disparaissent tout simplement. Le métier de Winston consiste à modifier les écrits passés afin de les rendre exactes par rapport à la réalité. Winston n'en pense cependant pas moins et essaie de se rappeler comment c'était avant. Mais après s'être aventuré dans des chemins dangereux et avoir flirté avec Julia, Winston va subir le châtiment imposé à ceux qui veulent contester le pouvoir en place.</Story>
+    <Id>1</Id>
+    <ImagePath>1-441186484.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Aurélien</Title>
+    <Author>Louis Aragon</Author>
+    <Editor>Gallimard</Editor>
+    <Like>2</Like>
+    <Date>01/05/2012 00:00:00</Date>
+    <Summary>Durant l’entre-deux-guerres, Aurélien, rentier parisien, et Bérénice, provinciale, se rencontrent à Paris et commence un jeu d’amour sachant l’un et l’autre que leur amour sera impossible</Summary>
+    <MyOpinion>Roman intéressant, durant l’entre-deux-guerres entre 2 personnages à la psychologie différente. Le livre s’éternise cependant à certains passages et les descriptions de l’époque des protagonistes sont trop peu nombreuses.</MyOpinion>
+    <Story>Aurélien est un jeune homme vivant à Paris, rentier depuis son retour de la guerre et qui est sans activité. Il fait la connaissance de Bérénice, une jeune provinciale en séjour à Paris, loin de son marie Lucien. D’univers et de conception de vie différents, ils vont néanmoins se fréquenter et se voir seuls. Leur amour est impossible, mais tous deux ont leur propre rêves. Ils vont malgré tout être séparés pendant 17 ans et se retrouveront lors de la guerre à nouveau, chacun ayant malgré tout poursuivi sa vie.</Story>
+    <Id>2</Id>
+    <ImagePath>2-1862280580.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Carte Blanche</Title>
+    <Author>Jeffery Deaver</Author>
+    <Editor>Flammarion</Editor>
+    <Like>4</Like>
+    <Date>01/07/2011 00:00:00</Date>
+    <Summary>James Bond affronte à Severan Hydt, puissant industriel spécialisé dans le recyclage des déchets. De fortes menaces pèsent contre le Royaume-Uni et 007 va devoir démêler une enquête complexe pour trouver la vérité et arrêter le mécanisme.</Summary>
+    <MyOpinion>Très bon James Bond, très prenant. Pas énormément d’actions, mais beaucoup de rebondissements tout au long du livre. 007 est vraiment ancré dans l’époque actuel et l’action se déroule au cœur de conflits actuel. Excellent livre.</MyOpinion>
+    <Story>Suite aux attentats du 11 septembre, M et James Bond ont rejoint l’ODG, une nouvelle unité d’espionnage qui a pour but de répondre à n’importe quelle menace contre le Royaume. Alors que la menace d’un « Incident Vingt » se profile, 007 assiste en Serbie au déraillement d’un train. L’un des malfaiteurs s’enfuit, laissant Bond récupérer des premiers indices. Ce début d’enquête va le mener à March, en Angleterre, puis à Dubaï et enfin en Afrique du Sud. James Bond va devoir approcher Severan Hydt et son redoutable associé Niall Dunne. L’entrepreneur a fait fortune en créant d’immenses usines de recyclage des déchets et en permettant à de nombreux payx de se libérer du poids des déchets. Mais cet entrepreneur ne semble pas vouloir s’arrêter là et semble vouloir utiliser ses moyens et ses connaissances pour de plus ambitieux projets. Aidé par le capitaine Bheka Jordaan et les autres policiers du Cap Bond va devoir infiltré le monde de Hydt et contrecarrer ses plans pour protéger le monde.</Story>
+    <Id>3</Id>
+    <ImagePath>3-1396800948.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Casino Royal</Title>
+    <Author>Ian Fleming</Author>
+    <Editor>Robert Laffont (Bouquins)</Editor>
+    <Like>5</Like>
+    <Date>01/09/2008 00:00:00</Date>
+    <Summary>James Bond doit affronter le Chiffre dans un casino de Royale-le-Eaux pour tenter de le liquider afin de l'anéantir et de démasquer le SMERSH.</Summary>
+    <MyOpinion>Premier roman de James Bond écrit par Ian Fleming. On retrouve tout l'univers de James Bond. Le film Casino Royale reprend la trame principale du livre mais ajoute et enlève un grand nombre d'éléments. Le livre est très agréable à lire.</MyOpinion>
+    <Story>Le Chiffre, homme d'affaires travaillant pour le SMERSH organise une partie de Baccara dans un casino française pour lever des fonds afin de récupérer en une nuit l'argent (du SMERSH) qu'il a perdu (en créant des maisons closes en France). 007, nouveau promu, est un as du poker et des jeux et est donc envoyé en mission pour affronter Le Chiffre. On lui associe Vesper Lynd pour l'aider (on découvrira finalement qu'il s'agit d'un agent double). René Mathis (du deuxième bureau de paris) et Félix Leiter de la CIA viennent également l'aider. Bond va battre Le Chiffre, mais il sera finalement enlevé et torturé par ses hommes. Bond sera finalement sauvé (par un agent du SMERSH) et prendra du repos en compagnie de Vesper. Cette dernière se suicide à la fin du livre, ne pouvant supporter d'aimer Bond et d'être aux mains des russes.</Story>
+    <Id>4</Id>
+    <ImagePath>4-1926622704.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Cet instant-là</Title>
+    <Author>Douglas Kennedy</Author>
+    <Editor>Belfond</Editor>
+    <Like>4</Like>
+    <Date>01/06/2012 00:00:00</Date>
+    <Summary>Thomas, écrivain new-yorkais, reçoit un colis en provenance de Berlin. Il se remémore alors le séjour qu’il a passé là-bas pendant que le mur était en présent et sa rencontre avec l’unique véritable amour de sa vie, Petra.</Summary>
+    <MyOpinion>Très bon livre de Douglas Kennedy. Les descriptions de Berlin, Est et Ouest sont très intéressantes et l’histoire de Thomas et Petra est passionnante. C’est une très bon mélange entre fiction et description et la lecture est vraiment très agréable. Un très bon livre.</MyOpinion>
+    <Story>Thomas Nesbitt est un écrivain new-yorkais qui a une certaine notoriété pour les nombreux livres qu’il a écrit relatant ses voyages à travers le monde. Mais alors que son mariage prend fin et qu’il déménage dans le Maine, il reçoit un colis d’Allemagne qui va le faire revivre une époque de sa vie qui date de plus de 20 ans. Désirant écrire un livre sur Berlin, le jeune Thomas s’envole pour Berlin et s’installe au cœur de cette ville, chez Alastair, un peintre talentueux, câmé, mais qui cache au fond de lui une grande gentillesse. Thomas va découvrir cette ville, passé du côté de la RDA et travailler pour Radio Liberty. C’est là qu’il va rencontrer Petra, une traductrice originaire d’Allemagne de l’Est, passée à l’Ouest. Entre eux, un amour absolu va bientôt naître, eux 2 ayant jusqu’à eux des déboires sentimentaux. Mais le passé trouble de Petra va venir entacher cette situation et leur destin va être changé à jamais.</Story>
+    <Id>5</Id>
+    <ImagePath>5-795258982.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Confessions d'une religieuse</Title>
+    <Author>Soeur Emmanuelle</Author>
+    <Editor>Flammarion</Editor>
+    <Like>4</Like>
+    <Date>01/05/2009 00:00:00</Date>
+    <Summary>Soeur Emmanuelle livre dans un livre posthume un témoignage de sa vie, de tout ce qu'elle a vécue : son enfance, son entrée au couvent, ses premières missions auprès des pauvres, sa célébrité,...</Summary>
+    <MyOpinion>Ce livre est très agréable à lire. Soeur Emmanuelle raconte sa vie avec une écriture simple et claire et n'hésite pas à se mettre à nue. On y voit les difficultés rencontrées et toujours cette volonté de venir en aide aux autres. Un beau livre.</MyOpinion>
+    <Story>Ce livre commence dès l'enfance de Soeur Emmanuelle (née Madeleine Cinquin). Elle détaille sa vie de petite fille, ses premières envies et son attirance pour l'Eglise. Malgré un caractère fort et quelque peu rebel, qui ne la portait pas forcément cers le couvent, elle va se faire une place au sein de l'Eglise. Elle a une forte volonté et va vite réussir à convaincre les gens. Après quelques années d'initiation, elle débute auprès des populations pauvres en tant qu'institutrice. Peu à peu, elle va s'orienter vers ce qui l'attire vraiment : aider les populations vivre. Elle va aller vivre chez ces populations pauvres, notamment en Turquie, au Liban puis en Egypte où elle s'installera avec les chiffonniers du Caire. Soeur Emmanuelle nous raconte comment elle s'est liée à ces gens, ce qu'ils se sont mutuellement apportés et comment elle a réussi à les sortir de la misère. Le livre va jusqu'à la fin de sa vie, sa retraite toujours active et son engagement toujours aussi fort.</Story>
+    <Id>6</Id>
+    <ImagePath>6-1777445848.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Délivrez-nous du Mal</Title>
+    <Author>Romain Sardou</Author>
+    <Editor>XO Editions</Editor>
+    <Like>5</Like>
+    <Date>01/03/2009 00:00:00</Date>
+    <Summary>Plusieurs enlèvements d'enfant dans le sud de la France provoque des remous jusqu'à Rome qui semble être impliqué dans cette histoire. Deux hommes vont chacun mener une enquête pour essayer de démêler tous ces faits.</Summary>
+    <MyOpinion>Suite au roman 'Pardonnez nos offenses", ce roman est dans la même lignée. Tout se joue autour de Rome, il y a des complots et des renversements jusqu'au bout.</MyOpinion>
+    <Story>Pierrot, un jeune garçon, est enlevé à Cantimpré, sous les yeux du père Aba, dans la violence et l'horreur. Le garçon est en fait doté de pouvoirs de guérison et le père décide de partir dans l'inconnu à sa recherche. En parallèle, à Rome, Bénédict Gui, brillant enquêteur, se voit charger de rechercher un jeune homme, Rainerio, qui a disparu depuis quelques jours. S'intéressant particulièrement à cette enquête, Bénédict Guy va se rendre compte que Rainerio, malgré son jeune âge, occupait une place importante à Rome, alors qu'un nouveau pape doit être élu. Le jeune homme a fait de découvertes importantes qui pourraient bien concerné l'enlèvement de jeunes garçons.
+Les deux hommes vont devoir voyager suite à leurs découvertes et finalement aboutir à une enquête commune. Des découvertes à la fin du livre éclaircissent les mystères qui entourent tous ces faits extraordinaires.</Story>
+    <Id>7</Id>
+    <ImagePath>7-1074396027.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Entourloupe dans l'azimut</Title>
+    <Author>Ian Fleming</Author>
+    <Editor>Robert Laffont (Bouquins)</Editor>
+    <Like>4</Like>
+    <Date>01/04/2011 00:00:00</Date>
+    <Summary>James Bond enquête sur Hugo Drax, nouveau bienfaiteur de l'Angleterre mais dont le dessein n'est pas aussi amical qu'il le laisse entendre.</Summary>
+    <MyOpinion>Ce livre dont a été adapté Moonraker est très bon, très prenant. Le méchant est diabolique et James doit mener une enquête approfondie pour comprendre ce qui motive cet homme et tenter de le mettre hors d'état de nuire. Un très bon James Bond !!</MyOpinion>
+    <Story>Alors que 007 est à son bureau de Londres, "M" fait appel à lui pour une affaire un peu annexe. Ce dernier souhaite que James l'aide à démasquer Hugo Drax qui, bien que célèbre et millionnaire, triche dans le plus grand club de jeu de Londres. James se rend avec "M" à une soirée de jeu où Drax se trouve. En jouant avec lui, James découvre comment il triche et James lui donne une petite leçon pour lui montrer qu'il a vu son manège.
+Hugo Drax est un millionnaire qui a décidé, au sortir de la Seconde Guerre Mondiale, d'offrir à l'Angleterre un énorme missile capable de protéger les Îles Britanniques contre n'importe quel attaque en pouvant détruire n'importe quelle capitale européenne. Alors qu'un premier tir de test doit bientôt avoir lieu, un meurtre survient sur le lien de construction. L'agent de sécurité étant mort, "M" fait appel à 007 pour prendre la place vacante et tenter de découvrir ce que prépare Drax avec ce missile.</Story>
+    <Id>8</Id>
+    <ImagePath>8-813553112.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Eternalis</Title>
+    <Author>Raymond Khoury</Author>
+    <Editor>Presses de la cité</Editor>
+    <Like>4</Like>
+    <Date>01/01/2011 00:00:00</Date>
+    <Summary>Evelyn, archéologue au Liban, est enlevée sous les yeux de sa fille Mia, généticienne, dans l'espoir de mettre la main sur un vieux livre (Ouroboros) qui renfermerait un savoir extraordinaire.</Summary>
+    <MyOpinion>Livre très prenant, l'histoire est bien rythmée, action, enlèvement, CIA,… Des rebondissements, retournement de situation,… bref, une histoire plein d'aventures qui se lit très facilement.</MyOpinion>
+    <Story>Alors que Mia vient de retrouver sa mère Evelyn au Liban où elles travaillent toutes les 2, la mère archéologue est enlevée par une bande très bien organisée et disposant de nombreux appuis. Mia va faire la connaissance de Corben, membre du CIA, qui est chargé de retrouver sa mère et en même temps d'enquêter sur le hakim, un homme au pouvoir très influent qui a mis en place d'innombrables laboratoires secrets très perfectionnés dans le but de découvrir ce que lui et ses ancêtres cherchent depuis des années : le pouvoir de ralentir le vieillissement des cellules afin de repousser les limites de la vie humaine. L'agent  et la jeune femme vont vite se rendre compte qu'ils ne sont pas les seuls à être intéressé par le hakim et ils vont vivre de nombreuses aventures pour découvrir la vérité.</Story>
+    <Id>9</Id>
+    <ImagePath>9-2137697541.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>J'aurais préféré vivre</Title>
+    <Author>Thierry Cohen</Author>
+    <Editor>Plon</Editor>
+    <Like>5</Like>
+    <Date>01/05/2011 00:00:00</Date>
+    <Summary>Le jour de ses 20 ans, Jeremy se suicide car Victoria, la femme qu'il aime, le rejette. Suite à son geste, il va se réveiller 1 an après, auprès de Victoria sans se souvenir ce qu'il s'est passé durant l'année écoulée...</Summary>
+    <MyOpinion>Magnifique livre !! C'est très bien écrit, c'est passionnant et ça fait réfléchir !! Quelles sont les relations que nous avons avec Dieu, quel impact nos gestes peuvent-ils avoir sur nous-même et sur les autres.. A lire et à relire.</MyOpinion>
+    <Story>Jeremy et Victoria sont 2 jeunes gens qui se connaissent depuis leur petite enfance. Toujours ensemble, ils sont restés très proches en grandissant. Mais alors que Jeremy éprouve de l'amour pour son amie et le lui déclare, celle-ci de veut pas plus que de l'amitié et lui présente un autre, son fiancé. Jeremy sombre peu à peu et le jour de ses 20 ans, il se suicide. Il se réveille 1 ans après, jour pour jour dans un lit auprès de Victoria avec pour dernier souvenir sa tentative de suicide. Essayant de trouver cette amnésie d'un an, il découvre que Victoria et lui ont construit leur vie ensemble pendant toute cette année. La journée s'achève sans que les médecins n'aient pu trouver de quoi souffrait Jeremy. En s'endormant le soir, il entend un vieux rabbin juif, auprès de lui qui lui des psaumes. A son réveil, le lendemain, Jeremy se réveille à nouveau le jour de son anniversaire, 2 ans après son premier réveil cette fois-ci. Il essaye d'appréhender cette nouvelle journée en prenant en compte le fait qu'il soit maintenant papa… Ainsi de suite, Jeremy va se réveiller durant sa journée d'anniversaire, pendant 1 jour et va découvrir que le reste du temps, son "double" ne semble pas être aussi bienveillant que lui souhaiterai l'être, surtout auprès de Victoria, qu'il a tant aimé. va alors se poser pour lui quelques cas de conscience.</Story>
+    <Id>10</Id>
+    <ImagePath>10-550731868.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Je le ferai pour toi</Title>
+    <Author>Thierry Cohen</Author>
+    <Editor>Flammarion</Editor>
+    <Like>5</Like>
+    <Date>01/08/2011 00:00:00</Date>
+    <Summary>Daniel, qui a perdu son fils Jérôme dans un attentat, ne pense qu'à une chose : le venger. De son côté, Jean, SDF, est enlevé dans la rue et son cas va passionner la France entière, alors qu'on se demande ce que veulent ses kidnappeurs.</Summary>
+    <MyOpinion>Encore un excellent livre de Thierry Cohen. 2 histoires à priori séparées, mais qui font réfléchir, proposent de réfléchir de manère très profonde et explorent la diversité des sentiments que l'on a en nous. Vraiment un excellent livre.</MyOpinion>
+    <Story>Daniel Leman, commercial français, perd son fils Jérôme, 10 ans dans un attentat terroriste dans un bus. Pour avoir préférer travailler plutôt qu'aller chercher son fils après son sport, la vie de Daniel n'existe presque plus : il n'y a plus de communications avec sa femme et son autre fils, plus rien ne l'intéresse. Il va se donner à fond dans son travail pour, en secret, essayer de venger la mort de son fils. Pour cela, il va revoir ses anciens camarades de jeunesse avec lesquels il a fait de nombreux cambriolages puis va partir à Londres pour s'approcher de sa victime.
+Parallèlement, Jean, SDF près de Lyon, est enlevé par des armes cagoules. Alors qu'il n'attend plus rien de la vie, ces terroristes vont malgré eux refaire sortir plein de choses en lui : sevrage avec l'alcool, nouvelle envie de vivre, foi en sa famille… Eric Suma, journaliste, va se retrouver le destinataire direct des réclamations des kidnappeurs et il va voir là l'occasion de se refaire un nom dans le métier depuis qu'il a été obligé de partir sur une petite chaîne.</Story>
+    <Id>11</Id>
+    <ImagePath>11-1777730540.gif</ImagePath>
+  </Book>
+  <Book>
+    <Title>Johnny Hallyday (Le roi caché)</Title>
+    <Author>Véronique Mortaigne</Author>
+    <Editor>Don Quichotte</Editor>
+    <Like>2</Like>
+    <Date>01/02/2010 00:00:00</Date>
+    <Summary>Retour sur la vied e Johnny Hallyday au cours de sa dernière tournée, le Tour 66. L'auteur reprend certains éléments importants de la vie de Johnny</Summary>
+    <MyOpinion>Livre assez déroutant, l'auteur n'est pas tendre avec "l'idole des jeunes", surtout concernant sa dernière tournée. Le livre est asez bizarrement écrit, on passe très souvent du coq à l'âne avec en prime une grosse promotion du journal "Le Monde" !! </MyOpinion>
+    <Story>Chapitre après chapitre, Véronique Mortaigne parcourt les chansons que Johnny interprète lors de sa dernière tournée, le Tour 66. Elle retrace la vie de Johnny, de façon non linéaire, ses rencontres, les personnages importants des mêmes époques (politiques, artistes, sportifs,...). Il y a quelques anecdotes intéressantes, mais aussi beaucoup de lieux communs. Certains en prennent pour leur grade gratuitement (notamment Laeticia et sa famille). Bref, c'est assez surprenant et on a parfois beaucoup de mal à suivre la pensée de l'auteur.</Story>
+    <Id>12</Id>
+    <ImagePath>12-13937466.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La fille de papier</Title>
+    <Author>Guillaume Musso</Author>
+    <Editor>XO Editions</Editor>
+    <Like>5</Like>
+    <Date>01/02/2011 00:00:00</Date>
+    <Summary>Auteur à succès, Tom Boyd se retrouve en panne d'inspiration lorsque sa petite amie le quitte. C'est alors que Billie, le personnage d'un de ses romans, arrive dans sa vie afin de le pousser à continuer à écrire ses aventures.</Summary>
+    <MyOpinion>Très bon Musso, le livre est captivant et se lit très rapidement. L'histoire est prenante, les personnages sont complets et la chute est très bonne. Très divertissant !!</MyOpinion>
+    <Story>
+      Tom Boyd est un romancier qui est devenu célèbre grâce à sa "Trilogie des Anges". Les 2 premiers tomes ont été des succès phénoménaux et du côté de sa vie affective, il vit une belle histoire avec Aurore, une grand pianiste célèbre dans le milieu de la musique classique. Chasseuse d'hommes, cette dernière va le quitter et plonger Tom dans une forte d'impression. Il va se retrouver dans l'impossibilité d'écrire le troisième tome, n'ayant plus d'inspiration et plus l'envie d'écrire. Ses amis Milo, son agent,  et Carole, policère, vont essayer de le sortir de là. Ils ont tous les 3 sortis d'une banlieue très difficile de Los Angeles et doivent leur réussite à l'écriture de Tom.
+      Un jour, Billie, l'un des personnages de la trilogie de Tom, va apparaître dans sa vie. Ensemble, ils vont peu à peu se connaître et ils vont passer un contrat : Billie va aider Tom à reconquérir Aurore et en échange, Tom va écrire la fin de sa trilogie et écrire une belle fin pour Billie. Ensemble, ils vont vivre de multiples aventures, notamment au Mexique et en France.
+    </Story>
+    <Id>13</Id>
+    <ImagePath>13-367158600jpeg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La formule de Dieu</Title>
+    <Author>José Rodrigues des Santos</Author>
+    <Editor>HC editions</Editor>
+    <Like>4</Like>
+    <Date>01/09/2012 00:00:00</Date>
+    <Summary>Tomás Noronha, éminent cryptologue protugais, est engagé par l'Iran pour déchiffre un manuscrit indédit d'Einstein. Agent double pour la CIA, Tomás va découvrir que le document se révèle beaucoup plus passionant qu'initialement prévu.</Summary>
+    <MyOpinion>Livre très intéressant et instructif, rempli de concepts physiques et astrophysiques. En utilisant une histoire sur fond d'action et de rebondissements, l'auteur nous fait part de théories sur l'origine du monde et l'évolution de l'Univers telle que le scientifiques la voit aujourd'hui.</MyOpinion>
+    <Story>Tomás Noronha est contacté par Ariana, une belle scientifique iranienne pour venir décoder un mystérieux manuscrit que l'Iran vient de récupérer. Ce manuscit écrit par Einstein contient, selon Théhéran, une formule disant comment concevoir une bombe atomique. Avant son départ en Iran, Tomás  est contacté par la CIA qui souhaite savoir de quoi il s'agit. Une fois en Iran, Tomás comprend que l'Iran n'a pas l'intention de le laisser repartir sans faire son devoir. A partir de là, Tomás va se retrouver en prison, en fuite, poursuivi en essayant de découvriri ce qui se passe. Avec l'aide de son père mourrant, d'anciens professeurs d'universités et d'un moine tibétain, Tomás va peu à peu comprendre qu'il ne s'agit pas d'un manuscrit concernant la fabrication d'une bombe, mais d'un document beaucoup plus important qui répond à la question: est-ce que Dieu existe ?</Story>
+    <Id>14</Id>
+    <ImagePath>14-2120610640.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La première nuit</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert Laffont</Editor>
+    <Like>5</Like>
+    <Date>01/06/2010 00:00:00</Date>
+    <Summary>Keira et Adrian ont survécu au terrible accident du premier livre. Ensemble, ils repartent à la quête des éléments qui vont peut-être leur permettre de découvrir l'origine de l'humanité.</Summary>
+    <MyOpinion>Très bonne suite au roman "Le premier jour". Ce livre est dans la même lignée, on voyage beaucoup, il y a de nombreux rebondissements jusqu'à la fin. Le livre est très prenant.</MyOpinion>
+    <Story>Après plusieurs jours dans le coma, Adrian se remet enfin de l'accident dont Keira et lui ont été victime en Chine alors qu'ils étaient sur la piste d'un nouveau fragment. Peu après, il apprend que Keira est également vivante, mais qu'elle retenue prisonnière en Chine à cause de problèmes de papier. Après avoir aidé à la libérer, Ivory fait en sorte que les 2 scientifiques poursuivent les recherches sur l'origine du monde malgré les menaces qui pèsent sur eux. Walter, l'ami d'Adrian va leur être d'une aide précieuse et il va en même temps tomber amoureux de la tante d'Adrian, rencontrée à Hydra. Keira et Adrian vont voyager en France, en Angleterre, en Russie, en Sibérie, en Ethiopie… Leur ténacité va être récompensée, mais le monde est-il prêt à accueillir une telle nouvelle ?</Story>
+    <Id>15</Id>
+    <ImagePath>15-1931069235.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>L'homme au ventre de plomb</Title>
+    <Author>Jean-François Parot</Author>
+    <Editor>10/18</Editor>
+    <Like>4</Like>
+    <Date>01/01/2011 00:00:00</Date>
+    <Summary>Nicolas Le Floch est de nouveau mis à contribution dans une enquête délicate, avec plusieurs personnes qui tirent les ficelles d'une intrigue qui touche jusqu'au Roi lui-même.</Summary>
+    <MyOpinion>Très bon deuxième livre de Jean-François Parot. Le Paris historique est toujours bien décrit, on ressent l'atmosphère du 18ème siècle. L'histoire se complique parfois avec des situations un peu étrange, mais l'ensemble est très agréable à lire.</MyOpinion>
+    <Story>Alors qu'il se rend à l'Opéra pour s'occuper de la sécurité de Madame Adélaïde, fille de Louis XV, Nicolas Le Floch apprend que le vicomte de Ruissec vient de se suicider. Les parents de celui-ci faisant partie de l'entourage de la cour, Monsieur de Sartine charge aussitôt Nicolas de cette enquête. A peine est-il arrivé sur le lieu du drame que Nicolas ressent comme un doute. Au lieu d'un suicide, c'est bien d'un assassinant dont a été victime le vicomte. Alors que son enquête progresse, la mère du vicomte va elle aussi être assassinée. Monsieur de Sartine et le ministre M. de Saint-Florentin recommandent à Nicolas d'être très prudent. Le jeune commissaire va poursuivre son enquête, aidé de son fidèle inspecteur Bourdeau, jusqu'à Versailles où il investiguera jusque dans les appartements de Madame Adélaïde. Truche de La Chaux, la Bichelière, Monsieur de La Borde, le docteur Semacgus ou encore la marquise de Pompadour vont être autant de personnage que Nicolas va devoir rencontrer afin de mener à bien son enquête.</Story>
+    <Id>16</Id>
+    <ImagePath>16-858417936.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Vivre et laisser mourir</Title>
+    <Author>Ian Fleming</Author>
+    <Editor>Robert Laffont</Editor>
+    <Like>3</Like>
+    <Date>01/02/2009 00:00:00</Date>
+    <Summary>James Bond enquête sur Mr Big, un puissant noir installé à New-York qui fait du trafic d'or, mais que personne n'arrive à arrêter du fait du pouvoir qu'il exerce sur les autres.</Summary>
+    <MyOpinion>Encore un bon James Bond. Le livre est moins détaillé que les films, l'action est plus minimaliste, mais on retrouve tout de même l'esprit de 007 et le plaisir de lire une nouvelle histoire.</MyOpinion>
+    <Story>M. Big est un imposant homme noir, basé à Harlem, à New York. Baigné dans la culture vaudou, il exerce sur toute la population noire de l'est des États-Unis un pouvoir sans faille. Tout le monde le craint et travaille pour lui. Lorsque Bond débarque pour enquêter sur lui à propos d'un trafic d'or, il est vite repéré et goûte vite au réseau de Mr Big. Après une première rencontre avec lui, il rencontra Solitaire, charmante jeune femme qui va s'éprendre de James. Après de multiples péripéties, James et Solitaire vont se retrouver prisonniers de Mr Big et échapperont de très peu à la mort, au milieu des requins et autre barracudas.</Story>
+    <Id>17</Id>
+    <ImagePath>17-224880756jpeg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Toutes ces choses qu'on ne s'est pas dites</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert Laffont</Editor>
+    <Like>4</Like>
+    <Date>01/07/2009 00:00:00</Date>
+    <Summary>Quelques jours avant son mariage, Julia apprend le décès de son père qui a toujours été distant. Mais son père lui a réservé une surprise qui va changer sa vie.</Summary>
+    <MyOpinion>Un très bon Marc Levy. L'histoire est simple, mais passionnante et le livre se dévore en un rien de temps. Une histoire d'amour entre un père et sa fille et entre cette fille et son amour de jeunesse. Très agréable.</MyOpinion>
+    <Story>Alors qu'elle doit se marier dans 4 jours à Adam, Julia apprend que son père ne pourra une nouvelle fois pas être là. Cette fois-ci, il a un vrai empêchement : il est mort. Le mariage repoussé, Julia enterre son père. Mais celui-ci lui réserve une dernière surprise : la possibilité de vivre encore 6 jours avec lui à travers une inovation technique : un père "artificiel" a été crée par une technologie de pointe. Cette "machine" lui ressemble parfaitement et possède l'ensemble de la mémoire de Anthony Walsh. D'abord réticente à communiquer avec ce père qui a toujours été distant, plus occupé à son travail d'homme d'affaires qu'à s'occuper de sa petite fille, Julia va peu à peu apprendre à communiquer avec lui, à l'apprécier et même à l'aimer. Ensemble, ils vont partir à la recherche du grand amour de Julia, Tomas, perdu de vue il y a 18 ans à cause du père de Julia. Ils vont voyager à Montréal, puis à Berlin pour retrouver sa trace et voir s'il est encore possible de créer quelque chose entre eux.</Story>
+    <Id>18</Id>
+    <ImagePath>18-1494948753.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Un bleu en politique</Title>
+    <Author>Bernard Laporte</Author>
+    <Editor>Presses de la cité</Editor>
+    <Like>4</Like>
+    <Date>01/03/2011 00:00:00</Date>
+    <Summary>Bernard Laporte retrace sa carrière politique, ses actions et sa découverte du milieu politique.</Summary>
+    <MyOpinion>Bernard Laporte retrace très simplement son parcours politique avec de nombreuses anecdotes personnelles, son ressenti sur l'assemblée nationale, le conseil des ministres… Livre très intéressant.</MyOpinion>
+    <Story>Alors qu'il mène l'équipe de France du rugby à la coupe du monde 2007, Bernard Laporte est reçu par son ami Nicolas Sarkozy, le nouveau président de la République. Ce dernier annonce à Bernard Laporte son envie de le voir rejoindre son gouvernement en tant que Secrétaire d'Etat aux sports. Sitôt la coupe du Monde terminée, Bernard Laporte endosse son nouveau rôle politique. Lui, enfant de Rodez, va découvrir les plus hautes fonctions de l'Etat, voir comment il va mener à bien les missions que lui ont confiés le chef de L'Etat et le Premier Ministre. A travers ses eux, on va découvrir comment se passe le conseil des Ministres, les questions au gouvernement et toute la vie au jour le jour d'un haut fonctionnaire de l'Etat.</Story>
+    <Id>19</Id>
+    <ImagePath>19-1763078691.JPG</ImagePath>
+  </Book>
+  <Book>
+    <Title>L'affaire Nicolas Le Floch</Title>
+    <Author>Jean-François Parot</Author>
+    <Editor>10/18</Editor>
+    <Like>3</Like>
+    <Date>01/01/2012 00:00:00</Date>
+    <Summary>Nicolas Le Floch doit mener une enquête délicate, concernant l’empoisonnement d’une très proche amie. De plus, il fait partie des suspects…</Summary>
+    <MyOpinion>L’enquête est une fois de plus intéressante, mais le livre a un peu tendance à partir dans tous les sens. Le livre consacre une grande partie à la fin du règne de Louis XV, excellent chapitre.</MyOpinion>
+    <Story>Après avoir laissé son ami proche Mme Julie de Lastérieux s’amuser avec d’autres jeunes gens, Nicolas retourne chez lui dépité et en colère. Le lendemain, il apprend que sa charmante compagne a été retrouvée morte dans son lit et que les premiers indices tendent à penser qu’il s’agit d’un empoisonnement. Avec les liens qui l’unissait à elle, Nicolas apparait très vite comme un des suspects. Avec l’aide de Bourdeau et avec le soutien de M. de Sartine, Nicolas va enquêter discrètement. Par ailleurs, le roi va l’envoyer à Londres pour une mission secrète. De nombreuses péripéties vont amener Nicolas à découvrir ce qui se cache derrière tous ces mystères et ces atteintes qui sont faites à sa personne.
+      Par ailleurs, le roi vit ses derniers moments et Nicolas sera plus que jamais au cœur de l’Histoire.
+    </Story>
+    <Id>20</Id>
+    <ImagePath>20-1361749262.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>L'appel de l'ange</Title>
+    <Author>Guillaume Musso</Author>
+    <Editor>XO Editions</Editor>
+    <Like>5</Like>
+    <Date>01/06/2011 00:00:00</Date>
+    <Summary>Madeline et Jonathan se bousculent à l'aéroport de New-York et dans la confusion, ils échangent leurs téléphones. L'un et l'autre vont alors s'intéresser à la vie de l'autre et découvrir qu'ils ont chacun leur part de mystère.</Summary>
+    <MyOpinion>Excellent livre. La rencontre originale entre les 2 protagonistes laisse ensuite place à une aventure aventure pleine de rebondissement et de suspens comme Guillaume Musso sait le faire. Très très bon livre.</MyOpinion>
+    <Story>Madeline, fleuriste à Paris termine ses vacances à NY avec Raphael qui vient de la demander en mariage. De son côté, Jonathan, ancien grand chef cuisinier, vient récupérer son fils que son ex-femme et lui se partagent. Alors que l'aéroport Kennedy est bondé de monde en cette période de Noël, Madeline et Jonathan se bousculent dans un restaurant et dans la précipitation, se trompent de téléphone portable en ramassant leur affaire. Lorsqu'ils se rendent compte de l'erreur est trop tard : Madeline est dans l'avion qui la ramène à Paris et Jonathan vole en direction de San Francisco.
+      Alors qu'ils ont convenu de se renvoyer respectivement leurs téléphones, les événements vont faire qu'ils vont chacun découvrir la vie de l'autre à travers leur téléphone. Ainsi, Madeline va essayer de comprendre pourquoi Jonathan, à qui tout réussissait, a vu du jour au lendemain sa femme le quitter et sa gloire le fuir. Jonathan, quant à lui, va découvrir que Madeline est une ancienne policière anglaise qui essaie tant bien que mal de fuir une enquête qu'elle n'a jamais réussi à résoudre.
+    </Story>
+    <Id>21</Id>
+    <ImagePath>21-1877794592.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le cercle littéraire des amateurs d'épluchures de patates</Title>
+    <Author>Mary Ann Shaffer et Annie Barrows</Author>
+    <Editor>NiL</Editor>
+    <Like>4</Like>
+    <Date>01/07/2010 00:00:00</Date>
+    <Summary>Juliet est une écrivaine londonienne. Alors qu'elle cherche le sujet de son prochain livre, elle se met à correspondre avec des habitants de Guernesey qui ont créé un cercle littéraire durant l'occupation par les allemands lors de la deuxième guerre mondiale.</Summary>
+    <MyOpinion>Livre original uniquement composé d'échanges de lettres. L'histoire est prenante et on apprend beaucoup sur la manière de vivre de ces habitants durant la guerre. Très bon livre.</MyOpinion>
+    <Story>Juliet est une écrivaine qui a eu du succès grâce à une série humoristique commandée par un journal anglais durant la Guerre. Ces articles ont été rassemblés dans un livre qui s'est bien vendu. Suite à cela, son éditeur Stephens and Stark (ce dernier est son grand ami) lui organise une tournée des librairies en Angleterre. A son retour, elle commence une correspondance avec un habitant de Guernesey qui a trouvé ses coordonnées dans un livre lui ayant appartenu quelques années auparavant. Cet habitant va lui expliquer comment le goût de la lecture lui ait venu, pendant la guerre, alors que les allemands occupaient l'île. Avec d'autres habitants, il a créé un cercle littéraire et ils ont appris à aimer et découvrir les livres. Juliet va s'intéresser de plus en plus à leur histoire, notamment leurs anecdotes durant la guerre. Leur histoire la passionne tellement qu'elle va aller leur rendre visite et trouvera peut-être un sujet pour son prochain livre.</Story>
+    <Id>22</Id>
+    <ImagePath>22-1604619054.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le dernier templier</Title>
+    <Author>Raymond Khoury</Author>
+    <Editor>Presses de la cité</Editor>
+    <Like>4</Like>
+    <Date>01/08/2009 00:00:00</Date>
+    <Summary>Suite à un vol dans un musée de New-York, une jeune archéologue et un agent du FBI vont enquêter dessus et remonter à l'origine du mystère des templiers.</Summary>
+    <MyOpinion>Livre intéressant, sur le thème des templiers et des secrets de l'Eglise, à la mode actuellement. L'Eglise est à nouveau malmené et des secrets sont dévoilés. Livre agréable à lire.</MyOpinion>
+    <Story>Lors de l'inauguration d'une exposition sur les trésors du Vatican à New-York, 4 cavaliers habillés en templiers surgissent et volent plusieurs objets, dont un très vieil encodeur. Alors que la police recherche activement les voleurs, Tess, une brillante archéologue qui a assisté au vol et Sean Reilly, agent du FBI, sont intimement convaincus qu'au-delà du simple vol, il y a un véritable lien avec les templiers. Ce soupçon va s'avérer vrai et ces 2 personnages vont se lancer dans une chasse à l'homme qui s'avère être en fait un jeu de piste créé par les templiers quelques siècles plus tôt pour retrouver leur secret.</Story>
+    <Id>23</Id>
+    <ImagePath>23-2048964064.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le diable l'emporte</Title>
+    <Author>Sebastian Faulks</Author>
+    <Editor>Flammarion</Editor>
+    <Like>4</Like>
+    <Date>01/08/2008 00:00:00</Date>
+    <Summary>James Bond affronte le Dr Gorner, un universitaire qui s'est investi dans la 2ème GM aux côtés des Nazis, puis des russes et qui déteste l'Angleterre. Il s'est installé en Perse où il produit de l'héroïne et compte anéantir l'empire britannique.</Summary>
+    <MyOpinion>Premier Bond que je lis, c'est assez différent des films. L'action se déroule beaucoup plus vite, mais n'en est pas moins intéressante; On retrouve tous les ingrédients d'un film de 007 et c'est très agréable à lire.</MyOpinion>
+    <Story>Alors qu'il profite de quelques jours de vacances, James Bond est rappelé par M qui le prie de rejoindre Londres. Là, M lui annonce qu'un certain Dr Julius Gorner (chercheur en Chimie et homme d'affaires) est problablement impliqué dans un traffic de drogue planétaire.
+      Bond se rend à Téhéran pour enquêter. Il retrouve sur place Darius Alizadeh qui va l'aider, ainsi qu'une certaine Scarlett, qui tente de sauver sa soeur jumelle Poppy (embauchée par Gorner). James et Scarlett vont découvrir que Gorner a monté une usine implémentée dans le désert dans laquelle il fabrique de l'héroïne pour droguer tous les jeunes d'Angleterre. Parrallèlement, il envisage d'envoyer des bombes sur l'URSS au nom des Britanniques pour forcer les soviétiques à combattre les anglais. James va devoir empêcher tout ça et réduire le Dr Gorner au silence.
+    </Story>
+    <Id>24</Id>
+    <ImagePath>24-489226067.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le premier jour</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert Laffont</Editor>
+    <Like>5</Like>
+    <Date>01/11/2009 00:00:00</Date>
+    <Summary>Une archéologue et un astrophysicien vont partir ensemble à la recherche des premiers signes de vie humaine suite à la découverte d'une pierre aux caractéristiques étranges.</Summary>
+    <MyOpinion>Très bon livre de Marc Levy qui change un peu de son registre habituel. L'histoire est captivante et le domaine scientifique rappelle de loin l'univers de Dan Brown.</MyOpinion>
+    <Story>Keira est une jeune archéologue qui effectue des fouilles en Ethiopie. Un jeune garçon rencontré là-bas lui offre un jour une étrange pierre qu'elle garde en pendentif. Soumis à une forte lumière, cette pierre semble montrer le ciel tel qu'il était il y a des millions d'année. Forcée de rentrer en France, elle va se rendre à Londres où elle va retrouver homme qui a été son amant quelques temps. Celui-ci, astrophysicien, s'intéresse rapidement à cette pierre. Mais cette découverte éveille l'attention d'Ivory, vieux professeur de sciences à Paris qui a déjà rencontré une pierre similaire à celle-là. Alors que les 2 scientifiques partent à travers le monde pour explorer les secrets de cette pierre, d'autres hommes s'intéressent de près à leurs agissements et leurs éventuelles découvertes.</Story>
+    <Id>25</Id>
+    <ImagePath>25-5002331747369</ImagePath>
+  </Book>
+  <Book>
+    <Title>L'énigme des Blancs-Manteaux</Title>
+    <Author>Jean-François Parot</Author>
+    <Editor>10/18</Editor>
+    <Like>4</Like>
+    <Date>01/10/2010 00:00:00</Date>
+    <Summary>Au temps de Louis XV, une jeune recrue de la police de Paris va se voir confier une enquête compliquée et pleine de renversements qui va révéler son savoir-faire auprès de son supérieur.</Summary>
+    <MyOpinion>Excellent livre policier qui se déroule au 18ème siècle, à Paris. De nombreuses descriptions de la capitale et le langage de l'époque nous replacent bien dans le contexte. L'énigme est complexe, le livre a un très bon rythme et l'histoire est prenante jusqu'au bout. Parfait !</MyOpinion>
+    <Story>Nicolas Le Floch quitte sa Bretagne natale pour Paris, où il va se mettre au service de M. de Sartine, lieutenant générale de police de Paris. Appuyé par son parrain le duc de Ranreuil, le policier va prendre Nicolas sous son aile et va lui donner une mission secrète. Associé à un commissaire, Nicolas va vite faire ses preuves et apporter des résultats. Voyant cela, M. de Sartine va lui relever la teneur exacte de l'enquête qu'il lui a confié, enquête qui implique le royaume et le Roi lui-même. Nicolas va alors tenté de démêler le faux du vrai, dans une histoire où il est question de vols, de meurtres, de prostituées, de jeux d'argent… Les protagonistes vont mêler les mensonges, les coups bas et l'omission d'informations pour rendre la tâche de Nicolas la plus difficile possible. Il va devoir faire preuve de beaucoup d'intelligence pour élucider cette affaire et rendre des comptes à M. de Sartine et au Roi directement.</Story>
+    <Id>26</Id>
+    <ImagePath>26-2116955099.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les enfants de la liberté</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert Laffont</Editor>
+    <Like>2</Like>
+    <Date>01/06/2011 00:00:00</Date>
+    <Summary>"Les enfants de la liberté" raconte l'histoire de jeunes résistants durant la seconde guerre mondiale qui ont refusé la présence de l'occupant et on tout fait pour résister à l'ennemi à l'intérieur de la France.</Summary>
+    <MyOpinion>Très différent des autres Marc Levy, ce livre est un hommage à tous les résistants français qui ont tenté de saboter et d'empêcher les actions allemandes. Ce livre se lit facilement, presque comme un livre historique.</MyOpinion>
+    <Story>Jeannot et son jeune frère Claude entrent dans la résistance en 1943. Désireux de combattre clandestinement face aux allemands, ils vont rencontrer la 35ème brigade et, peu à peu, ils vont participer à des actions. N'ayant que des missions d'assistance au début, ils vont peu à peu voler des entrepôts, faire sauter des locomotives, des ponts et vont même aller jusqu'à tuer des officiers allemands responsables de condamnation à mort d'autres résistants. Beaucoup de rencontrent vont marquer tous ces mois, beaucoup de pertes aussi parmi les autres résistants, des tués, des prisonniers, des condamnés… La solitude de chaque résistât qui doit rester seul pour ne pas se faire remarquer est dur à tenir. Mais Jeannot et Claude vont finir par se faire arrêter, avec d'autres résistants et vont être transportés en prison, en train pendant des jours en attendant une libération prochaine...</Story>
+    <Id>27</Id>
+    <ImagePath>27-329783519.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les fabuleuses aventures d'un Indien malchanceux qui devint milliardaire</Title>
+    <Author>Vikas Swarup</Author>
+    <Editor>Belfond</Editor>
+    <Like>5</Like>
+    <Date>01/02/2010 00:00:00</Date>
+    <Summary>Ram Mohammad Thomas devient le grand vainqueur du jeu "Qui veut gagner un milliard de roupies?" en Inde. Mais c'est un simple serveur et il est suspecté de tricher.</Summary>
+    <MyOpinion>Excellent livre, très prenant et très originale. L'auteur nous fait découvrir l'Inde à travers la vie de son jeune héros.</MyOpinion>
+    <Story>Après avoir remporté 1 milliard de roupies, Ram Mohammad Thomas est interpellé par la Police qui veut absolument lui faire avouer sa tricherie au jeu. Une avocate arrive alors pour l'extirper du commissariat. Ensemble, ils vont visionner l'enregistrement de l'émission et Ram va, à chaque question, raconter un épisode de sa vie qui explique comment il connaissait la réponse. Il va raconter son enfance d'orphelin, ses diverses rencontres (un prêtre, des amitiés, ses amours, ses emplois,...). Et à chaque anecdote, la réponse se révèlera tirée de son expérience de la vie.</Story>
+    <Id>28</Id>
+    <ImagePath>28-37997013.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les secrets du Vatican</Title>
+    <Author>Bernard Lecomte</Author>
+    <Editor>Tempus</Editor>
+    <Like>3</Like>
+    <Date>01/07/2012 00:00:00</Date>
+    <Summary>17 événements qui ont marqués le Vatican sont expliqués dans ce livre qui veut apporter la vérité à différentes histoires/mythes qui entourent le Vatican.</Summary>
+    <MyOpinion>C’est un très livre très intéressant, facile à lire et qui surtout donne envie d’explorer encore plus chaque histoire qui s’y trouve. Entre 20 et 30 pages sur chaque histoire, ça donnerai envie d’avoir un livre entier sur chaque événement.</MyOpinion>
+    <Story>17 événements marquants pour l’Eglise et pour le monde sont repertoriés dans ce livre ; de la 1ère Guerre Mondiale jusqu’à l’élection de Benoit XVI. On revit une grande partie de la vie dans la Cité du Vatican au travers des différents papes : Pie XII, Jean XXIII, Paul VI, Jean-Paul II, …. Ce livre nous plonge dans l’histoire du Vatican : sa fondation, ses positions durant les guerres, le Concile, le règne très court de Jean-Paul I, l’attentat contre Jean-Paul II, Solidarnosc, le secret de Fatima,…</Story>
+    <Id>29</Id>
+    <ImagePath>29-50532356.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les témoins de la mariée</Title>
+    <Author>Didier Van Cauwelaert</Author>
+    <Editor>Albin Michel</Editor>
+    <Like>4</Like>
+    <Date>01/03/2011 00:00:00</Date>
+    <Summary>Marc, grand photographe renommé, se tue dans un accident de voiture, laissant seuls ses 4 amis qui vivaient autour de lui, ainsi qu'une jeune fille qui doit arriver de Chine et que Marc projetait d'épouser.</Summary>
+    <MyOpinion>Bon livre, l'histoire est très prenante autour des thèmes de l'amitié, de l'amour et de la relation entre amis. L'histoire est simple, finement menée et amène le lecteur a réfléchir sur son propre avenir.</MyOpinion>
+    <Story>Marc est un photographe français qui a très bien réussi : il photographie les plus grandes stars, les politiques, il collectionne les voitures, les maisons et les conquêtes. Lorsqu'il annonce à ses 4 meilleurs amis qu'il a décidé d'épouser dans quelques jours une jeune fille rencontrée en Chine, ceux-ci tombent des nues. Ses 4 amis, ce sont: Bany (inventeur qui gère la vie de Marc, ses voitures, ses conquêtes,…), Jean-Claude (qui gère un grand hôtel que lui a offert Marc), Marlène (peintre et gérante de galerie, soutenu par Marc) et Lucas (journaliste lutant pour le Tibet, contre le régime chinois). Ils connaissent Marc depuis leur jeunesse, alors qu'ils faisaient du théâtre ensemble. Suite à la réussite de Marc, ils ont chacun pris une place dans sa vie. Ils connaissent tout de Marc et c'est pourquoi ils ont étonnés de ce mariage rapide, avec une fille qu'ils ne connaissent pas et dont ils seront tous les 4 les témoins du couple. Mais la veille d'aller chercher sa conquête à l'aéroport, Marc se tue dans un accident de voiture. Sous le choc, ses 4 amis se demandent ce qu'ils vont devenir. Marc était leur trait d'union, c'est lui qui leur permettait également de vivre (le frère jumeau de Marc les hait et s'empressera bien vite de leur supprimer tous ces avantages)… sans parler de cette jeune chinoise qui doit arriver et dont ils ne connaissent que le prénom. Comment lui dire ce qu'il s'est passé ? Et comment survivre à ce drame qui les touche ?</Story>
+    <Id>30</Id>
+    <ImagePath>30-1528881812.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Longtemps, j'ai rêvé d'elle</Title>
+    <Author>Thierry Cohen</Author>
+    <Editor>Flammarion</Editor>
+    <Like>5</Like>
+    <Date>01/02/2012 00:00:00</Date>
+    <Summary>Jonas et Lior recherchent tous les 2 l’amour. Lui, auteur, rêve de la femme idéale et attend de la rencontrer. Elle, déçue par les hommes, désespère de rencontrer quelqu’un de bien. Ils vont se rencontrer autour des livres.</Summary>
+    <MyOpinion>À nouveau un excellent livre de Thierry Cohen. L’histoire qui parait compliquée est en fait très belle et parle d’amour. La rencontre est magnifiquement amenée et le suspens va vraiment crescendo jusqu’à la fin du livre. Admirable !</MyOpinion>
+    <Story>Jonas est un homme qui a souvent rêvé d’une fille parfaite et qu’il recherche à découvrir. Cela lui a donné la force d’écrire un roman qui a eu un grand succès par son style innovent et la force de l’amour qu’il décrit. Après un deuxième roman qu’on lui a imposé, il cesse d’écrire et va de petits boulots en petits boulots jusqu’à trouver un travail dans une petite librairie tenue par un amoureux des livres qui voit en Jonas un éclat de fraîcheur. M. Hillel, le libraire est un marieur de livres, il souhaite à chacun de découvrir son roman lumière.
+      De son côté, Lior, très belle jeune femme, a été très déçue par les nombreux hommes qu’elle a connue. Passionnée, elle s’engageait à fond dans ses relations et souffrait de chaque rupture. Infirmière à l’hôpital dans l’accompagnement des personnes en fin de vie, elle est contactée un jour par M. Luciani pour venir s’occuper à plein de temps de Serena, sa fille, gravement malade. Lior et Serena vont devenir très proches et partager plein de choses. Lior va fréquenter la librairie de M. Hillel dans laquelle Serena avait l’habitude de dénicher de très bons livres, dont celui écrit par un certain Raphaël Scali, le nom d’auteur de Jonas…
+    </Story>
+    <Id>31</Id>
+    <ImagePath>31-385060550.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Louis XIV</Title>
+    <Author>Max Gallo</Author>
+    <Editor>Xo Editions</Editor>
+    <Like>3</Like>
+    <Date>01/11/2010 00:00:00</Date>
+    <Summary>Biographie de Louis XIV, roi de France qui a régné de 1661 à 1715. Tous les aspects de sa rie vie (femmes, guerre, château,…) sont décrits dans ce livre à travers le portrait d'un grand homme (2 tomes).</Summary>
+    <MyOpinion>Max Gallo a toujours une excellente plume, le livre se lit comme un roman et est très prenant de bout en bout. Je regrette cependant un peu le manque d'information sur les guerres et la politique qu'il a mené. Le livre est très axé sur ces conquêtes et le côté festif de son règne.</MyOpinion>
+    <Story>A la mort de son père Louis XIII, le jeune Louis-Dieudonné n'a que 5 ans. Sa mère, la reine Anne d'Autriche va prendre en charge la régence avec l'aide de Mazarin. A 22 ans, Louis XIV se marie avec Marie-Thérèse d'Autriche. Suite à la mort de Mazarin l'année suivante, Louis XIV commence son règne personnel en 1661. Rapidement, il fait arrêté Fouquet qui s'enrichissait sur le dos du royaume et nomme Colbert contrôleur général des Finances. La vie de Louis XIV va ensuite être ponctuée de théâtre, de danses, de chasse mais également de nombreuses guerres au cours desquelles il n'hésitera pas à montrer sa bravoure en se plaçant en première ligne. En parallèle, il entame la construction d'un gigantesque château à Versailles. Cette construction et ces guerres vont mener le royaume à la pauvreté et la misère va s'installer en France. Les 15 dernières années de sa vie sont marquées par une guerre interminable suite à la succession d'Espagne et par la mort d'un très grand nombre de personnes de la famille royale (son fils, 2 de cses petits-fils, belles-filles et arrières petits-enfants. Seul un arrière petit-fils, le duc d'Anjou survit et à 5 ans, lorsque Louis XIV mourra, il deviendra Louis XV.</Story>
+    <Id>32</Id>
+    <ImagePath>32-815605075.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Malavita</Title>
+    <Author>Tonino Benacquista</Author>
+    <Editor>Gallimard</Editor>
+    <Like>3</Like>
+    <Date>01/05/2011 00:00:00</Date>
+    <Summary>La famille Blake, une étrange famille new-yorkaise, vient s'installer dans un petit village de Normandie. Ils amènent avec eux de lourds secrets que la petite ville va bientôt découvrir.</Summary>
+    <MyOpinion>Bon livre sur le thème de la mafia et du repentir. L'histoire est bien écrite, le livre se lit facilement. Les descriptions de l'ambiance de la mafia et de l'honneur et du déshonneur sont bien rendus. Livre très agréable.</MyOpinion>
+    <Story>En pleine nuit, la famille Blake emménage dans leur nouvelle maison, à Cholong-sur-Avre. Alors que chacun prend ses marques (les 2 enfants, Belle et Warren au lycée, la mère dans la vis associative), le père, Frédéric Blake (de son vrai nom Giovanni Manzoni) se met à écrire ses mémoires sur une vieille machine à écrire qu'il vient de trouver dans cette nouvelle maison. C'est un ancien grand parrain de la mafia qui a décidé un jour de témoigner à la police contre tous les anciens membres de la mafia. En échange, le FBI s'engage à le protéger et à le fondre dans la nature pour que personne ne puisse le retrouver. A chaque problème, la famille déménage pour ne pas attirer de soupçons et continuer à rater caché. Mais les anciens proche de Manzoni, restés aux USA, sont bien décidés à le retrouver et lui faire payer coûte que coûte son changement de position qui a causé les plus grandes pertes au sein de la "Cosa Nostra".</Story>
+    <Id>33</Id>
+    <ImagePath>33-840794048.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Marie-Madelaine (Le livre de l'Élue)</Title>
+    <Author>Kathleen McGowan</Author>
+    <Editor>XO Éditions</Editor>
+    <Like>3</Like>
+    <Date>01/07/2011 00:00:00</Date>
+    <Summary>Maureen, journaliste américaine, perçoit des visions de Marie-Madeleine. Persuadée qu'il y a un message derrière ces visions, elle va partir à la recherche d'informations sur Marie-Madeleine et va faire de surprenantes découvertes.</Summary>
+    <MyOpinion>Livre très intéressant. Une fois plongé dedans, le parrallèle entre Maureen et Marie-Madelaine est vraiment prenant et leur évolution est vraiment intéressante. Ce livre est très bien écrit et l’écriture très agréable.</MyOpinion>
+    <Story>Alors qu’elle visite Jérusalem, Maureen rencontre un marchand qui lui offre une étrange bague, très ancienne. Suite à ça, Maureen voit des visions qui peut à peu la convainc qu’elle est la témoin de scènes très anciennes concernant Marie-Madeleine. De retour aux USA, elle s’entretient avec son cousin, le Père Healy, puis ave Tamara, une très bonne amie. Elle apprend qu’il existe des sociétés secrètes qui œuvrent à la réhabilitation de Marie-Madelaine à sa juste place, l’épouse de Jésus. Maureen se rend en France et rencontre Bérenger Sinclair, qui dirige la société des Pommes bleues. Maureen va peu à peu rencontrer les gens de cette société et se rendre compte que d’autres gens ont déjà entendus des voix comme elle, mais jamais aussi précises et au sujet si importants. Maureen a en fait été choisie pour accomplir de grandes choses et elle redécouvrir l’histoire de Jésus comme si elle y était.</Story>
+    <Id>34</Id>
+    <ImagePath>34-1195080065.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les hommes qui n'aimaient pas les femmes - MILLENIUM 1</Title>
+    <Author>Stieg Larsson</Author>
+    <Editor>Actes Sud</Editor>
+    <Like>5</Like>
+    <Date>01/08/2008 00:00:00</Date>
+    <Summary>Mikael Blomkvist, journaliste économique qui sort d'un procès perdu pour diffamation est contacté par Henrik Vanger pour enquêter sur la disparition de sa petite nièce Harriet et pour écrire un livre sur leur grande famille.</Summary>
+    <MyOpinion>Très bon livre, très intéressants et très prenant. L'histoire est très passionnante et les renversements nombreux. Le livre mène enquête policière et chronique familiale sur les deux fronts.</MyOpinion>
+    <Story>Mikael Blomkvist vient juste de perdre le procès qui l'opposait, via son journal Millenium, à l'industriel Hans-Erik Wennerström. Condamné à une petite peine de prison, Henrik Vanger le contacte à ce moment pour venir s'installer sur une petite île où a disparu mystérieusement sa petite nièce il y a 40 ans. Henrik ne se résout pas d'avoir perdu sa nièce et cherche toujours une explication. Mikael accepte de se pencher sur l'affaire. Il va être aidée par Lisbeth Salander, jeune femme rebelle et perturbée qui est spécialisée sur les enquêtes approfondis envers certaines personnes.
+      Ensemble, ils vont découvrir de nouveaux éléments et faire surgir des faits enfouis profondément.
+    </Story>
+    <Id>35</Id>
+    <ImagePath>35-1300172288.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La fille qui rêvait d'un bidon d'essence et d'une allumette - MILLENIUM 2</Title>
+    <Author>Stieg Larsson</Author>
+    <Editor>Actes Sud</Editor>
+    <Like>5</Like>
+    <Date>01/06/2009 00:00:00</Date>
+    <Summary>Mikael Blomkvist se lance dans une nouvelles enquête suite au meurtre de deux de ses amis. Lisbeth Salander est impliquée dans ces meurtres et traquée par la police.</Summary>
+    <MyOpinion>Excellente suite du premier tome. L'histoire est plus centrée sur Lisbeth Salander, difficile personnage à cerner. L'action se déroule toujours à 100 à l'heure et le livre est passionnant jusqu'à la dernière page.</MyOpinion>
+    <Story>Après les événements du tome 1, Michael Blomkvist a repris son travail et a été réhabilité en tant que journaliste. De son côté, Lisbeth Salander est parti en voyage autour du monde pendant un an, après s'être mise à l'abris du besoin. Millenium prépare un numéro spécial sur le trafic de jeunes femmes et travaille pour cela avec Dag Svensson. Lui et sa femme Mia vont être assassinés, ainsi que le tuteur de Lisbeth. Tout indique que Lisbeth est la coupable. Le pays va partir à sa recherche et Michael va mener son enquête. Mais il s'avère que cette histoire est plus complexe que prévu et plusieurs personnages vont faire leur apparition. Malgré leur longue séparation Michael pense toujours à Lisbeth et va tout faire pour l'aider à s'en sortir.</Story>
+    <Id>36</Id>
+    <ImagePath>36-1482758476.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La reine dans le palais des courants d'air - MILLENIUM 3</Title>
+    <Author>Stieg Larsson</Author>
+    <Editor>Actes Sud</Editor>
+    <Like>5</Like>
+    <Date>01/04/2010 00:00:00</Date>
+    <Summary>Lisbeth Salander est passée très près de la mort. Elle et Mikael vont faire en sorte de préparer son procès et de rendre public la plus grande erreur judiciaire de la Suède.</Summary>
+    <MyOpinion>Troisième et dernier livre de la trilogie, toujours aussi excellent. De nombreux personnages viennent se greffer à l'histoire pour offrir un final en apothéose. Quel livre !!</MyOpinion>
+    <Story>Lisbeth Salander a reçu une balle dans la tête en voulant aller tuer son père. Admis à l'hôpital, elle va y rester en rééducation de très longs mois avant de pouvoir être livrée à la police. Pendant ce temps, Mikael continue de regrouper toutes les preuves qu'il peut, notamment sur "La Section", une unité secrète au service de l'Etat qui dépasse allègrement ses prérogatives. Il va devoir convaincre d'autres policiers, faire face à des écoutes téléphoniques et des filatures pour pouvoir continuer à écrire son livre qui paraîtra le jour du procès de Lisbeth. Sa soeur, Annika, va être l'avocate de Lisbeth et ils vont tous ensemble préparer un procès vérité qui mettra à jour tous les abus perpétrés contre Lisbeth.</Story>
+    <Id>37</Id>
+    <ImagePath>37-340327273jpeg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Pardonnez nos offenses</Title>
+    <Author>Romain Sardou</Author>
+    <Editor>XO Editions</Editor>
+    <Like>5</Like>
+    <Date>01/01/2009 00:00:00</Date>
+    <Summary>Des événements étranges se déroulent autour d'un petit village du compté de Draguan, près de Toulouse. Un curé, un évêque et les plus hautes autorités de Rome s'y intéressent. Mais que s'y est-il donc passé ?</Summary>
+    <MyOpinion>Premier roman de Romain Sardou que je lis. Entre "Au nom de la Rose" et "Anges et Démons", le livre est passionnant, plein de rebondissements et se lit très facilement, un régal.</MyOpinion>
+    <Story>Draguan est un petit diocèse du comté de Toulouse. Durant l'hiver 1284, plusieurs faits étranges se déroulent: 2 fillettes découvrent des morceaux de 3 corps humains dans une rivière. Quelques temps après, l'évèque Romée de Haquin est assassiné et la peur s'installe dans ce village. Un mystérieux prêtre, Henno Gui, arrive alors dans ce village pour comprendre ce qui s'y passe et notamment enquêté sur une bande de villageois oubliés de tous et vivant en recul. Mais Rome s'intéresse également à cette histoire et semble déployer d'énormes moyens pour cacher quelque chose, faisant appel notamment à la famille du Grand-Cellier et à des hommes dévoués au service de l'Eglise. Les événements vont alors s'enchaîner pour arriver à un dénouement extraordinaire ou tout sera remis en question.</Story>
+    <Id>38</Id>
+    <ImagePath>38-591553140.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Quand souffle le vent du nord</Title>
+    <Author>Daniel Glattauer</Author>
+    <Editor>Bernard Grasset</Editor>
+    <Like>3</Like>
+    <Date>01/02/2011 00:00:00</Date>
+    <Summary>Leo et Emmi se mettent à discuter par email interposés suite à une erreur d'envoi de la part d'Emmi. A partir de là, les 2 inconnus vont nouer une relation très originale.</Summary>
+    <MyOpinion>Roman construit uniquement sur des échanges de mail. La lecture est très fluide et l'ensemble se lit très rapidement. L'histoire est bien écrite et très agréable à lire.</MyOpinion>
+    <Story>Emmi Rothner envoie un jour par erreur un email à Leo Leike, pensant s'adresser au magasine "Like". Celui-ci lui répond en lui faisant part de son erreur. A partir de là, Emmi et Leo vont se mettre à communiquer uniquement par email. Ne sachant pas trop à quoi cela peut les mener, les 2 personnages poursuivent leurs échanges jusqu'à se rendre compte que ces échanges sont très importants pour eux. Attendant fébrilement devant l'ordinateur, ils essaient de se découvrir tout en laissant un voile de mystère autour d'eux. Vont-ils se rencontrer, discuter directement ? A de nombreux moments la question va se poser.</Story>
+    <Id>39</Id>
+    <ImagePath>39-677435326.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Soumission à l'autorité</Title>
+    <Author>Stanley Milgram</Author>
+    <Editor>Calmann-Lévy</Editor>
+    <Like>4</Like>
+    <Date>01/11/2008 00:00:00</Date>
+    <Summary>Stanley Milgram, psychosociologue américain, fait le récit d'expériences qu'il a effectué entre les années 1950 et 1963 sur la soummission et l'obéissance des hommes.</Summary>
+    <MyOpinion>Livre très intéressant sur les réactions des gens à l'obéissance et à l'autorité. Le livre décrit toutes les expériences effectuées et tente d'apporter à chaque fois une explication sur les processus mis en jeu.</MyOpinion>
+    <Story>Stanley Milgram,américain né en 1933, était un docteur en psychologie sociale de l'université d'Harvard et professeur à l'université de New-York. A partir des années 1950, il a mis en place toute une série d'expériences au sein de l'université de Yale. Sous prétexte d'une étude de l'apprentissage, le Dr Milgram faisait en réalité l'expérience suivante : un volontaire était rémunéré pour infliger des chocs électriques à une victime anonyme lorsque celle-ci commettait des erreurs, les chocs étant de plus en plus violents. Contrairement aux pronositcs, les résultats se révélèrent impresionnants.</Story>
+    <Id>40</Id>
+    <ImagePath>40-1290904475.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Steve Jobs</Title>
+    <Author>Walter Isaacson</Author>
+    <Editor>JC Lattès</Editor>
+    <Like>2</Like>
+    <Date>01/03/2012 00:00:00</Date>
+    <Summary>Biographie complète de Steve Jobs. Toute sa vie est retracée dans ce livre, des premières inventions à ses plus belles réussites. Bel hommage à toute son œuvre.</Summary>
+    <MyOpinion>Le livre est très intéressant d’un point de vue psychologique. On apprend beaucoup sur le comportement et la façon de vivre de Steve Jobs. Le livre ne s’étend pas énormément sur le processus de création de tous ces produits et sur la vision révolutionnaire du patron d’Apple, c’est dommage.</MyOpinion>
+    <Story>Né en 1955, Steve Jobs a fabriqué son premier ordinateur dans le garage de ses parents à Palo Alto avec Steve Wozniak. Dès lors, il a toujours voulu créer la machine la plus simple et la plus adaptée à l’utilisateur. Après avoir créé le premier Macintosh, il quitte Apple et fonde NeXT, une autre société informatique. Il s’intéresse aussi à l’animation avec Pixar et son partenariat avec Disney. Dans les années 90, il reviendra chez Apple pour relever la boîte et continuer le travail qu’il a commencé. Il lancera successivement l’iMac, l’iBook, l’iPod, l’iTunes Store, l’iPhone, l’iPad, iCloud,…Ses ennuis de santé vont peu à peu l’affaiblir mais il tentera jusqu’au bout de créer de d’imaginer les produits que voudront utiliser les gens dans le futur.</Story>
+    <Id>41</Id>
+    <ImagePath>41-43501797.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Tante Mame</Title>
+    <Author>Patrick Dennis</Author>
+    <Editor>Flammarion</Editor>
+    <Like>3</Like>
+    <Date>01/09/2010 00:00:00</Date>
+    <Summary>Un jeune orphelin se retrouve chez sa tante un peu délurée qui va l'élever et lui faire découvrir une vie particulière, faite d'extravagances et de plaisirs.</Summary>
+    <MyOpinion>Livre original, semi-autobiographique. Les situations sont cocasses et les aventures bien tournées. Globalement, le livre n'est pas très fluide et ne constitue pas un ensemble très cohérent. L'histoire reste intéressante à lire.</MyOpinion>
+    <Story>Suite à la mort de son père, Patrick Dennis, une dizaine d'années, rejoint New-York, selon le testament, pour aller vivre chez sa tante Mame. Patrick découvre alors une personne extravagante, qui sait plaire à tous les publics et aime organiser des fêtes chez elle. Ayant quelques conceptions étranges de la vie, elle va faire découvrir de nouveaux horizons à son neveu : école révolutionnaire où tout le monde est nu, voyage dans le sud pour pratiquer chasse et traditions,… Tante Mame va vivre avec différents hommes qui la prendront en charge financièrement. Elle n'hésitera pas à sacrifier les derniers mois d'université de son neveu pour son intérêt. Enfin, la dernière grande aventure est la prise en charge d'enfants pendant la guerre dans une grande maison de New-York.</Story>
+    <Id>42</Id>
+    <ImagePath>42-854174125.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>L’infini dans la paume de la main</Title>
+    <Author>Matthieu Ricard &amp; Trinh Xuan Thuan</Author>
+    <Editor>Pocket</Editor>
+    <Like>2</Like>
+    <Date>01/11/2012 00:00:00</Date>
+    <Summary>Le livre retranscrit une discussion entre le moine bouddhiste Matthieu Ricard et l’astrophysicien Trinh Xuan Thuan. Ils évoquent les points communs et les différences de leur vision de l’homme et de l’humanité.</Summary>
+    <MyOpinion>Livre intéressant qui vise à rapprocher l’univers de la spiritualité et celui de la recherche scientifique avec la volonté de montrer leur complémentarité. Le livre est cependant parfois difficile à suivre et les thèmes et idées sont amener de manière un peu aléatoire.</MyOpinion>
+    <Story>Matthieu Ricard, fils de Jean-François Revel, est un ancien scientifique qui s’est converti au bouddhisme et qui vit dorénavant sa vie en suivant les préceptes de la religion bouddhiste. De par sa formation, il est ouvert et très aux faits des théories scientifiques. Lors d’une conférence, il a fait la connaissance the Trinh Xuan Thuan et le livre est le témoin de leur échange. Au fil du livre, on se rend compte qu’ils n’ont pas des points de vue totalement opposé et qu’ils arrivent parfois même à observer les mêmes événements chacun dans sa discipline.</Story>
+    <Id>43</Id>
+    <ImagePath>43-9782266108.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le Parfum d’Adam</Title>
+    <Author>Jean-Christophe Rufin</Author>
+    <Editor>Gallimard</Editor>
+    <Like>4</Like>
+    <Date>01/12/2012 00:00:00</Date>
+    <Summary>Juliette, jeune militante écologiste, mène une action contre un laboratoire de recherche pour libérer des animaux. Elle va se rendre que cette première action n’est que le début d’une immense mise en œuvre internationale qui a pour but d’éradiquer une grande partie de la population mondiale.</Summary>
+    <MyOpinion>Ce livre veut montrer les théories parfois extrêmes que portent les mouvements écologistes. A travers une enquête superbement menée et entrainante, on apprend peu à peu comment fonctionnent cette organisation et quelle est leur vision de l’écologie. Livre très prenant !!</MyOpinion>
+    <Story>Lors d’une mission dans un laboratoire, Juliette libère des animaux de laboratoire et vole également une fiole rouge. Souhaitant s’investir encore plus, elle demande à ses commanditaires d’être impliquée dans d’autres opérations en échange de cette fiole. Juliette va alors découvrir peu à peu que l’organisation agit au niveau mondial et qu’ils ont des plans extraordinaires.
+Suite l’action contre le laboratoire, Archie, directeur de l’agence de renseignements Providence, envoie Paul et Kerry enquêter sur le terrain. Ces 2 anciens de la CIA vont peu à peu remonter le fil des événements et découvrir tout ce qui se trame.</Story>
+    <Id>44</Id>
+    <ImagePath>44-4623849102.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le crime de l'hôtel Saint-Florentin</Title>
+    <Author>Jean-François Parot</Author>
+    <Editor>10/18</Editor>
+    <Like>4</Like>
+    <Date>01/02/2013 00:00:00</Date>
+    <Summary>Au début du règne de Louis XVI, Nicolas Le Floch mène de frond de multiples enquêtes passionantes sous l'autorité de M Le Noir, le remplaçant de Sartine devenu Ministre de la Marine.</Summary>
+    <MyOpinion>A nouveau un excellent livre de Nicolas Le Floch. L'aventure est prenante, l'intrigue très complexe et s'entremêle dans de nombreux sens. Les descriptions de Paris et de la nourriture sont toujours aussi savoureuses. Très bon livre !</MyOpinion>
+    <Story>Suite à la mort de Louis XV, la cour termine le deuil alors que Louis XVI commence à devenir le véritable nouveau souverain. Sartine a été nommé ministre et Le Noir est maintenant Lieutenant général de Police. Nicolas Le Floch passe son temps à la cour en attendant de pouvoir faire ses preuves vis à vis de Le Noir. Il va en avoir l'occasion suite à un meurtre survenu chez le duc de La Vrillière. Nicolas va enquêter et se rendre compte que de nombreux éléments vont venir se greffer dans cette histoire. Il va devoir en référer au roi directement, prendre contact avec la reine, tout en gardant un contact étroit avec Sartine. A l'aide de Bourdeau, il va confondre les coupables en gagnant peu à peu l'estime de Le Noir.</Story>
+    <Id>45</Id>
+    <ImagePath>45-7834028836.gif</ImagePath>
+  </Book>
+  <Book>
+    <Title>Des héros ordinaires</Title>
+    <Author>Eva Joly</Author>
+    <Editor>les arènes</Editor>
+    <Like>2</Like>
+    <Date>01/03/2013 00:00:00</Date>
+    <Summary>Eva Joly raconte l'histoire de 6 personnes différentes qui pour différentes raisons ont lutté contre de grands pouvoirs en place pour faire reculer les problèmes majeurs (notamment la corruption).</Summary>
+    <MyOpinion>Le sujet est intéressant mais les histoires ne sont pas tellement développées. Tous ces "héros" gravitent autour du thème de la corruption, sujet sur lequel Eva Joly a beaucoup travaillé.</MyOpinion>
+    <Story>Le livre est composé de 6 chapitres qui retrace chacun l'aventure d'un héros qui s'est élevé contre un pouvoir trop fort, une corruption écrasante en Afrique, au Royaume Uni, en Bulgarie,...</Story>
+    <Id>46</Id>
+    <ImagePath>46-7834023366.gif</ImagePath>
+  </Book>
+  <Book>
+    <Title>Dans les bras du Mékong</Title>
+    <Author>Hélène Armand</Author>
+    <Editor>éditions du ROCHER</Editor>
+    <Like>3</Like>
+    <Date>01/03/2013 00:00:00</Date>
+    <Summary>Alors que la deuxième guerre mondiale vient de se terminer, Irène se marie avec François, son second époux, le premier étant mort à la guerre. Mais alors qu'Irène est enceinte de leur deuxième enfant, François part pour la guerre d'Indochine.</Summary>
+    <MyOpinion>Ce livre est facile à lir et intéressant. Il y a de très belles descriptions, notamment de l'indochine, des paysans et de la guerre vue de l'intérieur. La vie des femmes de marins/soldats est également bien décrite.</MyOpinion>
+    <Story>Irène vit en Bretagne avec sa mère. Alors que son premier mari est mort durant la seconde guerre mondiale, Irène se remarie avec François, un ami d'enfance devenu marin. Ensemble, ils vont avoir un premier fils qui va mourir quelques jours après sa naissance. Un deuxième garçon va naître, qui se trouvera être retardé et nécessitant beaucoup de soins. François va devoir partir travailler à Toulon. Peu de temps après, alors qu'Irène est à nouveau enceinte, François est envoyé en Indochine pour participer à la guerre qui sévit là-bas. Après quelques temps d'adaptation, il va être prisionner suite à l'explosion de son bateau. Peu à peu, Irène va devoir se faire à l'idée qu'elle ne reverra peut-être jamais François et prendre sa vie en main au milieu des drames qu'elle vit. de son côté,  François va peu à peu être transformé par son statut de prisonnier et par les rencontres qu'il va faire.</Story>
+    <Id>47</Id>
+    <ImagePath>47-8944839892.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Si c'était à refaire</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert LAFFONT</Editor>
+    <Like>5</Like>
+    <Date>01/05/2013 00:00:00</Date>
+    <Summary>Andrew Stilman, grand reporter au New York Times, mène une des plus grandes enquêtes de sa carrière. Peu après son mariage, il est assassiné lors de son jogging. Juste après, il se réveille 2 mois plus tôt et va revivre les mêmes événements en tentant de découvrir qui a voulu l’assassiner.</Summary>
+    <MyOpinion>Excellent livre de Marc Levy, se lit très facilement. L’enquête est très prenante et comporte de nombreux rebondissements jusqu’à la fin. Un très bon moment.</MyOpinion>
+    <Story>Andrew Stilman est un journaliste au New York times. Après avoir gravi tous les échelons, il est devenu grand reporter et a signé un article remarqué sur l’adoption des enfants chinois par les familles américaines. Peu de temps après avoir retrouvé son amour d’enfance, Andrew et Valérie se marient. Parallèlement, Andrew travaille sur un nouveau sujet en Argentine qui fera du lui un reporter reconnu de tous. Mais lors d’un footing matinal, Andrew est assassiné. Alors qu’il se voit mourir, il se réveille tout à coup 2 mois plus tôt. Il va devoir revivre les mêmes événements tout en tentant de trouver qui voudrait l’assassiner. Aidé de son meilleur ami Simon et d’un ancien inspecteur de police Pilguez, Andrew va enquêter pour découvrir la vérité.</Story>
+    <Id>48</Id>
+    <ImagePath>48-6739323490.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>L'homme qui voulait être heureux</Title>
+    <Author>Laurent Gounelle</Author>
+    <Editor>Anne Carrière</Editor>
+    <Like>4</Like>
+    <Date>01/06/2013 00:00:00</Date>
+    <Summary>En vacances à Bali, un homme se décide à aller voir un vieux guérisseur plus par curiosité que par nécessité. Peu à peu, au fil de leurs rencontres, le narrateur va se rendre compte qu’il n’est peut-être pas aussi heureux qu’il le pense et Maître Samtyang va le faire beaucoup réfléchir.</Summary>
+    <MyOpinion>La forme de ce livre est extrêmement simple, principalement basé sur la rencontre de ce touriste avec ce vieux sage de grande renommée. Le livre pose plein de bons principes et de vérités sur la façon dont les gens se voient par rapport aux autres et sur tous les éléments inconscients dont chacun d’entre nous se remplit la tête.</MyOpinion>
+    <Story>Alors que son séjour à Bali touche à sa fin, le narrateur du livre part à la rencontre de Maitre Samtyang. C’est dans un cadre paisible que ce dernier le reçoit et va l‘écouter. A travers des visites quotidiennes et des exercices qu’il va lui donner, le vieux sage va peu à peu transformer la manière de voir les choses de son visiteur. Les gens ont beaucoup d’idées préfaites sur le monde qui les entoure et n’ont qu’une vision biaisé, souvent accentuée par leur propre pensée qui les oriente à agir d’une certaine façon. Le narrateur va se rendre compte qu’il n’est pas facile de changer sa vision mais que ça vaut vraiment le coup et qu’il parviendra ainsi à être plus heureux, plus proche de ce qu’il désire vraiment être.</Story>
+    <Id>49</Id>
+    <ImagePath>49-5685222145.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Les dieux voyagent toujours incognito</Title>
+    <Author>Laurent Gounelle</Author>
+    <Editor>Anne Carrière</Editor>
+    <Like>5</Like>
+    <Date>01/07/2013 00:00:00</Date>
+    <Summary>Alors que tout va mal pour Alan Greenmor et qu’il est sur le point de se suicider sur la tour Eiffel, il va faire la rencontre d’un homme qui va le dissuader de sauter et qui va l’entraîner dans un tas d’aventures pour le faire changer et pour qu’il puisse changer sa vie comme il le souhaite.</Summary>
+    <MyOpinion>Excellent livre. A travers ce roman qui se lit très facilement et où l’intrigue est très prenante, l’auteur nous délivre un grand et beau message sur la vie de chacun, comment accepter les épreuves, comme obtenir ce que l’on veut et comment changer le cours de son destin. Un très bon moment.</MyOpinion>
+    <Story>Alan Greenmor, américain installé en France est consultant en recrutement. Pas vraiment passionné par son travail, sans famille et après une rupture avec une femme qu’il adorait, il envisage de se suicider depuis la tour Eiffel. Mais une fois en haut, il va faire la connaissance d’un homme qui va lui proposer un marché : il ne saute pas et viens discuter avec lui. Alan va s’engager auprès de cet inconnu à suivre ses directives qui ont pour but de changer Alan et le faire vivre sa vraie vie. Ainsi, ce dernier va devoir affronter plusieurs épreuves de communication, d’échanges et de comportement pour se débarrasser de ce qui le gêne pour avancer. A travers les épreuves, on va voir Alan évoluer, prendre confiance et se mettre à faire des choses qu’il n’aurait jamais pensé faire auparavent.</Story>
+    <Id>50</Id>
+    <ImagePath>50-7834343908.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Petit traité de l'abandon</Title>
+    <Author>Alexandre Jollien</Author>
+    <Editor>Seuil</Editor>
+    <Like>3</Like>
+    <Date>01/07/2013 00:00:00</Date>
+    <Summary>Alexandre Jollien nous livre ici quelques pensées pour accueillir la vie du bon côté et tenté de voir les choses du bon côté.</Summary>
+    <MyOpinion>L'auteur, qui souffre de handicap, tente ici de délivrer quelques pensées et idées qu'il a lui même appréhender au cours de sa vie. Le principe est bon et le livre agréable, mais il n'y a pas de réel cheminement dans le livre. Les thèmes sont lancés au fil du livre mais rien de concret de nous permet de nous rattacher à quelque chose.</MyOpinion>
+    <Story>A travers 21 chapitres, l'auteur nous fait part de sa pensée et de sa conception de la vie. Cela concerne la peur, l'abandon, le rire, la compassion,… autant de sujets qui sont abordés simplement et que l'auteur tend à rendre accessible à chacun. Le livre se lit très facilement et constitue une bonne bouffée d'oxygène.</Story>
+    <Id>51</Id>
+    <ImagePath>51-5896522351.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La princesse des glaces</Title>
+    <Author>Camilla Läckberg</Author>
+    <Editor>Actes Sud</Editor>
+    <Like>5</Like>
+    <Date>01/08/2013 00:00:00</Date>
+    <Summary>Erica, écrivaine, retrouve son amie d’enfance morte dans sa baignoire. Meurtre ou suicide, elle va décider de mener sa propre enquête au sein d’un petit village ou elle va découvrir de vieux secrets enfouis depuis longtemps.</Summary>
+    <MyOpinion>Ecrit à la même période que Millenium, ce roman est très comparable à la trilogie à succès. L’action de déroule en hiver, dans un petit village perdu, et les trahisons familiales et les secrets bien gardés font de ce livre un excellent divertissement. On a hâte de finir la lecture !!</MyOpinion>
+    <Story>Erica Falck, écrivaine à Stockholm, retourne Fjällbacka, le village où elle a grandi et où ses parents viennent juste de mourir dans un accident. Alors qu’elle s’occupe de ranger les affaires et de la succession avec sa sœur, elle découvre Alexandra, une copine d’enfance, morte dans sa baignoire. Alors que les policiers commencent une enquête pour déterminer les circonstances de sa mort, un deuxième cadavre est découvert dans le village : un artiste alcoolique semble être lié à Alexandra. Avec l’aide de Patrik Hedström, policier qui a toujours été amoureux d’elle, Erica va tenter de découvrir la vérité autour des récents événements survenus à Fjällbacka.</Story>
+    <Id>52</Id>
+    <ImagePath>52-55986532.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>De cœur inconnu</Title>
+    <Author>Charlotte Valandrey</Author>
+    <Editor>cherche midi</Editor>
+    <Like>3</Like>
+    <Date>01/09/2013 00:00:00</Date>
+    <Summary>Charlotte Valandrey raconte 3 ans de sa vie, suite à sa greffe cardiaque. Elle parle de ses amours, ses amis, sa relation à son métier…</Summary>
+    <MyOpinion>Livre intéressant, dans lequel l’actrice se livre beaucoup. Elle dévoile sans se cacher les hauts et les bas de sa vie suite à sa greffe, les épreuves qu’elle a subit. Ce livre est un témoignage de ces quelques années.</MyOpinion>
+    <Story>Après avoir révélé sa séropositivité, Charlotte Valandrey a dû subir une greffe cardiaque quelques années après suite à plusieurs infarctus qu’elle a fait. Dans ce livre, elle raconte comment elle a trouvé 2 fois l’amour, tout d’abord son cardiologue, puis un admirateur qui s’avère être relié à la greffe qu’elle a eu. Elle raconte aussi la difficulté de trouver du travail et d’exister dans cet univers difficile. Elle évoque également ses relations avec sa fille et sa meilleure amie.</Story>
+    <Id>53</Id>
+    <ImagePath>53-2389098763.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Secrets d'Histoire 2</Title>
+    <Author>Stéphane Bern</Author>
+    <Editor>Albin Michel</Editor>
+    <Like>4</Like>
+    <Date>01/11/2013 00:00:00</Date>
+    <Summary>Stéphane Bern nous dévoile une partie d’Histoire à travers une trentaine d’histoires empruntées à de nombreuses époques différentes.</Summary>
+    <MyOpinion>Livre d’Histoire très intéressant. Les histoires sont malheureusement un peu courtes (6 ou 7 pages chacune) mais chacune est captivante et nous replace bien dans le contexte de l’époque. De superbes illustrations complètent le tout.</MyOpinion>
+    <Story>Les histoires relatées dans ce livre sont nombreuses et diverses : affaires de mœurs au 18ème siècle, déboires impériaux, amants et maîtresses à profusion,… Chaque histoire mériterait un livre entier, tant le contexte est compliqué à appréhender pour bien saisir toute l’ampleur d’un problème et d’une situation.</Story>
+    <Id>54</Id>
+    <ImagePath>54-4412579663.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La femme du Ve</Title>
+    <Author>Douglas Kennedy</Author>
+    <Editor>Belfond (Pocket)</Editor>
+    <Like>5</Like>
+    <Date>01/12/2013 00:00:00</Date>
+    <Summary>Un ex-professeur d’université américain s’envole pour Paris où il compte écrire un roman après avoir été licencié, s’être séparé de sa femme et fâchée avec sa fille.</Summary>
+    <MyOpinion>Ce livre est extrêmement prenant et l’histoire totalement captivante. L’action est très rythmée et l’histoire pleine de rebondissements. Vraiment un très bon livre, très divertissant.</MyOpinion>
+    <Story>Harry Ricks était un professeur de cinéma à l’université dans une ville moyenne des Etats-Unis, marié à Susan, également professeur et père de Megan. Suite à une relation avec une étudiante qui a fini par se suicider suite à l’annonce publique de leur relation, Harry a été licencié de l’université. Sa femme l’a quitté, sa fille ne veut plus le voir et la presse l’a descendu en flèche. Harry décide donc de partir à Paris pour réaliser un de ses rêves : écrire un roman. Alors qu’il tente de subsister péniblement dans Paris, il fait la rencontre d’une mystérieuse femme qu’il se met à voir 2 fois par semaine pendant 2h. Peu à peu, sa vie va changer et les relations avec cette femme prennent de plus en plus de place dans sa vie, jusqu’à en prendre le contrôle.</Story>
+    <Id>55</Id>
+    <ImagePath>55-6732881903.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Nymphéas noirs</Title>
+    <Author>Michel Bussi</Author>
+    <Editor>Presses de la Cité</Editor>
+    <Like>3</Like>
+    <Date>01/01/2014 00:00:00</Date>
+    <Summary>Un meurtre est commis à Giverny. Cette ville qui tourne autour de la vie de Claude Monet va être le théâtre d’une enquête policière qui va réveiller de vieilles histoires et semer le trouble sur plusieurs générations.</Summary>
+    <MyOpinion>Ce livre propose de très belles descriptions de la ville et de la vie de Claude Monet. L’enquête policière part sur de nombreuses pistes, des sentiments amoureux viennent se greffer et finalement on perd un peu le fil de l’enquête. Les explications de l’auteur sont un peu lourdes et ne laissent que peu de place à l’imagination. La fin est en plus assez prévisible.</MyOpinion>
+    <Story>Alors que le corps de Jérôme Morval est retrouvé dans le ruisseau à côté de la maison de Claude Monet, l’inspecteur Sérénac, de Vernon, est envoyé sur place pour mener l’enquête sur le terrain. Peu à peu, on va faire connaissance des 3 protagonistes : une vieille dame qui vit isolée dans son moulin, une jeune institutrice très belle et une jeune fille d’une dizaine d’années très douée en peinture. Alors que l’enquête se révèle plus compliquée que prévue, des sentiments amoureux vont naître entre l’inspecteur et la jeune institutrice.</Story>
+    <Id>56</Id>
+    <ImagePath>56-6723998790.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Saint-Germain ou la négociation</Title>
+    <Author>Francis Walder</Author>
+    <Editor>Gallimard</Editor>
+    <Like>2</Like>
+    <Date>01/02/2014 00:00:00</Date>
+    <Summary>En prenant pour prétexte un événement historique, l’auteur tente de montrer quelles techniques de négociation il est possible d’utiliser.</Summary>
+    <MyOpinion>Francis Walder raconte dans ce livre la négociation qui a eu lieu en 1570 entre catholiques et huguenots. La négociation est ici imaginée afin de mettre en avant les différents aspects de la négociation. Le livre est assez lent, les négociations pas très développées et l’aspect historique peu présent. Pas très intéressant, seul le contexte historique est intéressant.</MyOpinion>
+    <Story>Henri de Malassise et le baron de Biron sont chargés de négocier la paix de Saint-Germain et de définir avec 2 huguenots quelles villes vont leur être céder en échange de la signature de la paix. Les négociations ont eu lieu dans un beau cadre et se sont étalées sur plusieurs jours.</Story>
+    <Id>57</Id>
+    <ImagePath>57-6733899016.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le confident</Title>
+    <Author>Hélène Grémillon</Author>
+    <Editor>Folio</Editor>
+    <Like>4</Like>
+    <Date>01/04/2014 00:00:00</Date>
+    <Summary>Camille vient de perdre sa mère. Au milieu des lettres de condoléances qu’elle reçoit, elle découvre la lettre d’un inconnu qui commence à lui raconter l’histoire de Louise. Ces lettres hebdomadaires vont peu à peu avoir une étrange résonnance pour elle.</Summary>
+    <MyOpinion>Livre intéressant qui se lit très facilement. L’histoire est prenante, originale et le tout très bien écrit.</MyOpinion>
+    <Story>Suite au décès de sa mère, Camille va découvrir petit à petit, au fil des lettres qu’elle reçoit, qu’une partie de sa vie est différente de ce qu’elle croyait. A travers l’histoire de la petite Louise pendant la deuxième guerre mondiale, on va découvrir une vraie histoire prenante et émouvante qui touchera Camille au plus profond d’elle-même.</Story>
+    <Id>58</Id>
+    <ImagePath>58-7844563901.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La méthode Facebook</Title>
+    <Author>Ekaterina Walter</Author>
+    <Editor>First Editions</Editor>
+    <Like>4</Like>
+    <Date>01/05/2014 00:00:00</Date>
+    <Summary>Ekaterina Walter dévoile ici les faits et éléments qui ont fait ce que Facebook est devenu maintenant. A travers la règle des 5 « P », elle dévoile les différentes composantes pour réussir un grand projet.</Summary>
+    <MyOpinion>Livre très intéressant qui dévoile les secrets de ceux qui ont réussi à créer une entreprise à partir d’une idée qui leur tenait à cœur. Facebook et d’autres entreprises ont réussi grâce à la volonté et à l’ambition de leur fondateur.</MyOpinion>
+    <Story>Ekaterina Walter est responsable de l’innovation sociale chez Intel. Experte en réseaux sociaux, elle a ainsi décrypté comment Mark Zuckerberg a peaufiné son idée et comment il a créé cette entreprise qui est aujourd’hui leader mondial. Comme d’autres sociétés, Facebook a suivi la règle des « 5P » : Passion, Propos, Personnes, Produit, Partenariats. Le livre est une ode à suivre ses idées et développer ses projets envers et contre tout.</Story>
+    <Id>59</Id>
+    <ImagePath>59-5644090987.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>La femme au miroir</Title>
+    <Author>Eric-Emmanuel Schmitt</Author>
+    <Editor>Albin Michel (Le livre de poche)</Editor>
+    <Like>3</Like>
+    <Date>01/08/2014 00:00:00</Date>
+    <Summary>Le destin de 3 femmes vivant à des époques différentes est raconté dans ce livre. Ces 3 femmes ont en commum une aspiration à vivre différemment de ce qu’on exige d’elles à l’époque où elles vivent. Toutes les 3 veulent vivre selon leurs propres désirs et volontés.</Summary>
+    <MyOpinion>Ce livre est bien écrit, les 3 histoires sont très complémentaires et l’auteur retranscrit bien les époques et les spécificités des différentes époques mentionnées dans ce livre. C’est très plaisant à lire !</MyOpinion>
+    <Story>Anne vit à Bruges au temps de la renaissance. Alors qu’elle est promise à un bon partie, elle préfère s’enfuire et se rapprocher de la nature, là où elle se sent bien et se sent vivre. A l’aide du moine Braindor, elle va approfondir cette liberté et cet amour qu’elle sent en elle. Hanna vit dans la Vienne impériale. Epouse d’un noble, elle a tout ce dont peut désirer une femme. Cependant, elle sent bien qu’elle n’est pas à sa place. Quant à Anny, elle est la nouvelle star d’Hollywood aujourd’hui et flirte avec alcool et drogues. Elle non plus n’est pas ravie avec son existence et recherche sa voie.</Story>
+    <Id>60</Id>
+    <ImagePath>60-7854623569.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Je suis né un jour bleu</Title>
+    <Author>Daniel Tammet</Author>
+    <Editor>Editions des arènes (J’ai Lu)</Editor>
+    <Like>4</Like>
+    <Date>01/09/2014 00:00:00</Date>
+    <Summary>Daniel Tammet, jeune autiste de 25 ans, raconte dans ce livre comment il a réussi à grandir et à s’intégrer dans la société malgré la maladie dont il souffrait. Il s’est fait connaître au grand public après avoir réussi à mémoriser plus de 22500 chiffres de Pi.</Summary>
+    <MyOpinion>Livre extrêmement intéressant, écrit par Daniel lui-même. Il nous raconte sa vie et les épreuves qu’il a rencontré et l’amour de ses parents qui l’ont toujours soutenu et lui ont permis de vivre une vie presque normale.</MyOpinion>
+    <Story>Daniel est anglais, il est l’aîné d’une fratrie de 9 enfants. Elevé dans une famille modeste, il se sent très vite différent, différent des autres enfants de sa classe mais aussi de ses frères et sœurs.Il voue un amour inconditionnell pour les chiffres q’il associe à des formes, des couelurs, des textures. Il est capable de mémoriser un très grand nombre d’informations et a réussi à mémoriser 22514 décimakes de Pi dans l’ordre… Suite à ça, un documentaire a été fait sur lui à travers les US. Depuis, Daniel a écrit 2 autres livres et réussit à vivre tout en faisant connaître la maladie dont il souffre et avec la valonté de venir aux autres touchés par la même maladie que lui.</Story>
+    <Id>61</Id>
+    <ImagePath>61-8934230908.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Un sentiment plus fort que la peur</Title>
+    <Author>Marc Levy</Author>
+    <Editor>Robert Laffont (Pocket)</Editor>
+    <Like>4</Like>
+    <Date>29/10/2014 21:28:09</Date>
+    <Summary>Suzie Baker est la petite fille d’une dame soupçonnée d’avoir trahi son pays lors de la guerre froide. Avec l’aide d’Andrew Stilman (reporter au New York Times), elle va tenter d’innocenter sa grand-mère et de retrouver la vérité.</Summary>
+    <MyOpinion>Marc Levy retrouve le reporter Andrew Stilman dans de nouvelles aventures intéressantes qui nous emmène en voyage en Europe. Nos 2 protagonistes vont se retrouver dans une chasse au trésor / chasse à l’homme dans un très bon rythme bien prenant.</MyOpinion>
+    <Story>Suzie Baker attaque l’ascension du Mont Blanc à l’aide d’un guide (devenu son amant) qui l’a préparé pour cette aventure. Une fois en haut, elle dévoile sa véritable intention : retrouver un document perdu lors du crash d’un avion dans cette montagne des dizaines d’années plus tôt. Son ami ne s’en sort pas et une fois de retour aux Etats-Unis, elle décide de poursuivre la piste trouvée pour découvrir la vérité. Elle va s’allier à Andrew Stilam, grand reporter qui se remet difficilement d’une tentative d’assassinat (voir livre « Si c’était à refaire »). Intrigué et attiré par cette affaire, Andrew va s’impliquer de plus en plus dans cette affaire, même si leur vie est de plus en plus mise en danger. Mais la vérité et la possibilité d’un scoop mondial seront le plus fort.</Story>
+    <Id>62</Id>
+    <ImagePath>62-367685634.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Double identité</Title>
+    <Author>Didier Van Cauwelaert</Author>
+    <Editor>Albin Michel (Le livre de poche)</Editor>
+    <Like>4</Like>
+    <Date>29/10/2014 21:36:21</Date>
+    <Summary>Un agent secret de la CIA habitué aux roles de "nettoyeur' de personnes gênantes, endosse différents roles pour atteindre ses cibles. Mais lorsqu'il endosse le role de Martin Harris, passionné par les plantes médicinales, sa vie va se transformer.</Summary>
+    <MyOpinion>Livre très intéressant à plusieurs points de vue : l'intrigue est prenante, la psychologie du personnage est complexe et l'histoire de fond sur la liberté de chacun est très intéressante. C'est un bon livre qui se lit rapidement.</MyOpinion>
+    <Story>Alors qu'il a endossé l'identité de Martin Harris, un tueur de la CIA voit ses plans contrariés pour la première fois. Jusque-là, cet habitué des crimes de sang froid se contentait d'exécuter ses contrats avant de passer à la cible suivante. Mais il va peu à peu s'identifier à cet homme qui avait 2 passions: les plantes et sa femme. Lors d'un voyage en Afrique, il avait en effet rencontrer une tribu qui utilisait des plantes pour se soigner et notamment une qui avait permis de sauver sa femme du cancer. Mais un riche fabricant de cosmétique a dérobé cette plante pour l'utiliser afin de fabriquer une crème rajeunissante (autre pouvoir de cette plante), empêchant une exploitation médicale. Dès lors, Martin va retrouver la femme de son "double" et tenter de poursuivre son travail.</Story>
+    <Id>63</Id>
+    <ImagePath>63-1727469768.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Si un jour la vie t'arrache à moi</Title>
+    <Author>Thierry Cohen</Author>
+    <Editor>Flammarion</Editor>
+    <Like>5</Like>
+    <Date>03/11/2014 23:34:18</Date>
+    <Summary>Gabriel, jeune brillant hommes d'affaires, fait la connaissance de Clara, une danseuse issue des quartiers défavorisés. Alors que tout semble les opposés, un amour fort va naître entre eux, malgré le désaccord de leurs proches. Mais un accident de voiture va remettre en cause tout cela et Gabriel va avoir 8 jours pour sauver Clara alors qu'il est lui-même déjà pratiquement mort.</Summary>
+    <MyOpinion>Excellent livre de Thierry Cohen. Comme d'habitude, l'histoire est halletante et l'écriture vraiment belle. Il prend bien le temps de construire l'univers de ces 2 personnages avant d'entrer dans le vif de l'action.</MyOpinion>
+    <Story>Gabriel est un jeune homme d'affaires qui fait la fierté de ses parents. Ces derniers l'ont élevé dans le but de faire de lui un brillant dirigeant et de reprendre l'enterprise familial. Aussi voient-ils d'un mauvais oeil la fille que fréquente désormais Gabriel : Clara, une jeune danseuse qui travaille dans un bar en attendant de pouvoir vivre de sa passion. Entre eux 2, un amour très fort va naître. Leur complicité est totale, ils filent le bonheur ensemble mais leur différence sociale génère des problèmes vis-à-vis des relations de Gabriel, et en premier lieu avec ses parents. Clara ne se voile pas la face et sait bien qu'il sera dur de trouver sa place dans le monde de Gabriel. Lui, de son côté, est fou amoureux de Clara mais elle ne se confie pas énormément sur son passé et il a du mal à bien la cerner.
+Alors qu'ils ont décidé de vivire leur amour, tout va chavirer lorsqu'ils sont victimes d'un accident de la route. Gabriel va alors rencontrer un passeur d'âmes qui va lui octroyer 8 jours avant de le faire passer dans l'au-delà, 8 jours afin de sauver Clara qui va se laisser mourir par amour pour Gabriel... Dès lors, un combat contre-la-montre va commencer pour Gabriel.</Story>
+    <Id>64</Id>
+    <ImagePath>64-193268245.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Inferno</Title>
+    <Author>Dan Brown</Author>
+    <Editor>JC Lattès</Editor>
+    <Like>4</Like>
+    <Date>15/01/2015 22:20:04</Date>
+    <Summary>Robert Langdon se réveille à l'hôpital de Florence sans aucun souvenir des 48 dernières heures. A peine réveillé, le docteur qui s'occupe de lui se fait tirer dessus et Robert est obligé de prendre la fuite avec une infirmière. Dès lors, une course poursuite va commencer sans que Robert ne sache ce qu'il fait là et pourquoi on le recherche.</Summary>
+    <MyOpinion>C'est à nouveau un excellent livre de Dan Brown. On retrouve son héros Robert Langdon, professeur de symbologie à Harvard. Les éléments se mettent au fur et à mesure du livre, on découvre le double jeu de certaines personnes et les descriptions sont toujours aussi détaillées et passionnantes. Très bon livre !</MyOpinion>
+    <Story>Alors qu'il se réveille à Florence dans un lit d'hôpital, Robert se voit contrain de s'enfuirr avec Sienna Brooks qui s'occupait de lui. Sans la moindre idée de ce qu'il fait là, il doit échapper aux policiers qui semblent le rechercher. Même l'ambassade semble vouloir le retrouver de toute urgence. Peu à peu, il va se rendre compte qu'il est embarqué dans une histoire beaucoup plus grande qu'il n'y parait. En effet, il a récupéré un cylindre qui contient le tableau "La carte de l'enfer" d'après l'oeuvre de Dante. A partir de là, un jeu de piste va le mener à Venise pour essayer de découvrir qui lui court après et quel est le but final. Au terme d'une course haletante, il s'avère que la vérité est plus effrayante que tout ce qu'i aurait pu imaginer et va provoquer un changment pour l'humanité.</Story>
+    <Id>65</Id>
+    <ImagePath>65-309235782.jpg</ImagePath>
+  </Book>
+  <Book>
+    <Title>Le scandale Modigliani</Title>
+    <Author>Ken Follett</Author>
+    <Editor>Le livre de poche</Editor>
+    <Like>3</Like>
+    <Date>01/02/2015 09:59:49</Date>
+    <Summary>Plusieurs personnes ayant entendu parlé d'un tableau inconnu de Modigliani qui aurait été donné par le peintre à un ami, se lancent à sa recherche. A travers cette quête, nous allons découvrir l'univers du monde de l'art à Londres, mais aussi le destin d'une grande actrice, la romance d'un jeune couple,...</Summary>
+    <MyOpinion>Ce premier Ken Follett est composé de nombreux personnages, peut-être un peu trop ce qui empêche de bien approfondir chaque histoire. La quête du fabuleux tableau apparait peu à peu de moins en importante, au profit de la mise en lumière des pouvoirs et de la puissance du marché de l'art. L'histoire se lit facilement, mais je n'ai pas été pris dans le livre à la recherche du tableau.</MyOpinion>
+    <Story>Une jeune londonienne, Dee Sleign, étudiante en histoire de l'art à Paris enviage de démarrer une thèse sur l'art. Afin de commencer son travail, elle rencontre une personne ayant fréquentée plusieurs artistes de renom. Au cours de leur discussion, Dee apprend qu'il se pourrait bien qu'un tableau inconnu de Modigliani se soit perdu en Italie sans que personne ne sache ni son existence, ni sa valeur. Elle décide de partir à sa rechecher, avec l'aide de son ami MIcth. L'information va remontée jusqu'à différentes personnes. Tout d'abord, un marchand d'art londonien peu scrupuleux va engagé un détective pour filer la jeune fille et tenter de s'emparer du tableau avant elle. Dans le même temps, Julian, un galeriste en pleine crise financière et conjugale va également se lancer à la recherche de ce tableau dans l'espoir de faire décoller sa nouvele galerie qu'il doit ouvrir prochainement. Enfin, une actrice au top de sa carrière va également se mêler à cette histoire, ainsi que 2 jeunes peintres déçus par le monde de l'art qui vont peu à peu tomber dans le monde des faussaires...</Story>
+    <Id>66</Id>
+    <ImagePath>66-1262797796.jpg</ImagePath>
+  </Book>
+</BookList>

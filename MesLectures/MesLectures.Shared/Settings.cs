@@ -97,15 +97,18 @@ namespace MesLectures
             await FileIO.WriteTextAsync(sampleFile, xml);
         }
 
-        public static async Task<List<Book>> ReadFileForBookList()
+        public static async Task<List<Book>> ReadFileForBookList(StorageFile storageFile = null)
         {
             try
             {
-                StorageFile sampleFile = await LocalFolder.GetFileAsync(DataFileName);
-                string xmlString = await FileIO.ReadTextAsync(sampleFile);
+                if (storageFile == null)
+                {
+                    storageFile = await LocalFolder.GetFileAsync(DataFileName);
+                }
+                string xmlString = await FileIO.ReadTextAsync(storageFile);
                 return GetBookListXdoc(XDocument.Parse(xmlString));
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return null;
             }
