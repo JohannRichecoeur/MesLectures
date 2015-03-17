@@ -131,9 +131,14 @@ namespace MesLectures.DataModel
             try
             {
                 imageDebutFile = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/default.jpg"));
-            
+                
                 // Search for a specific picture for each book
+#if WINDOWS_PHONE_APP
+                var folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+                imageDebutFile = await folder.GetFileAsync("66-1262797796.jpg");
+#else
                 imageDebutFile = await Settings.LocalFolder.GetFileAsync(b.ImagePath);
+#endif
             }
             catch (Exception)
             {

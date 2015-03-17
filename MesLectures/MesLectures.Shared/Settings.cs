@@ -105,6 +105,7 @@ namespace MesLectures
                 {
                     storageFile = await LocalFolder.GetFileAsync(DataFileName);
                 }
+
                 string xmlString = await FileIO.ReadTextAsync(storageFile);
                 return GetBookListXdoc(XDocument.Parse(xmlString));
             }
