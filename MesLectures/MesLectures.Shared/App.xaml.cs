@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Serialization;
+using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -16,8 +19,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using MesLectures.Common;
-
-// The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
+using Microsoft.Live;
 
 namespace MesLectures
 {
@@ -54,7 +56,6 @@ namespace MesLectures
                 this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -142,6 +143,146 @@ namespace MesLectures
             var deferral = e.SuspendingOperation.GetDeferral();
             await SuspensionManager.SaveAsync();
             deferral.Complete();
+        }
+
+        LiveConnectClient liveClient;
+
+        private async Task<int> UploadFileToOneDrive()
+        {
+            try
+            {
+                //  create OneDrive auth client
+                var authClient = new LiveAuthClient();
+
+                //  ask for both read and write access to the OneDrive
+                LiveLoginResult result = await authClient.LoginAsync(new string[] { "wl.skydrive", "wl.skydrive_update", "wl.offline_access" });
+
+                //  if login successful 
+                if (result.Status == LiveConnectSessionStatus.Connected)
+                {
+                    //  create a OneDrive client
+                    liveClient = new LiveConnectClient(result.Session);
+
+                    //  create a local file
+                    StorageFile file = await ApplicationData.Current.LocalFolder.CreateFileAsync("filename", CreationCollisionOption.ReplaceExisting);
+
+                    //  copy some txt to local file
+                    MemoryStream ms = new MemoryStream();
+                    DataContractSerializer serializer = new DataContractSerializer(typeof(string));
+                    serializer.WriteObject(ms, "Hello OneDrive World!!");
+
+                    using (Stream fileStream = await file.OpenStreamForWriteAsync())
+                    {
+                        ms.Seek(0, SeekOrigin.Begin);
+                        await ms.CopyToAsync(fileStream);
+                        await fileStream.FlushAsync();
+                    }
+
+                    //  create a folder
+                    string folderID = await GetFolderID("folderone");
+
+                    if (string.IsNullOrEmpty(folderID))
+                    {
+                        //  return error
+                        return 0;
+                    }
+
+                    //  upload local file to OneDrive
+                    await liveClient.BackgroundUploadAsync(folderID, file.Name, file, OverwriteOption.Overwrite);
+
+                    return 1;
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            //  return error
+            return 0;
+        }
+
+        public async Task<string> GetFolderID(string folderName)
+        {
+            try
+            {
+                string queryString = "me/skydrive/files?filter=folders";
+                //  get all folders
+                LiveOperationResult loResults = await liveClient.GetAsync(queryString);
+                dynamic folders = loResults.Result;
+
+                foreach (dynamic folder in folders.data)
+                {
+                    if (string.Compare(folder.name, folderName, StringComparison.OrdinalIgnoreCase) == 0)
+                    {
+                        //  found our folder
+                        return folder.id;
+                    }
+                }
+
+                //  folder not found
+
+                //  create folder
+                Dictionary<string, object> folderDetails = new Dictionary<string, object>();
+                folderDetails.Add("name", folderName);
+                loResults = await liveClient.PostAsync("me/skydrive", folderDetails);
+                folders = loResults.Result;
+
+                // return folder id
+                return folders.id;
+            }
+            catch
+            {
+                return string.Empty;
+            }
+        }
+
+        public async Task<int> DownloadFileFromOneDrive()
+        {
+            try
+            {
+                string fileID = string.Empty;
+
+                //  get folder ID
+                string folderID = await GetFolderID("folderone");
+
+                if (string.IsNullOrEmpty(folderID))
+                {
+                    return 0; // doesnt exists
+                }
+
+                //  get list of files in this folder
+                LiveOperationResult loResults = await liveClient.GetAsync(folderID + "/files");
+                List<object> folder = loResults.Result["data"] as List<object>;
+
+                //  search for our file 
+                foreach (object fileDetails in folder)
+                {
+                    IDictionary<string, object> file = fileDetails as IDictionary<string, object>;
+                    if (string.Compare(file["name"].ToString(), "filename", StringComparison.OrdinalIgnoreCase) == 0)
+                    {
+                        //  found our file
+                        fileID = file["id"].ToString();
+                        break;
+                    }
+                }
+
+                if (string.IsNullOrEmpty(fileID))
+                {
+                    //  file doesnt exists
+                    return 0;
+                }
+
+                //  create local file
+                StorageFile localFile = await ApplicationData.Current.LocalFolder.CreateFileAsync("filename_from_onedrive", CreationCollisionOption.ReplaceExisting);
+
+                //  download file from OneDrive
+                await liveClient.BackgroundDownloadAsync(fileID + "/content", localFile);
+
+                return 1;
+            }
+            catch
+            {
+            }
+            return 0;
         }
     }
 }

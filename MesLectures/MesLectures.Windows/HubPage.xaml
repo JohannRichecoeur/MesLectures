@@ -140,13 +140,14 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
-                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10"
+                        <Button Grid.Row="0" Content="Onedrive" Click="OneDriveButtonClick" />
+                        <TextBlock Grid.Row="2" Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10"
                                    x:Uid="ItemTitle" Text="Item Title" />
-                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1"
+                        <TextBlock  Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1"
                                    x:Uid="Section2UnderTitle" Text="Quisque in porta lorem dolor amet sed consectetuer ising elit, sed diam non my nibh uis mod wisi quip."/>
                         <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Grid.Row="2" Margin="0,20,0,0"
                                    x:Uid="ItemSubTitle" Text="Item Sub Title"/>
-                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
+                        <TextBlock  Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
                                    x:Uid="LongText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper."/>
                     </Grid>
                 </DataTemplate>

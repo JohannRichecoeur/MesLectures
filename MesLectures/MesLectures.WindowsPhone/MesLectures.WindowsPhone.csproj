@@ -125,6 +125,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Fonts\LiveSymbol.ttf" />
+    <None Include="packages.config" />
     <None Include="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>

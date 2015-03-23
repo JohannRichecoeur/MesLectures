@@ -212,7 +212,7 @@ namespace MesLectures
             return random.Next().ToString();
         }
 
-        public static async Task GetUserName(Page page)
+        public static async Task GetOnedriveUserInfo()
         {
             try
             {
@@ -257,12 +257,6 @@ namespace MesLectures
             {
                 // Handle the exception. 
             }
-
-            //var itemsPage = page as GroupedItemsPage;
-            //if (itemsPage != null)
-            //{
-            //    await itemsPage.GetUserNameDone();
-            //}
         }
 
         public static async Task<bool> UploadToOnedrive()

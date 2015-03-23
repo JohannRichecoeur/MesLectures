@@ -70,9 +70,6 @@ namespace MesLectures
             }
 
             this.FakeButtonForFocus.Focus(FocusState.Programmatic);
-
-            // ReSharper disable once CSharpWarnings::CS4014 => we don't want to wauit this method to unblock the navigation
-            Settings.GetUserName(this);
         }
 
         /// <summary>
@@ -153,6 +150,11 @@ namespace MesLectures
         private void SearchBoxQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
         {
             this.Frame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
+        }
+
+        private void OneDriveButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(OnedrivePage));
         }
     }
 }
