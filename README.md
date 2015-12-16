@@ -1,3 +1,0 @@
-# MesLectures
-MesLectures
-ReadMe File
