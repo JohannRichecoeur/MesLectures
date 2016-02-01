@@ -1,0 +1,98 @@
+﻿<Page
+    x:Class="MesLectures.IsbnDialog"
+IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid
+        x:Name="RootPanel"
+        Background="#FFA08F7F"
+        Opacity=".75"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch">
+        <Border
+            Background="White"
+            Height="300"
+            Width="600">
+            <Grid Background="White" Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="auto" />
+                    <RowDefinition
+                        Height="auto" />
+                    <RowDefinition
+                        Height="auto" />
+                </Grid.RowDefinitions>
+                <TextBlock
+                    Name="HeaderTextBlock"
+                    Opacity="1"
+                    FontSize="24"
+                    Margin="12"
+                    HorizontalAlignment="Center"
+                    Grid.Row="0"/>
+
+                <Image 
+                    Name="coverPicture" 
+                    HorizontalAlignment="Left" 
+                    Height="153" 
+                    Margin="43,10,0,9" 
+                    Grid.Row="1"
+                    Opacity="1"
+                    VerticalAlignment="Center" 
+                    Width="128"/>
+
+                <TextBlock
+                    Name="TitleTextBlock"
+                    Height="25"
+                    Width="382"
+                    Opacity="1"
+                    FontSize="16"
+                    Margin="183,10,32,122"
+                    HorizontalAlignment="Left"
+                    Grid.Row="1"/>
+                <TextBlock
+                    Name="AuthorTextBlock"
+                    Height="25"
+                    Width="382"
+                    Opacity="1"
+                    FontSize="16"
+                    Margin="183,10,77,67"
+                    HorizontalAlignment="Left"
+                    Grid.Row="1"/>
+                <TextBlock
+                    Name="EditorTextBlock"
+                    Height="25"
+                    Width="382"
+                    Opacity="1"
+                    FontSize="16"
+                    Margin="183,10,77,10"
+                    HorizontalAlignment="Left"
+                    Grid.Row="1"/>
+                <Button 
+                    Name="UseButton"
+                    Click="UtiliserButtonClick"
+                    HorizontalAlignment="Right" 
+                    Padding="8"
+                    Margin="0,-10,182,0"
+                    Grid.Row="2" 
+                    VerticalAlignment="Center"
+                    Height="43" 
+                    Width="126"/>
+                <Button
+                    Name="CancelButton"
+                    Click="AnnulerButtonClick"
+                    HorizontalAlignment="Right"
+                    Padding="8"
+                    Margin="0,-10,32,0"
+                    Height="43"
+                    Width="126"
+                    Grid.Row="2"/>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+</Page>
