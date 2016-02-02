@@ -59,33 +59,36 @@
     <Grid 
         Style="{StaticResource LayoutRootStyle}"
         DataContext="{Binding Group}" 
-        d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}"
-        Background="White">
-
+        d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
+            <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <FlipView  SelectionChanged="FlipViewSelectionChanged1"
+        <Grid Grid.Row="0">
+            <TextBlock 
+                x:Name="PageTitle"
+                Margin="50,0,0,0"
+                VerticalAlignment="Center"
+                Style="{StaticResource HeaderTextBlockStyle}"
+                FontSize="50"
+                TextWrapping="WrapWholeWords"/>
+        </Grid>
+        
+        <FlipView  Grid.Row="1" SelectionChanged="FlipViewSelectionChanged1"
             x:Name="FlipView"
+            Background="White"
             AutomationProperties.AutomationId="ItemsFlipView"
             AutomationProperties.Name="Item Details"
             TabIndex="1"
-            Grid.RowSpan="2"
             ItemsSource="{Binding Source={StaticResource ItemsViewSource}}">
-
-            <FlipView.ItemContainerStyle>
-                <Style TargetType="FlipViewItem">
-                    <Setter Property="Margin" Value="0,137,0,0"/>
-                </Style>
-            </FlipView.ItemContainerStyle>
 
             <FlipView.ItemTemplate>
                 <DataTemplate>
                     <UserControl x:Name="userControl">
                         <ScrollViewer x:Name="scrollViewer" Style="{StaticResource HorizontalScrollViewerStyle}" Foreground="Black">
-                            <common:RichTextColumns Margin="117,0,0,100">
+                            <common:RichTextColumns Margin="50,0,0,10">
                                 <RichTextBlock Style="{StaticResource BodyRichTextBlockStyle}" IsTextSelectionEnabled="False">
                                     <Paragraph LineStackingStrategy="MaxHeight">
                                         <InlineUIContainer>
@@ -138,10 +141,5 @@
                 </DataTemplate>
             </FlipView.ItemTemplate>
         </FlipView>
-
-        <!-- Bouton Précédent et titre de la page -->
-        <Grid Grid.Row="0">
-            <TextBlock x:Name="PageTitle" VerticalAlignment="Center" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="WrapWholeWords"/>
-        </Grid>
     </Grid>
 </Page>

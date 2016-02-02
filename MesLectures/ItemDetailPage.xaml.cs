@@ -22,7 +22,9 @@ namespace MesLectures
 
         private readonly NavigationHelper navigationHelper;
         private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
-        
+
+        private static bool navigateToSearch;
+
         public ItemDetailPage()
         {
             this.InitializeComponent();
@@ -47,8 +49,7 @@ namespace MesLectures
             SystemNavigationManager.GetForCurrentView().BackRequested +=
                 (sender, args) =>
                 {
-                    Frame.Navigate(typeof(MainPage));
-                    args.Handled = true;
+                    this.NavigateTo();
                 };
         }
 
@@ -73,6 +74,7 @@ namespace MesLectures
                 this.DefaultViewModel["Group"] = BookDataSource.SearchDataGroup;
                 this.DefaultViewModel["Items"] = BookDataSource.SearchDataGroup.Items;
                 this.FlipView.SelectedItem = item;
+                navigateToSearch = true;
             }
             else
             {
@@ -86,20 +88,10 @@ namespace MesLectures
 
         private async void ButtonEditClick(object sender, RoutedEventArgs e)
         {
-            var windowWidth = Window.Current.Bounds.Width;
-            if (windowWidth > 500)
+            var selectedItem = (BookDataItem)this.FlipView.SelectedItem;
+            if (selectedItem != null)
             {
-                var selectedItem = (BookDataItem)this.FlipView.SelectedItem;
-                if (selectedItem != null)
-                {
-                    this.Frame.Navigate(typeof(EditionPage), selectedItem.Id);
-                }
-            }
-            else
-            {
-                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
-                md.Commands.Add(new UICommand("OK"));
-                await md.ShowAsync();
+                this.Frame.Navigate(typeof(EditionPage), selectedItem.Id);
             }
         }
 
@@ -200,7 +192,7 @@ namespace MesLectures
 
         private void OtherColumn_OnLoaded(object sender, RoutedEventArgs e)
         {
-            ((RichTextBlockOverflow)sender).Width = Window.Current.Bounds.Width - leftColumWidth - 280;
+            ((RichTextBlockOverflow)sender).Width = Window.Current.Bounds.Width - leftColumWidth - 120;
         }
 
         private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
@@ -212,7 +204,17 @@ namespace MesLectures
         {
             this.navigationHelper.GoBack();
         }
-
+        private void NavigateTo()
+        {
+            if (navigateToSearch)
+            {
+                this.Frame.Navigate(typeof(SectionPage), "searchValue=" + Settings.CurrentSearch);
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(MainPage));
+            }
+        }
 
         #region NavigationHelper registration
 

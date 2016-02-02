@@ -35,12 +35,12 @@
                     <Image Source="{Binding Image}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
                 </Border>
                 <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
-                    <TextBlock Text="{Binding Title}" FontSize="16" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Author}" FontSize="15" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Editor}" FontSize="12" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Title}" FontSize="16" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Author}" FontSize="15" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="NoWrap"/>
+                    <TextBlock Text="{Binding Editor}" FontSize="12" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="NoWrap"/>
 
                     <TextBlock Text="" FontSize="15" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Summary}" FontSize="14" Style="{StaticResource BaseTextBlockStyle}" MaxHeight="60"/>
+                    <TextBlock Text="{Binding Summary}" FontSize="14" Style="{StaticResource HeaderTextBlockStyle}" MaxHeight="60"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
@@ -71,26 +71,19 @@
             <ImageBrush ImageSource="Assets/background.jpg" Stretch="None"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="140"/>
+            <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!-- Back button and page title -->
         
-        <Grid>
+        <Grid Margin="60,0,0,0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="BackButton" Margin="39,59,39,0" Click="BackButtonOnClick"
-                        Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        VerticalAlignment="Top"
-                        AutomationProperties.Name="Back"
-                        AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="PageTitle" x:Uid="Section3Header.Text" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+            <TextBlock x:Name="PageTitle" x:Uid="Section3Header.Text" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="0" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,10,40"/>
-            <TextBlock x:Name="PageSubTitle" x:Uid="Section3Header.Text" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="2" 
+            <TextBlock x:Name="PageSubTitle" x:Uid="Section3Header.Text" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,0,40"/>
         </Grid>
         <!-- Grille de défilement horizontal utilisée dans la plupart des états d'affichage -->
@@ -110,7 +103,7 @@
 
             <GridView.ItemContainerStyle>
                 <Style TargetType="FrameworkElement">
-                    <Setter Property="Margin" Value="52,0,0,10"/>
+                    <Setter Property="Margin" Value="50,0,0,10"/>
                 </Style>
             </GridView.ItemContainerStyle>
         </GridView>

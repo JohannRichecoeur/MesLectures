@@ -32,6 +32,8 @@ namespace MesLectures
 
         public static bool ComingFromSearch { get; set; }
 
+        public static string CurrentSearch { get; set; }
+
         public static Book CurrentBook { get; set; }
 
         public static ImageSource CurrentImage { get; set; }

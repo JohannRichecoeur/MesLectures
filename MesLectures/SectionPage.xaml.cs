@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Windows.UI.Core;
 using MesLectures.Common;
 using MesLectures.DataModel;
 using Windows.UI.Popups;
@@ -29,6 +30,14 @@ namespace MesLectures
             this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
             this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
             this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
+
+            // Handle back navigation
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            SystemNavigationManager.GetForCurrentView().BackRequested +=
+                (sender, args) =>
+                {
+                    this.Frame.Navigate(typeof(MainPage));
+                };
         }
 
         /// <summary>
@@ -56,6 +65,7 @@ namespace MesLectures
                 // Search page context
                 this.searchContext = true;
                 string query = e.NavigationParameter.ToString().Replace("searchValue=", "");
+                Settings.CurrentSearch = query;
                 this.dataGroup = await BookDataSource.GetSearchResults(query);
                 this.PageTitle.Text = string.Format(Settings.GetRessource("Search_Results"), query);
                 this.PageSubTitle.Text = " / " + this.dataGroup.Items.Count + " " + (this.dataGroup.Items.Count == 1 ? Settings.GetRessource("Settings_Book_1") : Settings.GetRessource("Settings_Book_MoreThanOne"));
@@ -233,10 +243,5 @@ namespace MesLectures
         }
 
         #endregion
-
-        private void BackButtonOnClick(object sender, RoutedEventArgs e)
-        {
-            this.navigationHelper.GoBack();
-        }
     }
 }
