@@ -74,6 +74,7 @@ namespace MesLectures
                 this.DefaultViewModel["Group"] = BookDataSource.SearchDataGroup;
                 this.DefaultViewModel["Items"] = BookDataSource.SearchDataGroup.Items;
                 this.FlipView.SelectedItem = item;
+
                 navigateToSearch = true;
             }
             else
@@ -190,11 +191,6 @@ namespace MesLectures
             }
         }
 
-        private void OtherColumn_OnLoaded(object sender, RoutedEventArgs e)
-        {
-            ((RichTextBlockOverflow)sender).Width = Window.Current.Bounds.Width - leftColumWidth - 120;
-        }
-
         private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
         {
             leftColumWidth = ((Image)sender).ActualWidth;
@@ -239,5 +235,14 @@ namespace MesLectures
 
         #endregion
 
+        private void PicturePlace_OnLoading(FrameworkElement sender, object args)
+        {
+            sender.Width = Window.Current.Bounds.Width / 3;
+        }
+
+        private void MetadataPlace_OnLoading(FrameworkElement sender, object args)
+        {
+            sender.Width = Window.Current.Bounds.Width / 1.5;
+        }
     }
 }

@@ -114,7 +114,6 @@
     <Compile Include="Common\NavigationHelper.cs" />
     <Compile Include="Common\ObservableDictionary.cs" />
     <Compile Include="Common\RelayCommand.cs" />
-    <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
     <Compile Include="DataModel\BookDataGroup.cs" />
     <Compile Include="DataModel\BookDataItem.cs" />
