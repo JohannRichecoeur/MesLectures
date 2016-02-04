@@ -146,29 +146,29 @@
                                         <LineBreak />
                                         <Run
                                             x:Uid="Book_Summary"
-                                            FontSize="16"
+                                            FontSize="14"
                                             FontWeight="SemiLight"
                                             Foreground="#A08F7F"
                                             Text="" />
-                                        <Run FontSize="18" FontWeight="Normal" Text="{Binding Summary}" />
+                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding Summary}" />
                                         <LineBreak />
                                         <LineBreak />
                                         <Run
                                             x:Uid="Book_MyOpinion"
-                                            FontSize="16"
+                                            FontSize="14"
                                             FontWeight="SemiLight"
                                             Foreground="#A08F7F"
                                             Text="" />
-                                        <Run FontSize="18" FontWeight="Normal" Text="{Binding MyOpinion}" />
+                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding MyOpinion}" />
                                         <LineBreak />
                                         <LineBreak />
                                         <Run
                                             x:Uid="Book_Story"
-                                            FontSize="16"
+                                            FontSize="14"
                                             FontWeight="SemiLight"
                                             Foreground="#A08F7F"
                                             Text="" />
-                                        <Run FontSize="18" FontWeight="Normal" Text="{Binding Story}" />
+                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding Story}" />
                                     </Paragraph>
                                 </RichTextBlock>
                             </ScrollViewer>

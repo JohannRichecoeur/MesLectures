@@ -25,25 +25,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <DataTemplate x:Key="Standard480X160ItemTemplate">
-            <Grid Height="160" Width="480" Margin="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Width="110" Height="160">
-                    <Image Source="{Binding Image}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
-                </Border>
-                <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
-                    <TextBlock Text="{Binding Title}" FontSize="16" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Author}" FontSize="15" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Editor}" FontSize="12" Style="{StaticResource HeaderTextBlockStyle}" TextWrapping="NoWrap"/>
-
-                    <TextBlock Text="" FontSize="15" Style="{StaticResource BaseTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Summary}" FontSize="14" Style="{StaticResource HeaderTextBlockStyle}" MaxHeight="60"/>
-                </StackPanel>
-            </Grid>
-        </DataTemplate>
     </Page.Resources>
 
     <!-- AppBar -->
@@ -95,7 +76,7 @@
             AutomationProperties.Name="Items In Group"
             TabIndex="1"
             ItemsSource="{Binding Source={StaticResource ItemsViewSource}}"
-            ItemTemplate="{StaticResource Standard480X160ItemTemplate}"
+            ItemTemplate="{StaticResource PhoneItemTemplate}"
             SelectionMode="Multiple"
             IsSwipeEnabled="false"
             IsItemClickEnabled="True"
