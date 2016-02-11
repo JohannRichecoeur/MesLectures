@@ -108,6 +108,9 @@
       <DependentUpon>BingImages.xaml</DependentUpon>
     </Compile>
     <Compile Include="Book.cs" />
+    <Compile Include="Books.xaml.cs">
+      <DependentUpon>Books.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Common\BindableBase.cs" />
     <Compile Include="Common\BooleanToVisibilityConverter.cs" />
     <Compile Include="Common\DateConverter.cs" />
@@ -174,6 +177,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="BingImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Books.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

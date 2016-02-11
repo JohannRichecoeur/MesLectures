@@ -84,6 +84,7 @@ namespace MesLectures
                 this.DefaultViewModel["Group"] = item.Group;
                 this.DefaultViewModel["Items"] = item.Group.Items;
                 this.FlipView.SelectedItem = item;
+                navigateToSearch = false;
             }
         }
 
@@ -208,7 +209,7 @@ namespace MesLectures
             }
             else
             {
-                this.Frame.Navigate(typeof(MainPage));
+                this.Frame.Navigate(typeof(Books));
             }
         }
 

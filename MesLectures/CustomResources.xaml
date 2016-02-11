@@ -4,7 +4,7 @@
     <!--  DataTemplates  -->
     
     <DataTemplate x:Key="PhoneItemTemplate">
-        <Grid Width="480" Height="160" Margin="10">
+        <Grid Width="430" Height="160" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />

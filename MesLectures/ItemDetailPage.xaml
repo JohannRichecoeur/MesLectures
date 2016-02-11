@@ -110,7 +110,7 @@
                             </RichTextBlock>
 
                             <ScrollViewer Grid.Column="1" HorizontalAlignment="Center" Loading="MetadataPlace_OnLoading">
-                                <RichTextBlock Margin="10,0,80,20">
+                                <RichTextBlock Margin="10,0,140,20">
 
                                     <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
                                         <Run FontSize="32" FontWeight="Light" Text="{Binding Author}" />

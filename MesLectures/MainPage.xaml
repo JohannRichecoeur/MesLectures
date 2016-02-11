@@ -7,91 +7,116 @@
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d">
 
-    <!--  AppBar  -->
-    <Page.BottomAppBar>
-        <AppBar Name="MyAppBar" Grid.Row="0" Background="#A08F7F">
-            <Grid>
-                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                    <AppBarButton Name="AppBarInfosButton" Click="ButtonInfosClick" Icon="Setting" />
-                </StackPanel>
-                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                    <AppBarButton Name="AppBarAddButton" Click="ButtonAddClick" Icon="Add" />
-                </StackPanel>
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
-
     <Grid>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState x:Name="PhoneView">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="ItemGridView.ItemTemplate" Value="{StaticResource PhoneItemTemplate}" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="DesktopView">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="760" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="ItemGridView.ItemTemplate" Value="{StaticResource DesktopItemTemplate}" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/background.jpg" Stretch="None" />
         </Grid.Background>
-        <Grid Margin="10,10,10,10">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="120" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            
-            <!--  Top section  -->
-            <TextBlock
-                x:Name="PageTitle"
-                Style="{StaticResource PageHeaderTextStyle}"
-                Grid.Row="0"
-                FontFamily="Lucida Calligraphy" />
-            <Button
-                Name="FakeButtonForFocus"
-                Grid.Row="0"
-                Width="1"
-                Height="1" />
-            <SearchBox
-                x:Name="MySearchBox"
-                Grid.Row="0"
-                Width="270"
-                Height="35"
-                HorizontalAlignment="Right"
-                FocusOnKeyboardInput="True"
-                PlaceholderText="Search"
-                QuerySubmitted="SearchBoxQuerySubmitted" />
-            <Button
-                Grid.Row="0"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Top"
-                Click="OneDriveButtonClick"
-                Content="Onedrive" />
 
-            <!--  GridView to display items  -->
-            <Grid Grid.Row="1">
-                <GridView
-                    x:Name="ItemGridView"
-                    IsItemClickEnabled="True"
-                    ItemClick="BookClick"
-                    ItemsSource="{Binding Items}">
-                    <GridView.ItemContainerStyle>
-                        <Style TargetType="FrameworkElement">
-                            <Setter Property="Margin" Value="0 0 10 30" />
-                        </Style>
-                    </GridView.ItemContainerStyle>
-                </GridView>
-            </Grid>
-        </Grid>
+        <SplitView
+            x:Name="MySplitView"
+            CompactPaneLength="50"
+            DisplayMode="CompactInline"
+            IsPaneOpen="False"
+            OpenPaneLength="200">
+
+            <SplitView.Pane>
+                <Grid>
+                    <StackPanel>
+                        <Button
+                            x:Name="HamburgerButton"
+                            Width="50"
+                            Height="50"
+                            Background="Transparent"
+                            Click="HamburgerButton_Click"
+                            Content="&#xE700;"
+                            FontFamily="Segoe MDL2 Assets"
+                            FontSize="20" />
+
+                        <Button Background="Transparent" BorderThickness="0" Click="ButtonBooksClick">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Width="30"
+                                    Margin="8"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="20"
+                                    Foreground="#A08F7F"
+                                    Text="&#xE8F1;" />
+                                <TextBlock
+                                    x:Uid="AddButton"
+                                    VerticalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="#A08F7F" />
+                            </StackPanel>
+                        </Button>
+
+                        <Button Background="Transparent" BorderThickness="0" Click="ButtonAddClick">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Width="30"
+                                    Margin="8"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="20"
+                                    Foreground="#A08F7F"
+                                    Text="&#xE710;" />
+                                <TextBlock
+                                    x:Uid="AddButton"
+                                    VerticalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="#A08F7F" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                    <StackPanel VerticalAlignment="Bottom">
+                        <Button Background="Transparent" BorderThickness="0" Click="OneDriveButtonClick">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Width="30"
+                                    Margin="8"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="20"
+                                    Foreground="#A08F7F"
+                                    Text="&#xE753;" />
+                                <TextBlock
+                                    x:Uid="OneDriveButton"
+                                    VerticalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="#A08F7F" />
+                            </StackPanel>
+                        </Button>
+                        
+                        <Button Background="Transparent" BorderThickness="0" Click="MenuSettingsClick">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                    Width="30"
+                                    Margin="7"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="20"
+                                    Foreground="#A08F7F"
+                                    Text="&#xE115;" />
+                                <TextBlock
+                                    x:Uid="SettingsButton"
+                                    VerticalAlignment="Center"
+                                    FontSize="18"
+                                    Foreground="#A08F7F" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+
+            </SplitView.Pane>
+
+            <SplitView.Content>
+                <Frame x:Name="MainFrame"/>
+            </SplitView.Content>
+        </SplitView>
     </Grid>
 </Page>

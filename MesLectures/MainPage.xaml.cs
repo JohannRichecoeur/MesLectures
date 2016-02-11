@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using Windows.UI.Core;
+using Windows.UI.Notifications;
 using MesLectures.Common;
 using MesLectures.DataModel;
 using Windows.UI.Popups;
@@ -16,15 +16,13 @@ namespace MesLectures
     /// </summary>
     public sealed partial class MainPage
     {
-        private static double leftColumWidth;
-
         private readonly NavigationHelper navigationHelper;
 
         /// <summary>
         /// Gets the NavigationHelper used to aid in navigation and process lifetime management.
         /// </summary>
         public NavigationHelper NavigationHelper => this.navigationHelper;
-
+        
         /// <summary>
         /// Gets the DefaultViewModel. This can be changed to a strongly typed view model.
         /// </summary>
@@ -33,17 +31,14 @@ namespace MesLectures
         public MainPage()
         {
             this.InitializeComponent();
-            this.AppBarInfosButton.Label = Settings.GetRessource("AppBar_Infos");
-            this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
+            this.MainFrame.Navigate(typeof (Books));
         }
 
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            this.PageTitle.Text = Settings.GetRessource("AppTitle");
-
             // Retrieve book list from Local folder
             Settings.BookList = await Settings.ReadFileForBookList();
 
@@ -53,15 +48,12 @@ namespace MesLectures
                 var md = new MessageDialog(Settings.GetRessource("Welcome_Title") + "\n" + Settings.GetRessource("Welcome_Text"), Settings.GetRessource("AppTitle"));
                 md.Commands.Add(new UICommand("OK"));
                 await md.ShowAsync();
-                MyAppBar.IsOpen = true;
             }
             else
             {
                 await BookDataSource.FillData();
                 this.DefaultViewModel["Items"] = BookDataSource.GetGroups("AllGroups").First().Items;
             }
-
-            this.FakeButtonForFocus.Focus(FocusState.Programmatic);
         }
 
         /// <summary>
@@ -77,40 +69,11 @@ namespace MesLectures
 
         }
 
-        private async void ButtonAddClick(object sender, RoutedEventArgs e)
+        private void ButtonAddClick(object sender, RoutedEventArgs e)
         {
-            if (Window.Current.Bounds.Width > 500)
-            {
-                this.Frame.Navigate(typeof(EditionPage));
-            }
-            else
-            {
-                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
-                md.Commands.Add(new UICommand("OK"));
-                await md.ShowAsync();
-            }
+            this.MainFrame.Navigate(typeof(EditionPage));
         }
 
-        private async void ButtonInfosClick(object sender, RoutedEventArgs e)
-        {
-            var md = new MessageDialog(Settings.GetRessource("Infos_dev") + " = Jean-Eric Hourchon (jean-eric.hourchon@live.fr) \nVersion = 1.3 ", Settings.GetRessource("AppTitle"));
-            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_sendMail")));
-            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_close")));
-            var response = await md.ShowAsync();
-
-            if (response.Label == Settings.GetRessource("Infos_sendMail"))
-            {
-                var mailto = new Uri("mailto:?to=jean-eric.hourchon@live.fr&subject=" + Settings.GetRessource("AppTitle") + ", Windows 8");
-                await Windows.System.Launcher.LaunchUriAsync(mailto);
-            }
-        }
-
-        private void BookClick(object sender, ItemClickEventArgs e)
-        {
-            var itemId = ((BookDataItem)e.ClickedItem).Id;
-            var groupId = ((BookDataItem)e.ClickedItem).Group.GroupId;
-            this.Frame.Navigate(typeof(ItemDetailPage), itemId + "-" + groupId);
-        }
         #region NavigationHelper registration
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -125,19 +88,33 @@ namespace MesLectures
 
         #endregion
 
-        private void FrameworkElement_OnLoaded(object sender, RoutedEventArgs e)
-        {
-            leftColumWidth = ((Image)sender).ActualWidth;
-        }
-
-        private void SearchBoxQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
-        {
-            this.Frame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
-        }
-
         private void OneDriveButtonClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(OnedrivePage));
+            this.MainFrame.Navigate(typeof(OnedrivePage));
+        }
+
+        private async void MenuSettingsClick(object sender, RoutedEventArgs e)
+        {
+            var md = new MessageDialog(Settings.GetRessource("Infos_dev") + " = Jean-Eric Hourchon (jean-eric.hourchon@live.fr) \nVersion = 1.3 ", Settings.GetRessource("AppTitle"));
+            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_sendMail")));
+            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_close")));
+            var response = await md.ShowAsync();
+
+            if (response.Label == Settings.GetRessource("Infos_sendMail"))
+            {
+                var mailto = new Uri("mailto:?to=jean-eric.hourchon@live.fr&subject=" + Settings.GetRessource("AppTitle") + ", Windows 8");
+                await Windows.System.Launcher.LaunchUriAsync(mailto);
+            }
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void ButtonBooksClick(object sender, RoutedEventArgs e)
+        {
+            this.MainFrame.Navigate(typeof(Books));
         }
     }
 }

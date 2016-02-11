@@ -36,7 +36,7 @@ namespace MesLectures
             SystemNavigationManager.GetForCurrentView().BackRequested +=
                 (sender, args) =>
                 {
-                    this.Frame.Navigate(typeof(MainPage));
+                    this.Frame.Navigate(typeof(Books));
                 };
         }
 

@@ -51,13 +51,34 @@
         <Grid.Background>
             <ImageBrush ImageSource="Assets/background.jpg" Stretch="None"/>
         </Grid.Background>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="PhoneView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PageTitle.Style" Value="{StaticResource TitleTextBlockStyle}" />
+                        <Setter Target="PageSubTitle.Style" Value="{StaticResource SubtitleTextBlockStyle}" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="DesktopView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="760" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <!-- Back button and page title -->
         
-        <Grid Margin="60,0,0,0">
+        <Grid Margin="20,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -84,7 +105,7 @@
 
             <GridView.ItemContainerStyle>
                 <Style TargetType="FrameworkElement">
-                    <Setter Property="Margin" Value="50,0,0,10"/>
+                    <Setter Property="Margin" Value="10,0,0,10"/>
                 </Style>
             </GridView.ItemContainerStyle>
         </GridView>
