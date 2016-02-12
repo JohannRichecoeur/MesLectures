@@ -64,13 +64,12 @@ namespace MesLectures
 
             if (!FromBing)
             {
-                Settings.CurrentBook = new Book() { Title = "", Author = "", Editor = "", Like = 1, MyOpinion = "", Summary = "", Story = "", Id = this.GetNewId() };
-                this.isNewBook = true;
+                Settings.CurrentBook = new BookDataItem() { Title = "", Author = "", Editor = "", LikeStars = "1", MyOpinion = "", Summary = "", Story = "", Id = Settings.GetNewId() }; this.isNewBook = true;
 
                 if (e.NavigationParameter != null)
                 {
 
-                    foreach (Book b in Settings.BookList.Where(b => b.Id == (int)e.NavigationParameter))
+                    foreach (BookDataItem b in Settings.BookList.Where(b => b.Id == (int)e.NavigationParameter))
                     {
                         Settings.CurrentBook = b;
                         break;
@@ -195,7 +194,7 @@ namespace MesLectures
             TitleBox.Text = Settings.CurrentBook.Title;
             AuthorBox.Text = Settings.CurrentBook.Author;
             EditorBox.Text = Settings.CurrentBook.Editor;
-            this.ModifyStar(Settings.CurrentBook.Like.ToString());
+            this.ModifyStar(Settings.CurrentBook.LikeStars);
             DatePickerForUser.Date = Settings.CurrentBook.Date;
             SummaryBox.Text = Settings.CurrentBook.Summary;
             MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
@@ -219,7 +218,7 @@ namespace MesLectures
                 TitleBox.Text = Settings.CurrentBook.Title;
                 AuthorBox.Text = Settings.CurrentBook.Author;
                 EditorBox.Text = Settings.CurrentBook.Editor;
-                this.ModifyStar(Settings.CurrentBook.Like.ToString());
+                this.ModifyStar(Settings.CurrentBook.LikeStars);
                 DatePickerForUser.Date = Settings.CurrentBook.Date;
                 SummaryBox.Text = Settings.CurrentBook.Summary;
                 MyOpinionBox.Text = Settings.CurrentBook.MyOpinion;
@@ -265,7 +264,7 @@ namespace MesLectures
             Settings.CurrentBook.Title = TitleBox.Text;
             Settings.CurrentBook.Author = AuthorBox.Text;
             Settings.CurrentBook.Editor = EditorBox.Text;
-            Settings.CurrentBook.Like = Settings.CurrentBook.Like;
+            Settings.CurrentBook.LikeStars = Settings.CurrentBook.LikeStars;
             Settings.CurrentBook.Date = new DateTime(DatePickerForUser.Date.Year, DatePickerForUser.Date.Month, DatePickerForUser.Date.Day);
             Settings.CurrentBook.Summary = SummaryBox.Text;
             Settings.CurrentBook.MyOpinion = MyOpinionBox.Text;
@@ -274,7 +273,7 @@ namespace MesLectures
             // Existing book => remove the existing one and add the new one
             if (!this.isNewBook && Settings.BookList != null)
             {
-                Book toDelete;
+                BookDataItem toDelete;
                 try
                 {
                     toDelete = Settings.BookList.First(x => x.Id == Settings.CurrentBook.Id);
@@ -301,7 +300,7 @@ namespace MesLectures
                     // Add the book to the list and save it
                     if (Settings.BookList == null)
                     {
-                        Settings.BookList = new List<Book>();
+                        Settings.BookList = new List<BookDataItem>();
                     }
 
                     Settings.BookList.Add(Settings.CurrentBook);
@@ -314,17 +313,6 @@ namespace MesLectures
                     await md.ShowAsync();
                 }
             }
-        }
-
-        private int GetNewId()
-        {
-            if (Settings.BookList == null || Settings.BookList.Count == 0)
-            {
-                Settings.BookList = new List<Book>();
-                return 1;
-            }
-
-            return Settings.BookList.Select(book => book.Id).Max() + 1;
         }
 
         private async Task SavePicture()
@@ -396,7 +384,7 @@ namespace MesLectures
                 counter++;
             }
 
-            Settings.CurrentBook.Like = full;
+            Settings.CurrentBook.LikeStars = full.ToString();
         }
 
         private void TitleBoxFocusChange(object sender, RoutedEventArgs e)

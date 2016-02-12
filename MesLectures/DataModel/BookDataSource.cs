@@ -94,13 +94,13 @@ namespace MesLectures.DataModel
 
             if (Settings.BookList == null)
             {
-                Settings.BookList = new List<Book>();
+                Settings.BookList = new List<BookDataItem>();
             }
 
             if (Settings.BookList.Count == 0)
             {
                 // Retrieve book list from user folder
-                Settings.BookList = await Settings.ReadFileForBookList() ?? new List<Book>();
+                Settings.BookList = await Settings.ReadFileForBookList() ?? new List<BookDataItem>();
             }
 
             if (Settings.BookList.Count != 0)
@@ -109,16 +109,16 @@ namespace MesLectures.DataModel
                     1,
                     Settings.GetRessource("Title_HeaderSection"));
 
-                foreach (Book b in Settings.BookList.OrderByDescending(x => x.Date).ToList())
+                foreach (BookDataItem b in Settings.BookList.OrderByDescending(x => x.Date).ToList())
                 {
-                    group1.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.Like + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group1));
+                    group1.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, group1));
                 }
 
                 bookDataSource.AllGroups.Add(group1);
             }
         }
 
-        private static async Task<StorageFile> GetBookImage(Book b)
+        private static async Task<StorageFile> GetBookImage(BookDataItem b)
         {
             if (await Settings.LocalFolder.TryGetItemAsync(b.ImagePath) != null)
             {

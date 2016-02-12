@@ -16,9 +16,9 @@ using Newtonsoft.Json.Linq;
 
 
 using Windows.Storage;
-using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using MesLectures.DataModel;
 
 namespace MesLectures
 {
@@ -28,13 +28,13 @@ namespace MesLectures
 
         private const string DataFileName = "data.txt";
 
-        public static List<Book> BookList { get; set; }
+        public static List<BookDataItem> BookList { get; set; }
 
         public static bool ComingFromSearch { get; set; }
 
         public static string CurrentSearch { get; set; }
 
-        public static Book CurrentBook { get; set; }
+        public static BookDataItem CurrentBook { get; set; }
 
         public static ImageSource CurrentImage { get; set; }
 
@@ -99,7 +99,7 @@ namespace MesLectures
             await FileIO.WriteTextAsync(sampleFile, xml);
         }
 
-        public static async Task<List<Book>> ReadFileForBookList(StorageFile storageFile = null)
+        public static async Task<List<BookDataItem>> ReadFileForBookList(StorageFile storageFile = null)
         {
             try
             {
@@ -300,20 +300,20 @@ namespace MesLectures
             return result;
         }
 
-        private static List<Book> GetBookListXdoc(XDocument xDoc)
+        private static List<BookDataItem> GetBookListXdoc(XDocument xDoc)
         {
-            var bookList = new List<Book>();
+            var bookList = new List<BookDataItem>();
             foreach (XElement book in xDoc.Descendants("Book"))
             {
                 try
                 {
                     bookList.Add(
-                                 new Book()
+                                 new BookDataItem()
                                  {
                                      Title = book.Descendants("Title").ToList()[0].Value,
                                      Author = book.Descendants("Author").ToList()[0].Value,
                                      Editor = book.Descendants("Editor").ToList()[0].Value,
-                                     Like = Convert.ToInt32(book.Descendants("Like").ToList()[0].Value),
+                                     LikeStars = book.Descendants("Like").ToList()[0].Value,
                                      Date = DateTime.Parse(book.Descendants("Date").ToList()[0].Value,new CultureInfo("fr-FR")),
                                      Summary = book.Descendants("Summary").ToList()[0].Value,
                                      Story = book.Descendants("Story").ToList()[0].Value,
@@ -350,7 +350,7 @@ namespace MesLectures
             return dico;
         }
 
-        private static XDocument CreateBookXml(List<Book> bookList)
+        private static XDocument CreateBookXml(List<BookDataItem> bookList)
         {
             var xDoc = new XDocument();
             xDoc.Declaration = new XDeclaration("1.0", "utf-8", null);
@@ -369,7 +369,7 @@ namespace MesLectures
             date.Add(new XText(DateTime.Now.ToString(new CultureInfo("fr-FR"))));
 
             IFormatProvider culture = new CultureInfo(Settings.GetRessource("Locale"));
-            foreach (Book book in bookList)
+            foreach (BookDataItem book in bookList)
             {
                 var parentNode = new XElement("Book");
 
@@ -394,7 +394,7 @@ namespace MesLectures
                                             new XText(book.Title ?? string.Empty),
                                             new XText(book.Author ?? string.Empty),
                                             new XText(book.Editor ?? string.Empty),
-                                            new XText(book.Like.ToString(culture)),
+                                            new XText(book.LikeStars),
                                             new XText(book.Date.ToString(culture)),
                                             new XText(book.Summary ?? string.Empty),
                                             new XText(book.MyOpinion ?? string.Empty),
@@ -410,6 +410,17 @@ namespace MesLectures
             }
 
             return xDoc;
+        }
+
+        public static int GetNewId()
+        {
+            if (Settings.BookList == null || Settings.BookList.Count == 0)
+            {
+                Settings.BookList = new List<BookDataItem>();
+                return 1;
+            }
+
+            return Settings.BookList.Select(book => book.Id).Max() + 1;
         }
     }
 }

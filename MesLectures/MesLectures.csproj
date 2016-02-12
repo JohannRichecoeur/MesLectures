@@ -107,7 +107,6 @@
     <Compile Include="BingImages.xaml.cs">
       <DependentUpon>BingImages.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Book.cs" />
     <Compile Include="Books.xaml.cs">
       <DependentUpon>Books.xaml</DependentUpon>
     </Compile>

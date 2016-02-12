@@ -10,6 +10,10 @@ namespace MesLectures.DataModel
 
         private ImageSource imageSource;
 
+        public BookDataItem()
+        {
+        }
+
         public BookDataItem(int id, string title, string author, string imagePath, string summary, string likeStars, string editor, string myOpinion, string story, DateTime date, BookDataGroup group)
         {
             this.Id = id;
@@ -25,25 +29,25 @@ namespace MesLectures.DataModel
             this.Date = date;
         }
 
-        public int Id { get; private set; }
+        public int Id { get; set; }
 
-        public string Title { get; private set; }
+        public string Title { get; set; }
 
-        public string Author { get; private set; }
+        public string Author { get; set; }
 
-        public string MyOpinion { get; private set; }
+        public string MyOpinion { get; set; }
 
-        public string Summary { get; private set; }
+        public string Summary { get; set; }
 
-        public string LikeStars { get; private set; }
+        public string LikeStars { get; set; }
 
-        public string Story { get; private set; }
+        public string Story { get; set; }
 
-        public DateTime Date { get; private set; }
+        public DateTime Date { get; set; }
 
-        public BookDataGroup Group { get; private set; }
+        public BookDataGroup Group { get; set; }
 
-        public string Editor { get; private set; }
+        public string Editor { get; set; }
 
         public ImageSource Image
         {
@@ -58,6 +62,6 @@ namespace MesLectures.DataModel
             }
         }
 
-        private string ImagePath { get; set; }
+        public string ImagePath { get; set; }
     }
 }

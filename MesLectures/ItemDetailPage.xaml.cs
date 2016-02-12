@@ -120,8 +120,8 @@ namespace MesLectures
 
                 if (response.Label == "Yes")
                 {
-                    var selectedBook = new Book();
-                    foreach (Book b in Settings.BookList)
+                    var selectedBook = new BookDataItem(Settings.GetNewId(), "", "", "", "", "1", "", "", "", DateTime.Today, null);
+                    foreach (BookDataItem b in Settings.BookList)
                     {
                         if (b.Author == bookDataItem.Author && b.Title == bookDataItem.Title && b.Editor == bookDataItem.Editor)
                         {
