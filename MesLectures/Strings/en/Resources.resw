@@ -313,4 +313,53 @@
   <data name="SettingsButton.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="UploadPicturesToggle.Header" xml:space="preserve">
+    <value>Include books pictures in OneDrive</value>
+  </data>
+  <data name="UploadToOnedrive.Content" xml:space="preserve">
+    <value>Upload to Onedrive</value>
+  </data>
+  <data name="MyBooks.Text" xml:space="preserve">
+    <value>My books</value>
+    <comment>Title of the top left menu</comment>
+  </data>
+  <data name="DownloadFromOnedrive.Content" xml:space="preserve">
+    <value>Dowload from Onedrive</value>
+  </data>
+  <data name="OneDriveNoInternetAccess" xml:space="preserve">
+    <value>You need to be connected to internet to access OneDrive</value>
+  </data>
+  <data name="OneDriveSignOutButton.Content" xml:space="preserve">
+    <value>Sign out from OneDrive</value>
+  </data>
+  <data name="OneDriveGetOneDriveInfos.Text" xml:space="preserve">
+    <value>We're retrieving your OneDrive information...</value>
+  </data>
+  <data name="OneDrivePage_LocalCountFormat" xml:space="preserve">
+    <value>Locally, you have {0} books. Last update is from: {1}.</value>
+  </data>
+  <data name="OneDrivePage_OneDriveCountFormat" xml:space="preserve">
+    <value>On OneDrive, you have {0} books. Last update is from: {1}.</value>
+  </data>
+  <data name="OneDrivePage_Download_Ongoing" xml:space="preserve">
+    <value>Downloading...</value>
+  </data>
+  <data name="OneDrivePage_NoOneDriveFolderFound" xml:space="preserve">
+    <value>We didn't find any OneDrive backup for this application.</value>
+  </data>
+  <data name="OneDrivePage_Transfer_Finishing" xml:space="preserve">
+    <value>Finishing...</value>
+  </data>
+  <data name="OneDrivePage_Transfer_Preparing" xml:space="preserve">
+    <value>Preparing...</value>
+  </data>
+  <data name="OneDrivePage_Upload_Ongoing" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="OneDrive_FolderName" xml:space="preserve">
+    <value>MyReadings_WindowsApplication</value>
+  </data>
+  <data name="OneDrivePage_NoLocalBooksFound" xml:space="preserve">
+    <value>You don't have any book saved locally.</value>
+  </data>
 </root>

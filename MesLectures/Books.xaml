@@ -3,8 +3,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:MesLectures"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d">
 
     <Grid Margin="10,10,10,10">
@@ -45,8 +45,7 @@
         <TextBlock
             x:Uid="AppTitle"
             Style="{StaticResource PageHeaderTextStyle}"
-            Grid.Row="0"
-            FontFamily="Lucida Calligraphy" />
+            Grid.Row="0" />
         <Button
             Name="FakeButtonForFocus"
             Grid.Row="0"

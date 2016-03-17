@@ -123,6 +123,7 @@
     <Compile Include="EditionPage.xaml.cs">
       <DependentUpon>EditionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InfosClass.cs" />
     <Compile Include="IsbnNumberSearch.xaml.cs">
       <DependentUpon>IsbnNumberSearch.xaml</DependentUpon>
     </Compile>
@@ -134,6 +135,7 @@
     <Compile Include="ItemDetailPage.xaml.cs">
       <DependentUpon>ItemDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LocalSettingsValue.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

@@ -1,28 +1,30 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Windows.Networking.Connectivity;
+using Windows.UI;
+using Windows.UI.Popups;
 using MesLectures.Common;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+
 
 namespace MesLectures
 {
     public sealed partial class OnedrivePage
     {
         private readonly NavigationHelper navigationHelper;
-        private readonly ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private DateTime lastUpdateLocalTime;
+        private DateTime lastUpdateOneDriveTime;
 
         public OnedrivePage()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
-            this.navigationHelper.SaveState += this.NavigationHelperSaveState;
-        }
-
-        public ObservableDictionary DefaultViewModel
-        {
-            get { return this.defaultViewModel; }
+            this.UploadPicturesToggle.IsOn = Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive) != null && (bool)Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive);
         }
 
         public NavigationHelper NavigationHelper
@@ -32,49 +34,50 @@ namespace MesLectures
 
         private async void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
-            this.OneDriveProgressRing.IsActive = true;
-            this.UserName.Visibility = Visibility.Collapsed;
-            this.UserPicture.Opacity = 0;
-
-            await Settings.GetOnedriveUserInfo();
-
-            try
+            var connectionProfile = NetworkInformation.GetInternetConnectionProfile();
+            if (connectionProfile != null &&
+                connectionProfile.GetNetworkConnectivityLevel() != NetworkConnectivityLevel.InternetAccess)
             {
-                if (Settings.UserName != null)
+                var messageDialogError = new MessageDialog(Settings.GetRessource("OneDriveNoInternetAccess"), Settings.GetRessource("AppTitle/Text"));
+                messageDialogError.Commands.Add(new UICommand("OK"));
+                await messageDialogError.ShowAsync();
+                this.Frame.Navigate(typeof (Books));
+            }
+            else
+            {
+                this.OneDriveProgressRing.IsActive = true;
+                this.OneDriveGetOneDriveInfos.Visibility = Visibility.Visible;
+                this.UserName.Visibility = Visibility.Collapsed;
+                this.LocalInfosTextBlock.Visibility = Visibility.Collapsed;
+                this.OnedriveInfosTextBlock.Visibility = Visibility.Collapsed;
+                this.SignOutButton.Visibility = Visibility.Collapsed;
+                this.UserPicture.Opacity = 0;
+
+                var localInfosTask = Settings.ReadFileForInfos();
+                var getOnedriveUserInfoTask = Settings.GetOnedriveUserInfo();
+
+                await Task.WhenAll(localInfosTask, getOnedriveUserInfoTask);
+
+                this.DisplayLocalUserInfos(localInfosTask.Result);
+
+                if (getOnedriveUserInfoTask.Result)
                 {
-                    this.UserName.Text = Settings.UserName;
+                    this.DisplayOnedriveUserInfos();
                 }
 
-                if (Settings.UserPictureUrl != null)
-                {
-                    this.UserPicture.ImageSource = new BitmapImage(new Uri(Settings.UserPictureUrl));
-                }
+                // Delay to display the image at the same time than the name
+                await Task.Delay(1000);
+
+                this.OneDriveProgressRing.IsActive = false;
+                this.OneDriveGetOneDriveInfos.Visibility = Visibility.Collapsed;
+                this.UserPicture.Opacity = 1;
+                this.UserName.Visibility = Visibility.Visible;
+                this.LocalInfosTextBlock.Visibility = Visibility.Visible;
+                this.OnedriveInfosTextBlock.Visibility = Visibility.Visible;
+                this.UploadSection.Visibility = Visibility.Visible;
+                this.SignOutButton.Visibility = Visibility.Visible;
             }
-            catch (Exception)
-            {
-                this.Frame.GoBack();
-            }
-
-            await Task.Delay(1000);
-            this.OneDriveProgressRing.IsActive = false;
-            this.UserPicture.Opacity = 1;
-            this.UserName.Visibility = Visibility.Visible;
         }
-
-        private void NavigationHelperSaveState(object sender, SaveStateEventArgs e)
-        {
-        }
-
-        #region NavigationHelper registration
-
-        /// The methods provided in this section are simply used to allow
-        /// NavigationHelper to respond to the page's navigation methods.
-        /// 
-        /// Page specific logic should be placed in event handlers for the  
-        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
-        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
-        /// The navigation parameter is available in the LoadState method 
-        /// in addition to page state preserved during an earlier session.
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -86,6 +89,110 @@ namespace MesLectures
             navigationHelper.OnNavigatedFrom(e);
         }
 
-        #endregion
+        private void UploadPicturesToggle_OnToggled(object toggleSwitch, RoutedEventArgs e)
+        {
+            Settings.SetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive, ((ToggleSwitch)toggleSwitch).IsOn);
+        }
+
+        private void DisplayOnedriveUserInfos()
+        {
+            if (Settings.UserName != null)
+            {
+                this.UserName.Text = Settings.UserName;
+            }
+
+            if (Settings.UserPictureUrl != null)
+            {
+                this.UserPicture.ImageSource = new BitmapImage(new Uri(Settings.UserPictureUrl));
+            }
+
+            if (Settings.UserDataInfos != null)
+            {
+                OnedriveInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_OneDriveCountFormat"), Settings.UserDataInfos.Number, Settings.UserDataInfos.LastUpdateDate.ToString("g"));
+                lastUpdateOneDriveTime = Settings.UserDataInfos.LastUpdateDate;
+                this.UpdateMostrecentDateLayout();
+            }
+            else
+            {
+                OnedriveInfosTextBlock.Text = Settings.GetRessource("OneDrivePage_NoOneDriveFolderFound");
+                this.DownloadFromOnedriveButton.IsEnabled = false;
+            }
+        }
+
+        private void DisplayLocalUserInfos(InfosClass infos)
+        {
+            if (infos != null)
+            {
+                LocalInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_LocalCountFormat"), infos.Number, infos.LastUpdateDate.ToString("g"));
+                lastUpdateLocalTime = infos.LastUpdateDate;
+            }
+            else
+            {
+                LocalInfosTextBlock.Text = Settings.GetRessource("OneDrivePage_NoLocalBooksFound");
+                this.UploadToOnedriveButton.IsEnabled = false;
+                lastUpdateLocalTime = DateTime.Now;
+            }
+
+            this.UpdateMostrecentDateLayout();
+        }
+
+        private void UpdateMostrecentDateLayout()
+        {
+            if (lastUpdateLocalTime > lastUpdateOneDriveTime)
+            {
+                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Green);
+                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Red);
+            }
+            else if (lastUpdateLocalTime < lastUpdateOneDriveTime)
+            {
+                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Red);
+                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            else
+            {
+                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Black);
+                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Black);
+            }
+        }
+
+        private void SignOutButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            Settings.Signout();
+            this.Frame.Navigate(typeof(Books));
+        }
+
+        private async void UploadToOnedriveClick(object sender, RoutedEventArgs e)
+        {
+            this.UploadPicturesToggle.IsEnabled = false;
+            this.UploadToOnedriveButton.IsEnabled = false;
+            this.DownloadFromOnedriveButton.IsEnabled = false;
+            this.UploadToOnedriveProgressRing.IsActive = true;
+
+            await Settings.UploadToOnedrive(this.UploadPicturesToggle.IsOn, this.UploadDownloadTextBlock);
+            this.DisplayOnedriveUserInfos();
+
+            this.UploadPicturesToggle.IsEnabled = true;
+            this.UploadToOnedriveButton.IsEnabled = true;
+            this.DownloadFromOnedriveButton.IsEnabled = true;
+            this.UploadToOnedriveProgressRing.IsActive = false;
+        }
+
+        private async void DownloadFromOnedriveClick(object sender, RoutedEventArgs e)
+        {
+            this.UploadPicturesToggle.IsEnabled = false;
+            this.UploadToOnedriveButton.IsEnabled = false;
+            this.DownloadFromOnedriveButton.IsEnabled = false;
+            this.UploadToOnedriveProgressRing.IsActive = true;
+
+            await Settings.DownloadFromOnedrive(this.UploadPicturesToggle.IsOn, this.UploadDownloadTextBlock);
+            var localInfos = await Settings.ReadFileForInfos();
+            this.DisplayOnedriveUserInfos();
+            this.DisplayLocalUserInfos(localInfos);
+
+            this.UploadPicturesToggle.IsEnabled = true;
+            this.UploadToOnedriveButton.IsEnabled = true;
+            this.DownloadFromOnedriveButton.IsEnabled = true;
+            this.UploadToOnedriveProgressRing.IsActive = false;
+        }
     }
 }

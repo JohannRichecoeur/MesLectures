@@ -120,7 +120,7 @@ namespace MesLectures.DataModel
 
         private static async Task<StorageFile> GetBookImage(BookDataItem b)
         {
-            if (await Settings.LocalFolder.TryGetItemAsync(b.ImagePath) != null)
+            if (b.ImagePath != "" && await Settings.LocalFolder.TryGetItemAsync(b.ImagePath) != null)
             {
                 return await Settings.LocalFolder.GetFileAsync(b.ImagePath);
             }
