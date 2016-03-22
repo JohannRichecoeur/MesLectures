@@ -27,18 +27,9 @@ namespace MesLectures
             this.MainFrame.Navigate(typeof(OnedrivePage));
         }
 
-        private async void MenuSettingsClick(object sender, RoutedEventArgs e)
+        private void MenuSettingsClick(object sender, RoutedEventArgs e)
         {
-            var md = new MessageDialog(Settings.GetRessource("Infos_dev") + " = Jean-Eric Hourchon (jean-eric.hourchon@live.fr) \nVersion = 1.3 ", Settings.GetRessource("AppTitle"));
-            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_sendMail")));
-            md.Commands.Add(new UICommand(Settings.GetRessource("Infos_close")));
-            var response = await md.ShowAsync();
-
-            if (response.Label == Settings.GetRessource("Infos_sendMail"))
-            {
-                var mailto = new Uri("mailto:?to=jean-eric.hourchon@live.fr&subject=" + Settings.GetRessource("AppTitle") + ", Windows 8");
-                await Windows.System.Launcher.LaunchUriAsync(mailto);
-            }
+            this.MainFrame.Navigate(typeof(SettingsPage));
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)

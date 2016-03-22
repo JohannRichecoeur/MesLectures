@@ -362,4 +362,10 @@
   <data name="OneDrivePage_NoLocalBooksFound" xml:space="preserve">
     <value>You don't have any book saved locally.</value>
   </data>
+  <data name="SettingsPageTitle.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AppVersion" xml:space="preserve">
+    <value>2.0</value>
+  </data>
 </root>

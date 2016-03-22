@@ -63,19 +63,24 @@ namespace MesLectures
                 if (getOnedriveUserInfoTask.Result)
                 {
                     this.DisplayOnedriveUserInfos();
+                    
+                    // Delay to display the image at the same time than the name
+                    await Task.Delay(1000);
+
+                    this.OneDriveProgressRing.IsActive = false;
+                    this.OneDriveGetOneDriveInfos.Visibility = Visibility.Collapsed;
+                    this.UserPicture.Opacity = 1;
+                    this.UserName.Visibility = Visibility.Visible;
+                    this.LocalInfosTextBlock.Visibility = Visibility.Visible;
+                    this.OnedriveInfosTextBlock.Visibility = Visibility.Visible;
+                    this.UploadSection.Visibility = Visibility.Visible;
+                    this.SignOutButton.Visibility = Visibility.Visible;
                 }
-
-                // Delay to display the image at the same time than the name
-                await Task.Delay(1000);
-
-                this.OneDriveProgressRing.IsActive = false;
-                this.OneDriveGetOneDriveInfos.Visibility = Visibility.Collapsed;
-                this.UserPicture.Opacity = 1;
-                this.UserName.Visibility = Visibility.Visible;
-                this.LocalInfosTextBlock.Visibility = Visibility.Visible;
-                this.OnedriveInfosTextBlock.Visibility = Visibility.Visible;
-                this.UploadSection.Visibility = Visibility.Visible;
-                this.SignOutButton.Visibility = Visibility.Visible;
+                else
+                {
+                    // No OneDrive credentials
+                    this.Frame.Navigate(typeof(Books));
+                }
             }
         }
 
