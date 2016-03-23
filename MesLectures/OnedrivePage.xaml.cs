@@ -74,7 +74,7 @@ namespace MesLectures
                     this.LocalInfosTextBlock.Visibility = Visibility.Visible;
                     this.OnedriveInfosTextBlock.Visibility = Visibility.Visible;
                     this.UploadSection.Visibility = Visibility.Visible;
-                    this.SignOutButton.Visibility = Visibility.Visible;
+                    this.SignOutButton.Visibility = Settings.CanLogout() ? Visibility.Visible : Visibility.Collapsed;
                 }
                 else
                 {

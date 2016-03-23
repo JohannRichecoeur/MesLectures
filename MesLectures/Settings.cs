@@ -81,6 +81,11 @@ namespace MesLectures
             await CreateXmlFile(DataFileName, x);
         }
 
+        public static bool CanLogout()
+        {
+            return LiveAuthClient.CanLogout;
+        }
+
         public static string GetRessource(string ressourceName)
         {
             return Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView().GetString(ressourceName);
@@ -589,7 +594,7 @@ namespace MesLectures
         {
             // Reset OneDrive user infos
             UserDataInfos = null;
-
+            
             var rootFolders = JObject.Parse((await LiveConnectClient.GetAsync("/me/skydrive/files?filter=folders,albums")).RawResult);
             var mesLecturesFolder =
                 rootFolders["data"].FirstOrDefault(

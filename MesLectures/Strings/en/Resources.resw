@@ -329,8 +329,8 @@
   <data name="OneDriveNoInternetAccess" xml:space="preserve">
     <value>You need to be connected to internet to access OneDrive</value>
   </data>
-  <data name="OneDriveSignOutButton.Content" xml:space="preserve">
-    <value>Sign out from OneDrive</value>
+  <data name="OneDriveSignOutButton.Text" xml:space="preserve">
+    <value>Sign out</value>
   </data>
   <data name="OneDriveGetOneDriveInfos.Text" xml:space="preserve">
     <value>We're retrieving your OneDrive information...</value>

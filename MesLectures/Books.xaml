@@ -26,6 +26,7 @@
                         <Setter Target="MySearchBox.VerticalAlignment" Value="Top" />
                         <Setter Target="MySearchBox.Margin" Value="10,0,0,0" />
                         <Setter Target="ItemGridView.Margin" Value="0,50,0,0" />
+                        <Setter Target="AppTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -41,8 +42,8 @@
         
 
         <!--  Top section  -->
-
         <TextBlock
+            x:Name="AppTitle"
             x:Uid="AppTitle"
             Style="{StaticResource PageHeaderTextStyle}"
             Grid.Row="0" />
@@ -73,7 +74,7 @@
                 ItemsSource="{Binding Items}">
                 <GridView.ItemContainerStyle>
                     <Style TargetType="FrameworkElement">
-                        <Setter Property="Margin" Value="0 0 10 30" />
+                        <Setter Property="Margin" Value="0,0,10,20" />
                     </Style>
                 </GridView.ItemContainerStyle>
             </GridView>

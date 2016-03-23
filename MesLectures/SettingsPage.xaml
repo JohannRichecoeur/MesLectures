@@ -11,9 +11,31 @@
             <RowDefinition Height="100" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="PhoneView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="SettingsPageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="DesktopView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="760" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
         <TextBlock
             x:Uid="SettingsPageTitle"
+            x:Name="SettingsPageTitle"
             Style="{StaticResource PageHeaderTextStyle}"
             Grid.Row="0" />
         <StackPanel Grid.Row="1" Orientation="Vertical">

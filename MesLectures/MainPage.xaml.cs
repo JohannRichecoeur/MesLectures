@@ -20,16 +20,19 @@ namespace MesLectures
         private void ButtonAddClick(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(typeof(EditionPage));
+            this.MySplitView.IsPaneOpen = false;
         }
 
         private void OneDriveButtonClick(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(typeof(OnedrivePage));
+            this.MySplitView.IsPaneOpen = false;
         }
 
         private void MenuSettingsClick(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(typeof(SettingsPage));
+            this.MySplitView.IsPaneOpen = false;
         }
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
@@ -40,6 +43,12 @@ namespace MesLectures
         private void ButtonBooksClick(object sender, RoutedEventArgs e)
         {
             this.MainFrame.Navigate(typeof(Books));
+            this.MySplitView.IsPaneOpen = false;
+        }
+
+        private void CompactHamburgerButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
     }
 }
