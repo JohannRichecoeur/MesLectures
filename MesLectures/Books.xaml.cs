@@ -17,6 +17,7 @@ namespace MesLectures
         {
             this.InitializeComponent();
             this.FakeButtonForFocus.Focus(FocusState.Programmatic);
+            Application.Current.Resources["PhoneItemTemplateWidth"] = Window.Current.Bounds.Width - 60;
         }
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)

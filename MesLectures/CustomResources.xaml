@@ -4,7 +4,7 @@
     <!--  DataTemplates  -->
 
     <DataTemplate x:Key="PhoneItemTemplate">
-        <Grid Width="430" Height="120" Margin="10">
+        <Grid Width="{StaticResource PhoneItemTemplateWidth}"  Height="120" Margin="10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
@@ -28,7 +28,7 @@
                         FontSize="15"
                         Text="{Binding Author}"
                         TextWrapping="NoWrap" />
-                    <TextBlock 
+                    <TextBlock
                         Style="{StaticResource HeaderTextBlockStyle}"
                         FontSize="12"
                         Text=" ("
@@ -39,12 +39,13 @@
                         Text="{Binding Editor}"
                         Margin="0,3,0,0"
                         TextWrapping="NoWrap" />
-                    <TextBlock 
+                    <TextBlock
                         Style="{StaticResource HeaderTextBlockStyle}"
                         FontSize="12"
                         Margin="0,3,0,0"
-                        Text=")"/>
+                        Text=")" />
                 </StackPanel>
+                <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Height="6" />
                 <TextBlock
                     Style="{StaticResource HeaderTextBlockStyle}"
                     MaxHeight="60"
@@ -65,7 +66,7 @@
                     FontSize="14"
                     Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}"
                     Text="{Binding Title}"
-                    TextWrapping="Wrap"/>
+                    TextWrapping="Wrap" />
                 <TextBlock
                     Margin="10,0,2,10"
                     FontSize="13"
