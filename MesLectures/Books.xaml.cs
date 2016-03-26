@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -17,6 +18,7 @@ namespace MesLectures
         {
             this.InitializeComponent();
             this.FakeButtonForFocus.Focus(FocusState.Programmatic);
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
             Application.Current.Resources["PhoneItemTemplateWidth"] = Window.Current.Bounds.Width - 60;
         }
 
@@ -35,7 +37,13 @@ namespace MesLectures
             else
             {
                 await BookDataSource.FillData();
-                this.DefaultViewModel["Items"] = BookDataSource.GetGroups("AllGroups").First().Items;
+
+                // 0 : Sort by added date
+                // 1 : Sort by Title
+                // 2 : Sort by Author
+                // 3 : Sort by Likes
+
+                this.DefaultViewModel["Items"] = BookDataSource.GetGroup(0).Items;
             }
         }
 
@@ -49,6 +57,25 @@ namespace MesLectures
             var itemId = ((BookDataItem)e.ClickedItem).Id;
             var groupId = ((BookDataItem)e.ClickedItem).Group.GroupId;
             this.Frame.Navigate(typeof(ItemDetailPage), itemId + "-" + groupId);
+        }
+
+        private void ButtonA_Click(object sender, RoutedEventArgs e)
+        {
+            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(0).Items;
+        }
+
+        private void ButtonB_Click(object sender, RoutedEventArgs e)
+        {
+            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(1).Items;
+        }
+
+        private void ButtonC_Click(object sender, RoutedEventArgs e)
+        {
+            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(2).Items;
+        }
+        private void ButtonD_Click(object sender, RoutedEventArgs e)
+        {
+            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(3).Items;
         }
     }
 }

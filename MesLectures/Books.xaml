@@ -65,7 +65,12 @@
 
 
         <!--  GridView to display items  -->
-
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+        <Button Content="A" Click="ButtonA_Click"/>
+            <Button Content="B" Click="ButtonB_Click"/>
+            <Button Content="C" Click="ButtonC_Click"/>
+            <Button Content="D" Click="ButtonD_Click"/>
+        </StackPanel>
         <Grid Grid.Row="1">
             <GridView
                 x:Name="ItemGridView"

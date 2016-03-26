@@ -18,13 +18,12 @@ namespace MesLectures
             {
                 NavigateUri = new Uri("mailto:jean-eric.hourchon@live.fr?subject=" + Settings.GetRessource("AppTitle/Text"))
             };
-            var hyperlinkText = new Run { Text = "jean-eric.hourchon@live.fr" };
+            var hyperlinkText = new Run { Text = "Jean-Eric Hourchon" };
             mailLink.Inlines.Add(hyperlinkText);
             
-            this.Developer.Text = Settings.GetRessource("Infos_dev") + " = Jean-Eric Hourchon ( ";
+            this.Developer.Text = Settings.GetRessource("Infos_dev") + " = ";
             this.Developer.Inlines.Add(mailLink);
-            this.Developer.Inlines.Add(new Run() {Text = " )."});
-
+            
             this.Version.Text = "Version = " + Settings.GetRessource("AppVersion");
         }
     }
