@@ -368,4 +368,22 @@
   <data name="AppVersion" xml:space="preserve">
     <value>2.0</value>
   </data>
+  <data name="MyBooks_SortBy.Text" xml:space="preserve">
+    <value>Sort by:</value>
+  </data>
+  <data name="MyBooks_SortByAuthor" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="MyBooks_SortByDate" xml:space="preserve">
+    <value>Reading date</value>
+  </data>
+  <data name="MyBooks_SortByLikes" xml:space="preserve">
+    <value>Likes</value>
+  </data>
+  <data name="MyBooks_SortByTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="SearchBox.PlaceholderText" xml:space="preserve">
+    <value>Search...</value>
+  </data>
 </root>

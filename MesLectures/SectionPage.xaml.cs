@@ -27,17 +27,15 @@ namespace MesLectures
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
 
-            this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
-            this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
-            this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
-
             // Handle back navigation
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested +=
-                (sender, args) =>
-                {
-                    this.Frame.Navigate(typeof(Books));
-                };
+            SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
+        }
+
+        private void OnBackRequested(object sender, BackRequestedEventArgs args)
+        {
+            args.Handled = true;
+            this.Frame.Navigate(typeof(Books));
         }
 
         /// <summary>
@@ -114,100 +112,75 @@ namespace MesLectures
             }
         }
 
-        private async void ButtonDeleteClick(object sender, RoutedEventArgs e)
-        {
-            IUICommand response = new UICommand("initialize");
-            if (this.ItemGridView.SelectedItems.Count == 1)
-            {
-                var bookDataItem = (BookDataItem)this.ItemGridView.SelectedItem;
-                if (bookDataItem != null)
-                {
-                    var md =
-                        new MessageDialog(
-                            string.Format(Settings.GetRessource("Delete-Book"), bookDataItem.Title, bookDataItem.Author),
-                            Settings.GetRessource("AppTitle"));
-                    md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
-                    md.Commands.Add(new UICommand(Settings.GetRessource("No")));
-                    response = await md.ShowAsync();
-                }
-            }
-            else if (this.ItemGridView.SelectedItems.Count > 1)
-            {
-                var md =
-                    new MessageDialog(
-                        string.Format(Settings.GetRessource("Delete-Books"), this.ItemGridView.SelectedItems.Count),
-                        Settings.GetRessource("AppTitle"));
-                md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
-                md.Commands.Add(new UICommand(Settings.GetRessource("No")));
-                response = await md.ShowAsync();
-            }
+        //private async void ButtonDeleteClick(object sender, RoutedEventArgs e)
+        //{
+        //    IUICommand response = new UICommand("initialize");
+        //    if (this.ItemGridView.SelectedItems.Count == 1)
+        //    {
+        //        var bookDataItem = (BookDataItem)this.ItemGridView.SelectedItem;
+        //        if (bookDataItem != null)
+        //        {
+        //            var md =
+        //                new MessageDialog(
+        //                    string.Format(Settings.GetRessource("Delete-Book"), bookDataItem.Title, bookDataItem.Author),
+        //                    Settings.GetRessource("AppTitle"));
+        //            md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
+        //            md.Commands.Add(new UICommand(Settings.GetRessource("No")));
+        //            response = await md.ShowAsync();
+        //        }
+        //    }
+        //    else if (this.ItemGridView.SelectedItems.Count > 1)
+        //    {
+        //        var md =
+        //            new MessageDialog(
+        //                string.Format(Settings.GetRessource("Delete-Books"), this.ItemGridView.SelectedItems.Count),
+        //                Settings.GetRessource("AppTitle"));
+        //        md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
+        //        md.Commands.Add(new UICommand(Settings.GetRessource("No")));
+        //        response = await md.ShowAsync();
+        //    }
 
-            if (response.Label == "Yes")
-            {
-                foreach (var selectedItem in this.ItemGridView.SelectedItems)
-                {
-                    var selectedBook = Settings.BookList.First(x => x.Id == ((BookDataItem)selectedItem).Id);
-                    if (selectedBook != null)
-                    {
-                        Settings.BookList.Remove(selectedBook);
+        //    if (response.Label == "Yes")
+        //    {
+        //        foreach (var selectedItem in this.ItemGridView.SelectedItems)
+        //        {
+        //            var selectedBook = Settings.BookList.First(x => x.Id == ((BookDataItem)selectedItem).Id);
+        //            if (selectedBook != null)
+        //            {
+        //                Settings.BookList.Remove(selectedBook);
 
-                        // Delete old image
-                        if (selectedBook.ImagePath != null)
-                        {
-                            try
-                            {
-                                var deleteFile = selectedBook.ImagePath;
-                                await Settings.DeleteImage(deleteFile);
-                            }
-                            catch (Exception)
-                            {
-                                // we don't care if the old image is not deleted
-                            }
-                        }
-                    }
-                }
+        //                // Delete old image
+        //                if (selectedBook.ImagePath != null)
+        //                {
+        //                    try
+        //                    {
+        //                        var deleteFile = selectedBook.ImagePath;
+        //                        await Settings.DeleteImage(deleteFile);
+        //                    }
+        //                    catch (Exception)
+        //                    {
+        //                        // we don't care if the old image is not deleted
+        //                    }
+        //                }
+        //            }
+        //        }
 
-                await Settings.SaveBookListToXml();
-                await BookDataSource.FillData();
-                var group = BookDataSource.GetGroup(this.dataGroup.GroupId);
-                if (group != null)
-                {
-                    this.dataGroup = group;
-                    this.DefaultViewModel["Group"] = group;
-                    this.DefaultViewModel["Items"] = group.Items;
-                    ItemGridView.SelectedIndex = -1;
-                }
-            }
-            else
-            {
-                AppBar.IsOpen = true;
-            }
-        }
-
-        private void SelectedItem(object sender, SelectionChangedEventArgs e)
-        {
-            if (ItemGridView.SelectedItems.Count == 1 && Window.Current.Bounds.Width > 500)
-            {
-                AppBarEditButton.Visibility = Visibility.Visible;
-                AppBarDiscardButton.Visibility = Visibility.Visible;
-                AppBar.IsSticky = true;
-                AppBar.IsOpen = true;
-            }
-            else if (ItemGridView.SelectedItems.Count > 1 && Window.Current.Bounds.Width > 500)
-            {
-                AppBarEditButton.Visibility = Visibility.Collapsed;
-                AppBarDiscardButton.Visibility = Visibility.Visible;
-                AppBar.IsSticky = true;
-                AppBar.IsOpen = true;
-            }
-            else
-            {
-                AppBarEditButton.Visibility = Visibility.Collapsed;
-                AppBarDiscardButton.Visibility = Visibility.Collapsed;
-                AppBar.IsSticky = false;
-                AppBar.IsOpen = false;
-            }
-        }
+        //        await Settings.SaveBookListToXml();
+        //        await BookDataSource.FillData();
+        //        var group = BookDataSource.GetGroup(this.dataGroup.GroupId);
+        //        if (group != null)
+        //        {
+        //            this.dataGroup = group;
+        //            this.DefaultViewModel["Group"] = group;
+        //            this.DefaultViewModel["Items"] = group.Items;
+        //            ItemGridView.SelectedIndex = -1;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        AppBar.IsOpen = true;
+        //    }
+        //}
 
         private void ItemViewClick(object sender, ItemClickEventArgs e)
         {
@@ -239,6 +212,7 @@ namespace MesLectures
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
+            SystemNavigationManager.GetForCurrentView().BackRequested -= OnBackRequested;
             this.navigationHelper.OnNavigatedFrom(e);
         }
 

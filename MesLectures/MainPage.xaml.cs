@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -49,6 +50,19 @@ namespace MesLectures
         private void CompactHamburgerButton_OnClick(object sender, RoutedEventArgs e)
         {
             this.MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private async void SearchIcon_OnClick(object sender, RoutedEventArgs e)
+        {
+            this.MySplitView.IsPaneOpen = true;
+            await Task.Delay(200);
+            this.SearchBox.Focus(FocusState.Pointer);
+        }
+
+        private void SearchBox_OnQuerySubmitted(Windows.UI.Xaml.Controls.AutoSuggestBox sender, Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            this.MySplitView.IsPaneOpen = false;
+            this.MainFrame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
         }
     }
 }

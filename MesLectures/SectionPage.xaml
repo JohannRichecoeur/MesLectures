@@ -27,23 +27,6 @@
         </Style>
     </Page.Resources>
 
-    <!-- AppBar -->
-    <Page.BottomAppBar>
-        <AppBar x:Name="AppBar" Grid.Row="0" Background="#A08F7F">
-            <Grid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <AppBarButton Icon="Add" Name="AppBarAddButton" Click="ButtonAddClick"/>
-                    <AppBarButton Icon="Edit" Name="AppBarEditButton" Click="ButtonEditClick" Visibility="Collapsed"/>
-                    <AppBarButton Icon="Delete" Name="AppBarDiscardButton" Click="ButtonDeleteClick" Visibility="Collapsed"/>
-                </StackPanel>
-            </Grid>
-        </AppBar>
-    </Page.BottomAppBar>
-    <!--
-        This grid acts as a root panel for the page that defines two rows:
-        * Row 0 contains the back button and page title
-        * Row 1 contains the rest of the page layout
-    -->
     <Grid
         Style="{StaticResource LayoutRootStyle}"
         DataContext="{Binding Group}"
@@ -77,15 +60,15 @@
             <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
-        <Grid Margin="20,0,0,0">
+
+        <Grid Margin="10,10,10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBlock x:Name="PageTitle" x:Uid="Section3Header.Text" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="0" 
+            <TextBlock x:Name="PageTitle" x:Uid="Section3Header.Text" Style="{StaticResource PageHeaderTextStyle}" Grid.Column="0" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,10,40"/>
-            <TextBlock x:Name="PageSubTitle" x:Uid="Section3Header.Text" Style="{StaticResource SubheaderTextBlockStyle}" Grid.Column="1" 
+            <TextBlock x:Name="PageSubTitle" x:Uid="Section3Header.Text" Style="{StaticResource PageHeaderTextStyle}" FontSize="24" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,0,40"/>
         </Grid>
         <!-- Grille de défilement horizontal utilisée dans la plupart des états d'affichage -->
@@ -101,7 +84,7 @@
             SelectionMode="Multiple"
             IsSwipeEnabled="false"
             IsItemClickEnabled="True"
-            ItemClick="ItemViewClick" SelectionChanged="SelectedItem">
+            ItemClick="ItemViewClick">
 
             <GridView.ItemContainerStyle>
                 <Style TargetType="FrameworkElement">

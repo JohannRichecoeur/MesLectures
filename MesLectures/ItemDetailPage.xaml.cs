@@ -46,11 +46,13 @@ namespace MesLectures
 
             // Handle back navigation
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested +=
-                (sender, args) =>
-                {
-                    this.NavigateTo();
-                };
+            SystemNavigationManager.GetForCurrentView().BackRequested += OnBackRequested;
+        }
+
+        private void OnBackRequested(object sender, BackRequestedEventArgs args)
+        {
+            args.Handled = true;
+            this.NavigateTo();
         }
 
         public NavigationHelper NavigationHelper
@@ -231,6 +233,7 @@ namespace MesLectures
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
+            SystemNavigationManager.GetForCurrentView().BackRequested -= OnBackRequested;
             navigationHelper.OnNavigatedFrom(e);
         }
 

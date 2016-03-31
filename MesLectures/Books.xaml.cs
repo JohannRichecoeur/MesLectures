@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading.Tasks;
 using Windows.UI.Core;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
@@ -17,7 +18,7 @@ namespace MesLectures
         public Books()
         {
             this.InitializeComponent();
-            this.FakeButtonForFocus.Focus(FocusState.Programmatic);
+            //this.FakeButtonForFocus.Focus(FocusState.Programmatic);
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
             Application.Current.Resources["PhoneItemTemplateWidth"] = Window.Current.Bounds.Width - 60;
         }
@@ -30,6 +31,7 @@ namespace MesLectures
             // Otherwise create an xml from settings
             if (Settings.BookList == null || Settings.BookList.Count == 0)
             {
+                this.SortComboBox.Visibility = Visibility.Collapsed;
                 var md = new MessageDialog(Settings.GetRessource("Welcome_Title") + "\n" + Settings.GetRessource("Welcome_Text"), Settings.GetRessource("AppTitle"));
                 md.Commands.Add(new UICommand("OK"));
                 await md.ShowAsync();
@@ -38,18 +40,15 @@ namespace MesLectures
             {
                 await BookDataSource.FillData();
 
-                // 0 : Sort by added date
-                // 1 : Sort by Title
-                // 2 : Sort by Author
-                // 3 : Sort by Likes
+                this.SortComboBox.Visibility = Visibility.Visible;
+                this.SortComboBox.Items.Add(Settings.GetRessource("MyBooks_SortByDate"));   //0
+                this.SortComboBox.Items.Add(Settings.GetRessource("MyBooks_SortByTitle"));  //1
+                this.SortComboBox.Items.Add(Settings.GetRessource("MyBooks_SortByAuthor")); //2
+                this.SortComboBox.Items.Add(Settings.GetRessource("MyBooks_SortByLikes"));  //3
+                this.SortComboBox.SelectedIndex = Settings.GetLocalSettings(LocalSettingsValue.sortOption) == null ? 0 : (int)Settings.GetLocalSettings(LocalSettingsValue.sortOption);
 
-                this.DefaultViewModel["Items"] = BookDataSource.GetGroup(0).Items;
+                this.DefaultViewModel["Items"] = BookDataSource.GetGroup(this.SortComboBox.SelectedIndex).Items;
             }
-        }
-
-        private void SearchBoxQuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
-        {
-            this.Frame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
         }
 
         private void BookClick(object sender, ItemClickEventArgs e)
@@ -59,23 +58,28 @@ namespace MesLectures
             this.Frame.Navigate(typeof(ItemDetailPage), itemId + "-" + groupId);
         }
 
-        private void ButtonA_Click(object sender, RoutedEventArgs e)
+        private void SortComboBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(0).Items;
+            Settings.SetLocalSettings(LocalSettingsValue.sortOption, this.SortComboBox.SelectedIndex);
+            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(this.SortComboBox.SelectedIndex).Items;
         }
 
-        private void ButtonB_Click(object sender, RoutedEventArgs e)
+        private async void SearchIcon_OnClick(object sender, RoutedEventArgs e)
         {
-            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(1).Items;
+            this.SearchBox.Width = Window.Current.Bounds.Width - 80;
+            this.SearchBox.Visibility = Visibility.Visible;
+            await Task.Delay(200);
+            this.SearchBox.Focus(FocusState.Pointer);
         }
 
-        private void ButtonC_Click(object sender, RoutedEventArgs e)
+        private void SearchBox_OnLostFocus(object sender, RoutedEventArgs e)
         {
-            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(2).Items;
+            this.SearchBox.Visibility = Visibility.Collapsed;
         }
-        private void ButtonD_Click(object sender, RoutedEventArgs e)
+
+        private void SearchBox_OnQuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
         {
-            this.DefaultViewModel["Items"] = BookDataSource.GetGroup(3).Items;
+            this.Frame.Navigate(typeof(SectionPage), "searchValue=" + args.QueryText);
         }
     }
 }

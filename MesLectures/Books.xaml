@@ -21,12 +21,12 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="ItemGridView.ItemTemplate" Value="{StaticResource PhoneItemTemplate}" />
-                        <Setter Target="MySearchBox.HorizontalAlignment" Value="Left" />
-                        <Setter Target="MySearchBox.(Grid.Row)" Value="1" />
-                        <Setter Target="MySearchBox.VerticalAlignment" Value="Top" />
-                        <Setter Target="MySearchBox.Margin" Value="10,0,0,0" />
-                        <Setter Target="ItemGridView.Margin" Value="0,50,0,0" />
+                        <Setter Target="SortStackPanel.HorizontalAlignment" Value="Left" />
+                        <Setter Target="SortStackPanel.VerticalAlignment" Value="Bottom" />
+                        <Setter Target="SortStackPanel.Margin" Value="10,0,0,5" />
                         <Setter Target="AppTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                        <Setter Target="TopSection.Margin" Value="0,-20,0,0" />
+                        <Setter Target="SearchIcon.Visibility" Value="Visible" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -39,38 +39,71 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        
+
 
         <!--  Top section  -->
-        <TextBlock
-            x:Name="AppTitle"
-            x:Uid="AppTitle"
-            Style="{StaticResource PageHeaderTextStyle}"
-            Grid.Row="0" />
-        <Button
-            Name="FakeButtonForFocus"
-            Grid.Row="0"
-            Width="1"
-            Height="1" />
-        <SearchBox
-            x:Name="MySearchBox"
-            Grid.Row="0"
-            Width="270"
-            Height="35"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            FocusOnKeyboardInput="True"
-            PlaceholderText="Search"
-            QuerySubmitted="SearchBoxQuerySubmitted" />
-
-
+        <Grid Name="TopSection">
+            <TextBlock
+                x:Uid="AppTitle"
+                x:Name="AppTitle"
+                Style="{StaticResource PageHeaderTextStyle}"
+                Grid.Row="0" />
+            <Button
+                Name="FakeButtonForFocus"
+                Grid.Row="0"
+                Width="1"
+                Height="1" />
+            <Button
+                x:Name="SearchIcon"
+                Grid.Row="0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="0,23,10,0"
+                Foreground="#A08F7F"
+                FontSize="22"
+                Width="50"
+                Height="50"
+                Background="Transparent"
+                Content="&#xE11A;"
+                Visibility="Collapsed"
+                Click="SearchIcon_OnClick"
+                FontFamily="Segoe MDL2 Assets" />
+            <AutoSuggestBox
+                x:Name="SearchBox"
+                x:Uid="SearchBox"
+                Grid.Row="0"
+                Margin="0,30,15,0"
+                Width="300"
+                Height="35"
+                Visibility="Collapsed"
+                LostFocus="SearchBox_OnLostFocus"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                QuerySubmitted="SearchBox_OnQuerySubmitted" />
+            <StackPanel
+                x:Name="SortStackPanel"
+                Grid.Row="0"
+                Margin="0,0,10,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <TextBlock
+                    x:Uid="MyBooks_SortBy"
+                    Margin="0,0,5,0"
+                    VerticalAlignment="Center"
+                    Foreground="#A08F7F" />
+                <ComboBox
+                    Name="SortComboBox"
+                    Width="Auto"
+                    Height="40"
+                    Margin="0,2,0,0"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Foreground="#A08F7F"
+                    SelectionChanged="SortComboBox_OnSelectionChanged" />
+            </StackPanel>
+        </Grid>
         <!--  GridView to display items  -->
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-        <Button Content="A" Click="ButtonA_Click"/>
-            <Button Content="B" Click="ButtonB_Click"/>
-            <Button Content="C" Click="ButtonC_Click"/>
-            <Button Content="D" Click="ButtonD_Click"/>
-        </StackPanel>
         <Grid Grid.Row="1">
             <GridView
                 x:Name="ItemGridView"

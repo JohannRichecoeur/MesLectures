@@ -435,32 +435,36 @@ namespace MesLectures
             if (uploadPictures)
             {
                 // Download pictures
-                var picturesFileId = (files.Select(item => item as IDictionary<string, object>).First(file => file["name"].ToString() == ZipFileName))["id"].ToString();
-                var picturesFile = await LocalFolder.CreateFileAsync(ZipFileName, CreationCollisionOption.ReplaceExisting);
-
-                var downloadProgress = new Progress<LiveOperationProgress>((p) =>
-                {
-                    var percentage = p.ProgressPercentage.ToString("0,0") + "%";
-                    uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Download_Ongoing") + percentage;
-                });
-
-                await LiveConnectClient.BackgroundDownloadAsync(picturesFileId + "/content", picturesFile, new CancellationToken(), downloadProgress);
-
-                var tempFolder = await LocalFolder.CreateFolderAsync("temp", CreationCollisionOption.ReplaceExisting);
-                ZipFile.ExtractToDirectory(LocalFolder.Path + "\\" + ZipFileName, tempFolder.Path);
-                // Copy all the images
-                foreach (var storageFile in await tempFolder.GetFilesAsync())
-                {
-                    if (storageFile.FileType == ".jpg" || storageFile.FileType == ".png" || storageFile.FileType == ".gif")
+                var zipFileOnOnedrive = (files.Select(item => item as IDictionary<string, object>).Where(file => file["name"].ToString() == ZipFileName));
+                if (zipFileOnOnedrive.Any())
+                { 
+                    var picturesFileId = zipFileOnOnedrive.First()["id"].ToString();
+                    var picturesFile = await LocalFolder.CreateFileAsync(ZipFileName, CreationCollisionOption.ReplaceExisting);
+                    
+                    var downloadProgress = new Progress<LiveOperationProgress>((p) =>
                     {
-                        await storageFile.CopyAsync(LocalFolder, storageFile.DisplayName + storageFile.FileType, NameCollisionOption.ReplaceExisting);
+                        var percentage = p.ProgressPercentage.ToString("0,0") + "%";
+                        uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Download_Ongoing") + percentage;
+                    });
+                    
+                    await LiveConnectClient.BackgroundDownloadAsync(picturesFileId + "/content", picturesFile, new CancellationToken(), downloadProgress);
+                    
+                    var tempFolder = await LocalFolder.CreateFolderAsync("temp", CreationCollisionOption.ReplaceExisting);
+                    ZipFile.ExtractToDirectory(LocalFolder.Path + "\\" + ZipFileName, tempFolder.Path);
+                    // Copy all the images
+                    foreach (var storageFile in await tempFolder.GetFilesAsync())
+                    {
+                        if (storageFile.FileType == ".jpg" || storageFile.FileType == ".png" || storageFile.FileType == ".gif")
+                        {
+                            await storageFile.CopyAsync(LocalFolder, storageFile.DisplayName + storageFile.FileType, NameCollisionOption.ReplaceExisting);
+                        }
                     }
+                    
+                    uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
+                    // Delete temp items
+                    await tempFolder.DeleteAsync();
+                    await picturesFile.DeleteAsync();
                 }
-
-                uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
-                // Delete temp items
-                await tempFolder.DeleteAsync();
-                await picturesFile.DeleteAsync();
             }
 
             uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
