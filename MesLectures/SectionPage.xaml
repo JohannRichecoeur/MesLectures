@@ -9,32 +9,17 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!-- Collection of items displayed by this page -->
         <CollectionViewSource
             x:Name="ItemsViewSource"
             Source="{Binding Items}"
             d:Source="{Binding AllGroups[0].Items, Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}"/>
 
-        <Style x:Key="LayoutRootStyle" TargetType="Panel">
-            <Setter Property="Background" Value="{StaticResource ApplicationPageBackgroundThemeBrush}"/>
-            <Setter Property="ChildrenTransitions">
-                <Setter.Value>
-                    <TransitionCollection>
-                        <EntranceThemeTransition/>
-                    </TransitionCollection>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Page.Resources>
 
     <Grid
-        Style="{StaticResource LayoutRootStyle}"
         DataContext="{Binding Group}"
         d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
-        <Grid.Background>
-            <ImageBrush ImageSource="Assets/background.jpg" Stretch="None"/>
-        </Grid.Background>
-        
+
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="PhoneView">
@@ -42,8 +27,12 @@
                         <AdaptiveTrigger MinWindowWidth="0" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="PageTitle.Style" Value="{StaticResource TitleTextBlockStyle}" />
-                        <Setter Target="PageSubTitle.Style" Value="{StaticResource SubtitleTextBlockStyle}" />
+                        <Setter Target="PageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                        <Setter Target="PageSubTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                        <Setter Target="PageSubTitle.FontSize" Value="18" />
+                        <Setter Target="TopSection.Margin" Value="60,10,10,10" />
+                        <Setter Target="TopSection.Padding" Value="0,0,0,25" />
+                        <Setter Target="ItemGridView.Margin" Value="0,-50,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -61,7 +50,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid Margin="10,10,10,10">
+        <Grid x:Name="TopSection" Margin="10,10,10,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>

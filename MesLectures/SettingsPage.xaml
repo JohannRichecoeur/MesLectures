@@ -21,6 +21,7 @@
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="SettingsPageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                        <Setter Target="SettingsPageTitle.Margin" Value="50,-5,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
