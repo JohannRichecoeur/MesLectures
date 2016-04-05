@@ -111,7 +111,7 @@ namespace MesLectures.DataModel
 
                 foreach (BookDataItem b in Settings.BookList.OrderByDescending(x => x.Date).ToList())
                 {
-                    groupByDate.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, groupByDate));
+                    groupByDate.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.png", b.Editor, b.MyOpinion, b.Story, b.Date, groupByDate));
                 }
 
                 bookDataSource.AllGroups.Add(groupByDate);
@@ -121,7 +121,7 @@ namespace MesLectures.DataModel
                     Settings.GetRessource("Title_HeaderSection"));
                 foreach (BookDataItem b in Settings.BookList.OrderBy(x => x.Title).ToList())
                 {
-                    groupByTitle.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, groupByTitle));
+                    groupByTitle.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.png", b.Editor, b.MyOpinion, b.Story, b.Date, groupByTitle));
                 }
 
                 bookDataSource.AllGroups.Add(groupByTitle);
@@ -131,7 +131,7 @@ namespace MesLectures.DataModel
                     Settings.GetRessource("Title_HeaderSection"));
                 foreach (BookDataItem b in Settings.BookList.OrderBy(x => x.Author).ToList())
                 {
-                    groupByAuthor.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, groupByAuthor));
+                    groupByAuthor.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.png", b.Editor, b.MyOpinion, b.Story, b.Date, groupByAuthor));
                 }
 
                 bookDataSource.AllGroups.Add(groupByAuthor);
@@ -141,7 +141,7 @@ namespace MesLectures.DataModel
                     Settings.GetRessource("Title_HeaderSection"));
                 foreach (BookDataItem b in Settings.BookList.OrderByDescending(x => x.LikeStars).ToList())
                 {
-                    groupByStars.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.jpg", b.Editor, b.MyOpinion, b.Story, b.Date, groupByStars));
+                    groupByStars.Items.Add(new BookDataItem(b.Id, b.Title, b.Author, (await GetBookImage(b)).Path, b.Summary, "Assets/" + b.LikeStars + "etoiles.png", b.Editor, b.MyOpinion, b.Story, b.Date, groupByStars));
                 }
 
                 bookDataSource.AllGroups.Add(groupByStars);

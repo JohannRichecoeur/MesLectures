@@ -159,11 +159,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Package.StoreAssociation.xml" />
-    <Content Include="Assets\1etoiles.jpg" />
-    <Content Include="Assets\2etoiles.jpg" />
-    <Content Include="Assets\3etoiles.jpg" />
-    <Content Include="Assets\4etoiles.jpg" />
-    <Content Include="Assets\5etoiles.jpg" />
+    <Content Include="Assets\1etoiles.png" />
+    <Content Include="Assets\2etoiles.png" />
+    <Content Include="Assets\3etoiles.png" />
+    <Content Include="Assets\4etoiles.png" />
+    <Content Include="Assets\5etoiles.png" />
     <Content Include="Assets\background.jpg" />
     <Content Include="Assets\default.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -28,9 +28,9 @@ namespace MesLectures
         public ItemDetailPage()
         {
             this.InitializeComponent();
-            this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
-            this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
-            this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
+            //this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
+            //this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
+            //this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;

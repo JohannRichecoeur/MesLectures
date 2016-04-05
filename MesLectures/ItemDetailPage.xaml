@@ -10,33 +10,13 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!--  Collection d'éléments affichés par cette page  -->
         <CollectionViewSource x:Name="ItemsViewSource" Source="{Binding Items}" d:Source="{Binding AllGroups[0].Items, Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}" />
         <common:DateConverter x:Key="DateToStringConverter" />
-
-        <Style x:Key="LayoutRootStyle" TargetType="Panel">
-            <Setter Property="Background" Value="{StaticResource ApplicationPageBackgroundThemeBrush}" />
-            <Setter Property="ChildrenTransitions">
-                <Setter.Value>
-                    <TransitionCollection>
-                        <EntranceThemeTransition />
-                    </TransitionCollection>
-                </Setter.Value>
-            </Setter>
-        </Style>
-
-        <Style x:Key="HorizontalScrollViewerStyle" TargetType="ScrollViewer">
-            <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
-            <Setter Property="VerticalScrollBarVisibility" Value="Disabled" />
-            <Setter Property="HorizontalScrollMode" Value="Enabled" />
-            <Setter Property="VerticalScrollMode" Value="Disabled" />
-            <Setter Property="ZoomMode" Value="Disabled" />
-        </Style>
     </Page.Resources>
 
 
     <!--  AppBar  -->
-    <Page.BottomAppBar>
+    <!--<Page.BottomAppBar>
         <AppBar Grid.Row="0" Background="#A08F7F">
             <Grid>
                 <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
@@ -46,36 +26,48 @@
                 </StackPanel>
             </Grid>
         </AppBar>
-    </Page.BottomAppBar>
+    </Page.BottomAppBar>-->
 
-    <!--
-        La grille sert de panneau racine à la page, permettant de définir deux lignes :
-        * La ligne 0 qui contient le bouton Précédent et le titre de la page
-        * La ligne 1 qui contient le reste de la page
-    -->
-    <Grid Style="{StaticResource LayoutRootStyle}" DataContext="{Binding Group}" d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
+    <Grid Margin="10,10,10,10"
+        DataContext="{Binding Group}" d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="120" />
+            <RowDefinition Height="100" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="PhoneView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
+                        <Setter Target="PageTitle.Margin" Value="50,-5,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="DesktopView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="760" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
+        
         <Grid Grid.Row="0">
             <TextBlock
                 x:Name="PageTitle"
-                Style="{StaticResource HeaderTextBlockStyle}"
-                Margin="40,0,0,0"
-                VerticalAlignment="Center"
-                FontSize="50"
-                TextWrapping="WrapWholeWords" />
+                Style="{StaticResource PageHeaderTextStyle}" />
         </Grid>
 
         <FlipView
             x:Name="FlipView"
-            AutomationProperties.AutomationId="ItemsFlipView"
-            AutomationProperties.Name="Item Details"
             Grid.Row="1"
-            Background="White"
+            Background="Transparent"
             ItemsSource="{Binding Source={StaticResource ItemsViewSource}}"
             SelectionChanged="FlipViewSelectionChanged1"
             TabIndex="1">
@@ -110,7 +102,7 @@
                             </RichTextBlock>
 
                             <ScrollViewer Grid.Column="1" HorizontalAlignment="Center" Loading="MetadataPlace_OnLoading">
-                                <RichTextBlock Margin="10,0,140,20">
+                                <RichTextBlock Margin="10,0,160,20">
 
                                     <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
                                         <Run FontSize="32" FontWeight="Light" Text="{Binding Author}" />
