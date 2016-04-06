@@ -115,7 +115,6 @@ namespace MesLectures
             {
                 OnedriveInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_OneDriveCountFormat"), Settings.UserDataInfos.Number, Settings.UserDataInfos.LastUpdateDate.ToString("g"));
                 lastUpdateOneDriveTime = Settings.UserDataInfos.LastUpdateDate;
-                this.UpdateMostrecentDateLayout();
             }
             else
             {
@@ -136,27 +135,6 @@ namespace MesLectures
                 LocalInfosTextBlock.Text = Settings.GetRessource("OneDrivePage_NoLocalBooksFound");
                 this.UploadToOnedriveButton.IsEnabled = false;
                 lastUpdateLocalTime = DateTime.Now;
-            }
-
-            this.UpdateMostrecentDateLayout();
-        }
-
-        private void UpdateMostrecentDateLayout()
-        {
-            if (lastUpdateLocalTime > lastUpdateOneDriveTime)
-            {
-                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Green);
-                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Red);
-            }
-            else if (lastUpdateLocalTime < lastUpdateOneDriveTime)
-            {
-                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Red);
-                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Green);
-            }
-            else
-            {
-                this.LocalInfosTextBlock.Foreground = new SolidColorBrush(Colors.Black);
-                this.OnedriveInfosTextBlock.Foreground = new SolidColorBrush(Colors.Black);
             }
         }
 

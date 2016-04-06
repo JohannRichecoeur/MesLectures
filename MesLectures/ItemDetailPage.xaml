@@ -12,6 +12,207 @@
     <Page.Resources>
         <CollectionViewSource x:Name="ItemsViewSource" Source="{Binding Items}" d:Source="{Binding AllGroups[0].Items, Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}" />
         <common:DateConverter x:Key="DateToStringConverter" />
+
+        <DataTemplate x:Key="ItemDetailPageItemTemplateDesktop">
+            <UserControl x:Name="userControl">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <RichTextBlock
+                        Style="{StaticResource BodyRichTextBlockStyle}"
+                        Grid.Column="0"
+                        Margin="40,0,10,20"
+                        IsTextSelectionEnabled="False"
+                        Loading="PicturePlace_OnLoading"
+                        TextAlignment="Center">
+                        <Paragraph LineStackingStrategy="MaxHeight">
+                            <InlineUIContainer>
+                                <Image
+                                    x:Name="image"
+                                    AutomationProperties.Name="{Binding Title}"
+                                    Height="Auto"
+                                    Loaded="FrameworkElement_OnLoaded"
+                                    Source="{Binding Image}"
+                                    Stretch="Uniform" />
+                            </InlineUIContainer>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <ScrollViewer Grid.Column="1" HorizontalAlignment="Center" Loading="MetadataPlace_OnLoading">
+                        <RichTextBlock Margin="10,0,160,20">
+
+                            <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
+                                <Run FontSize="32" FontWeight="Light" Text="{Binding Author}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_Editor"
+                                    FontSize="16"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="20" FontWeight="Normal" Text="{Binding Editor}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_ReadingDate"
+                                    FontSize="16"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="20" FontWeight="Normal" Text="{Binding Date, Converter={StaticResource DateToStringConverter}}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <InlineUIContainer Foreground="Black">
+                                    <Image
+                                        x:Name="ImageEtoile"
+                                        Width="90"
+                                        Height="27"
+                                        Source="{Binding LikeStars}"
+                                        Visibility="Visible" />
+                                </InlineUIContainer>
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_Summary"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding Summary}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_MyOpinion"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding MyOpinion}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_Story"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding Story}" />
+                            </Paragraph>
+                        </RichTextBlock>
+                    </ScrollViewer>
+                </Grid>
+            </UserControl>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ItemDetailPageItemTemplatePhone">
+            <UserControl x:Name="userControl">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid Margin="0,0,0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <RichTextBlock
+                            Style="{StaticResource BodyRichTextBlockStyle}"
+                            Margin="10,0,10,0"
+                            IsTextSelectionEnabled="False"
+                            Loading="PicturePlace_OnLoading">
+                            <Paragraph LineStackingStrategy="MaxHeight">
+                                <InlineUIContainer>
+                                    <Image
+                                        x:Name="image"
+                                        AutomationProperties.Name="{Binding Title}"
+                                        Height="Auto"
+                                        Loaded="FrameworkElement_OnLoaded"
+                                        Source="{Binding Image}"
+                                        Stretch="Uniform" />
+                                </InlineUIContainer>
+                            </Paragraph>
+                        </RichTextBlock>
+
+                        <RichTextBlock
+                            Style="{StaticResource BodyRichTextBlockStyle}"
+                            Grid.Column="1"
+                            IsTextSelectionEnabled="False"
+                            Loading="MetadataPlace_OnLoading"
+                            TextAlignment="Left">
+                            <Paragraph LineStackingStrategy="MaxHeight">
+                                <Run FontSize="20" FontWeight="Light" Text="{Binding Author}" />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_Editor"
+                                    FontSize="12"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="14" FontWeight="Normal" Text="{Binding Editor}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_ReadingDate"
+                                    FontSize="12"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="14" FontWeight="Normal" Text="{Binding Date, Converter={StaticResource DateToStringConverter}}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <InlineUIContainer Foreground="Black">
+                                    <Image
+                                        x:Name="ImageEtoile"
+                                        Width="90"
+                                        Height="27"
+                                        Source="{Binding LikeStars}"
+                                        Visibility="Visible" />
+                                </InlineUIContainer>
+                                <LineBreak />
+                            </Paragraph>
+                        </RichTextBlock>
+                    </Grid>
+                    <ScrollViewer Grid.Row="1" Margin="10,10,10,10" HorizontalAlignment="Left">
+                        <RichTextBlock>
+                            <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
+                                <Run
+                                    x:Uid="Book_Summary"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding Summary}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_MyOpinion"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding MyOpinion}" />
+                                <LineBreak />
+                                <LineBreak />
+                                <Run
+                                    x:Uid="Book_Story"
+                                    FontSize="14"
+                                    FontWeight="SemiLight"
+                                    Foreground="#A08F7F"
+                                    Text="" />
+                                <Run FontSize="16" FontWeight="Normal" Text="{Binding Story}" />
+                            </Paragraph>
+                        </RichTextBlock>
+                    </ScrollViewer>
+                </Grid>
+            </UserControl>
+        </DataTemplate>
     </Page.Resources>
 
 
@@ -28,14 +229,13 @@
         </AppBar>
     </Page.BottomAppBar>-->
 
-    <Grid Margin="10,10,10,10"
-        DataContext="{Binding Group}" d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
+    <Grid Margin="10,10,10,10" DataContext="{Binding Group}" d:DataContext="{Binding AllGroups[0], Source={d:DesignInstance Type=dataModel:BookDataSource, IsDesignTimeCreatable=True}}">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="PhoneView">
@@ -45,6 +245,8 @@
                     <VisualState.Setters>
                         <Setter Target="PageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
                         <Setter Target="PageTitle.Margin" Value="50,-5,0,0" />
+                        <Setter Target="FlipView.ItemTemplate" Value="{StaticResource ItemDetailPageItemTemplatePhone}" />
+                        <Setter Target="FlipView.Margin" Value="0,-15,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -52,16 +254,14 @@
                         <AdaptiveTrigger MinWindowWidth="760" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="FlipView.ItemTemplate" Value="{StaticResource ItemDetailPageItemTemplateDesktop}" />
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        
-        
+
         <Grid Grid.Row="0">
-            <TextBlock
-                x:Name="PageTitle"
-                Style="{StaticResource PageHeaderTextStyle}" />
+            <TextBlock x:Name="PageTitle" Style="{StaticResource PageHeaderTextStyle}" TextWrapping="Wrap" />
         </Grid>
 
         <FlipView
@@ -69,105 +269,7 @@
             Grid.Row="1"
             Background="Transparent"
             ItemsSource="{Binding Source={StaticResource ItemsViewSource}}"
-            SelectionChanged="FlipViewSelectionChanged1"
-            TabIndex="1">
-
-            <FlipView.ItemTemplate>
-                <DataTemplate>
-                    <UserControl x:Name="userControl">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-
-                            <RichTextBlock
-                                Style="{StaticResource BodyRichTextBlockStyle}"
-                                Grid.Column="0"
-                                Margin="40,0,10,20"
-                                IsTextSelectionEnabled="False"
-                                Loading="PicturePlace_OnLoading"
-                                TextAlignment="Center">
-                                <Paragraph LineStackingStrategy="MaxHeight">
-                                    <InlineUIContainer>
-                                        <Image
-                                            x:Name="image"
-                                            AutomationProperties.Name="{Binding Title}"
-                                            Height="Auto"
-                                            Loaded="FrameworkElement_OnLoaded"
-                                            Source="{Binding Image}"
-                                            Stretch="Uniform" />
-                                    </InlineUIContainer>
-                                </Paragraph>
-                            </RichTextBlock>
-
-                            <ScrollViewer Grid.Column="1" HorizontalAlignment="Center" Loading="MetadataPlace_OnLoading">
-                                <RichTextBlock Margin="10,0,160,20">
-
-                                    <Paragraph LineStackingStrategy="BaselineToBaseline" TextAlignment="Justify">
-                                        <Run FontSize="32" FontWeight="Light" Text="{Binding Author}" />
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <Run
-                                            x:Uid="Book_Editor"
-                                            FontSize="16"
-                                            FontWeight="SemiLight"
-                                            Foreground="#A08F7F"
-                                            Text="" />
-                                        <Run FontSize="20" FontWeight="Normal" Text="{Binding Editor}" />
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <Run
-                                            x:Uid="Book_ReadingDate"
-                                            FontSize="16"
-                                            FontWeight="SemiLight"
-                                            Foreground="#A08F7F"
-                                            Text="" />
-                                        <Run FontSize="20" FontWeight="Normal" Text="{Binding Date, Converter={StaticResource DateToStringConverter}}" />
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <InlineUIContainer Foreground="Black">
-                                            <Image
-                                                x:Name="ImageEtoile"
-                                                Width="90"
-                                                Height="27"
-                                                Source="{Binding LikeStars}"
-                                                Visibility="Visible" />
-                                        </InlineUIContainer>
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <Run
-                                            x:Uid="Book_Summary"
-                                            FontSize="14"
-                                            FontWeight="SemiLight"
-                                            Foreground="#A08F7F"
-                                            Text="" />
-                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding Summary}" />
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <Run
-                                            x:Uid="Book_MyOpinion"
-                                            FontSize="14"
-                                            FontWeight="SemiLight"
-                                            Foreground="#A08F7F"
-                                            Text="" />
-                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding MyOpinion}" />
-                                        <LineBreak />
-                                        <LineBreak />
-                                        <Run
-                                            x:Uid="Book_Story"
-                                            FontSize="14"
-                                            FontWeight="SemiLight"
-                                            Foreground="#A08F7F"
-                                            Text="" />
-                                        <Run FontSize="16" FontWeight="Normal" Text="{Binding Story}" />
-                                    </Paragraph>
-                                </RichTextBlock>
-                            </ScrollViewer>
-                        </Grid>
-                    </UserControl>
-                </DataTemplate>
-            </FlipView.ItemTemplate>
-        </FlipView>
+            SelectionChanged="FlipViewSelectionChanged"
+            TabIndex="1" />
     </Grid>
 </Page>

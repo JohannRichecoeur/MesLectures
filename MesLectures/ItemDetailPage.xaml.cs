@@ -99,7 +99,7 @@ namespace MesLectures
             }
         }
 
-        private void FlipViewSelectionChanged1(object sender, SelectionChangedEventArgs e)
+        private void FlipViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Set the title of the page
             if (FlipView.SelectedItem != null)
