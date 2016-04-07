@@ -28,9 +28,6 @@ namespace MesLectures
         public ItemDetailPage()
         {
             this.InitializeComponent();
-            //this.AppBarAddButton.Label = Settings.GetRessource("AppBar_Add");
-            //this.AppBarEditButton.Label = Settings.GetRessource("AppBar_Edit");
-            //this.AppBarDiscardButton.Label = Settings.GetRessource("AppBar_Delete");
 
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
@@ -149,21 +146,6 @@ namespace MesLectures
 
                     this.Frame.GoBack();
                 }
-            }
-        }
-
-        private async void ButtonAddClick(object sender, RoutedEventArgs e)
-        {
-            var windowWidth = Window.Current.Bounds.Width;
-            if (windowWidth > 500)
-            {
-                this.Frame.Navigate(typeof(EditionPage));
-            }
-            else
-            {
-                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
-                md.Commands.Add(new UICommand("OK"));
-                await md.ShowAsync();
             }
         }
 

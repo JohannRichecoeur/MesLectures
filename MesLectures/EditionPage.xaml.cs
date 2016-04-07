@@ -30,14 +30,9 @@ namespace MesLectures
         {
             this.InitializeComponent();
 
-            this.AppBarSaveButton.Label = Settings.GetRessource("AppBar_Save");
-            this.AppBarCancelButton.Label = Settings.GetRessource("AppBar_Cancel");
-            this.AppBarSearchButton.Label = Settings.GetRessource("AppBar_Search");
-
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
 
-            Window.Current.SizeChanged += this.WindowSizeChanged;
             this.SetDisplay();
         }
 
@@ -58,9 +53,6 @@ namespace MesLectures
         private void NavigationHelperLoadState(object sender, LoadStateEventArgs e)
         {
             DatePickerForUser.Date = new DateTimeOffset(DateTime.Now);
-
-            AppBar.IsOpen = true;
-            AppBar.IsSticky = true;
 
             if (!FromBing)
             {
@@ -140,26 +132,16 @@ namespace MesLectures
 
             var h = pageHeight - 200;
             SummaryBox.Margin = new Thickness(ImageBox.MaxWidth + 80, 200, 0, 0);
-            SummaryBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 60;
+            SummaryBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 80;
             SummaryBox.Height = h / 6;
 
             MyOpinionBox.Margin = new Thickness(ImageBox.MaxWidth + 80, 200 + (h * 1 / 6) + 10, 0, 0);
-            MyOpinionBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 60;
+            MyOpinionBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 80;
             MyOpinionBox.Height = ((h / 6) * 2) - 10;
 
             StoryBox.Margin = new Thickness(ImageBox.MaxWidth + 80, 200 + (h * 1 / 2) + 10, 0, 0);
-            StoryBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 60;
+            StoryBox.Width = pageWidth - ImageBox.MaxWidth - 80 - 80;
             StoryBox.Height = (h * 0.5) - 50;
-        }
-
-        private void WindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
-        {
-            // Obtain view state by explicitly querying for it
-            var windowWidth = Window.Current.Bounds.Width;
-            if (windowWidth < 500)
-            {
-                this.Frame.GoBack();
-            }
         }
 
         private void CancelButtonClick(object sender, RoutedEventArgs e)
@@ -188,9 +170,6 @@ namespace MesLectures
 
         private async void FillContent()
         {
-            AppBar.IsOpen = true;
-            AppBar.IsSticky = true;
-
             TitleBox.Text = Settings.CurrentBook.Title;
             AuthorBox.Text = Settings.CurrentBook.Author;
             EditorBox.Text = Settings.CurrentBook.Editor;
@@ -210,9 +189,6 @@ namespace MesLectures
 
         private void FillBackBingContent()
         {
-            AppBar.IsOpen = true;
-            AppBar.IsSticky = true;
-
             if (Settings.CurrentBook != null)
             {
                 TitleBox.Text = Settings.CurrentBook.Title;

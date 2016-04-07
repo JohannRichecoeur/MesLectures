@@ -21,7 +21,7 @@
     </Page.Resources>
 
     <!-- AppBar -->
-    <Page.BottomAppBar>
+    <!--<Page.BottomAppBar>
         <AppBar x:Name="AppBar" Grid.Row="0" Background="#A08F7F">
             <Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
@@ -33,9 +33,9 @@
                 </StackPanel>
             </Grid>
         </AppBar>
-    </Page.BottomAppBar>
+    </Page.BottomAppBar>-->
 
-    <Grid Style="{StaticResource LayoutRootStyle}">
+    <Grid Margin="10,10,10,10">
 
         <Image x:Name="ImageBox" HorizontalAlignment="Left" Margin="60,80,0,60" VerticalAlignment="Top" Height="Auto" Width="Auto" Source="Assets/default.jpg"/>
         <Button x:Name="LocalButton" HorizontalAlignment="Left" Margin="60,25,0,0" VerticalAlignment="Top" Width="167" FontSize="12" Click="LocalButtonClick"/>
@@ -44,7 +44,6 @@
         <TextBox x:Name="TitleBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="TitleBoxFocusChange" LostFocus="TitleBoxFocusChange"/>
         <TextBox x:Name="AuthorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="AuthorBoxFocusChange" LostFocus="AuthorBoxFocusChange"/>
         <TextBox x:Name="EditorBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" GotFocus="EditorBoxFocusChange" LostFocus="EditorBoxFocusChange"/>
-
 
         <DatePicker x:Name="DatePickerForUser" HorizontalAlignment="Right" VerticalAlignment="Top" DayVisible="False" MonthFormat="month.full"/>
 
