@@ -165,9 +165,7 @@
     <Content Include="Assets\4etoiles.png" />
     <Content Include="Assets\5etoiles.png" />
     <Content Include="Assets\background.jpg" />
-    <Content Include="Assets\default.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Assets\default.jpg" />
     <Content Include="Assets\en\200x200.jpg" />
     <Content Include="Assets\en\200x200.scale-400.jpg" />
     <Content Include="Assets\en\284x284.jpg" />
@@ -179,6 +177,8 @@
     <Content Include="Assets\en\71x71.jpg" />
     <Content Include="Assets\en\96x96.jpg" />
     <Content Include="Assets\en\splash.jpg" />
+    <Content Include="Assets\etoile.png" />
+    <Content Include="Assets\etoileContour.png" />
     <Content Include="Assets\fr\200x200.jpg" />
     <Content Include="Assets\fr\200x200.scale-400.jpg" />
     <Content Include="Assets\fr\284x284.jpg" />

@@ -162,7 +162,7 @@ namespace MesLectures
                 return new InfosClass()
                 {
                     Number = int.Parse(infosData.Descendants("Number").ToList()[0].Value),
-                    LastUpdateDate = DateTime.Parse(infosData.Descendants("Date").ToList()[0].Value, new CultureInfo("fr-fr"))
+                    LastUpdateDate = DateTime.Parse(infosData.Descendants("Date").ToList()[0].Value, new CultureInfo("en-US"))
                 };
             }
             catch (Exception e)
@@ -485,7 +485,7 @@ namespace MesLectures
                                      Author = book.Descendants("Author").ToList()[0].Value,
                                      Editor = book.Descendants("Editor").ToList()[0].Value,
                                      LikeStars = book.Descendants("Like").ToList()[0].Value,
-                                     Date = DateTime.Parse(book.Descendants("Date").ToList()[0].Value, new CultureInfo("fr-FR")),
+                                     Date = DateTime.Parse(book.Descendants("Date").ToList()[0].Value, new CultureInfo("en-US")),
                                      Summary = book.Descendants("Summary").ToList()[0].Value,
                                      Story = book.Descendants("Story").ToList()[0].Value,
                                      Id = int.Parse(book.Descendants("Id").ToList()[0].Value),
@@ -537,9 +537,8 @@ namespace MesLectures
             number.Add(new XText(BookList.Count.ToString()));
             var date = new XElement("Date");
             infos.Add(date);
-            date.Add(new XText(DateTime.Now.ToString(new CultureInfo("fr-FR"))));
+            date.Add(new XText(DateTime.Now.ToString(new CultureInfo("en-US"))));
 
-            IFormatProvider culture = new CultureInfo(Settings.GetRessource("Locale"));
             foreach (BookDataItem book in bookList)
             {
                 var parentNode = new XElement("Book");
@@ -566,7 +565,7 @@ namespace MesLectures
                                             new XText(book.Author ?? string.Empty),
                                             new XText(book.Editor ?? string.Empty),
                                             new XText(book.LikeStars),
-                                            new XText(book.Date.ToString(culture)),
+                                            new XText(book.Date.ToString(new CultureInfo("en-US"))),
                                             new XText(book.Summary ?? string.Empty),
                                             new XText(book.MyOpinion ?? string.Empty),
                                             new XText(book.Story ?? string.Empty),
