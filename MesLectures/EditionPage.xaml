@@ -29,6 +29,8 @@
                         <Setter Target="BookMetadataScrollviewer.(Grid.Row)" Value="1" />
                         <Setter Target="BookPictureBoxDesktop.Visibility" Value="Collapsed" />
                         <Setter Target="GridMetadata.Margin" Value="0" />
+                        <Setter Target="BookReadingDate.Margin" Value="0,-30,10,0" />
+                        <Setter Target="DatePickerForUser.Margin" Value="-105,30,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -44,14 +46,13 @@
         </VisualStateManager.VisualStateGroups>
 
         <Grid Grid.Row="0">
-            <!--<TextBlock x:Name="PageTitle"  TextWrapping="Wrap" />-->
             <TextBox
                 x:Uid="DetailBook_Title"
                 x:Name="TitleBox"
                 Height="50"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                FontSize="30" />
+                FontSize="28" />
             <StackPanel
                 x:Name="EditDeleteButtons"
                 HorizontalAlignment="Right"
@@ -197,6 +198,7 @@
                             <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
                                 <TextBlock
                                     x:Uid="Book_ReadingDate"
+                                    x:Name="BookReadingDate"
                                     Margin="0,0,10,0"
                                     VerticalAlignment="Center"
                                     FontSize="16"
@@ -287,7 +289,7 @@
                                 Foreground="#A08F7F" />
                             <TextBox
                                 x:Name="StoryBox"
-                                Height="200"
+                                Height="208"
                                 AcceptsReturn="True"
                                 FontSize="15"
                                 FontWeight="Normal"
