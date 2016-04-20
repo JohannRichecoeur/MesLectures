@@ -28,7 +28,7 @@ namespace MesLectures
 
         private const string DataFileName = "data.txt";
         private const string ZipFileName = "pictures.zip";
-        private static readonly string OneDriveFolderName = Settings.GetRessource("OneDrive_FolderName");
+        private static readonly string OneDriveFolderName = Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName) == null ? Settings.GetRessource("OneDrive_FolderName") : (string)Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName);
 
         public static List<BookDataItem> BookList { get; set; }
 
@@ -473,11 +473,35 @@ namespace MesLectures
 
         private static List<BookDataItem> GetBookListXdoc(XDocument xDoc)
         {
+            // Check if the data.xml file contains "Infos"
+            var oldVersion = !xDoc.Descendants("Infos").Any();
+
             var bookList = new List<BookDataItem>();
-            foreach (XElement book in xDoc.Descendants("Book"))
+            foreach (var book in xDoc.Descendants("Book"))
             {
                 try
                 {
+                    DateTime date;
+                    if (oldVersion)
+                    {
+                        var success = DateTime.TryParse(book.Descendants("Date").ToList()[0].Value, new CultureInfo(GetRessource("Locale")), DateTimeStyles.None, out date);
+                        if (!success)
+                        {
+                            success = DateTime.TryParse(book.Descendants("Date").ToList()[0].Value, new CultureInfo("en-US"), DateTimeStyles.None, out date);
+                        }
+                        if (!success)
+                        {
+                            date = DateTime.Now;
+                        }
+                    }
+                    else
+                    {
+                        var success = DateTime.TryParse(book.Descendants("Date").ToList()[0].Value, new CultureInfo("en-US"), DateTimeStyles.None, out date);
+                        if (!success)
+                        {
+                            date = DateTime.Now;
+                        }
+                    }
                     bookList.Add(
                                  new BookDataItem()
                                  {
@@ -485,7 +509,7 @@ namespace MesLectures
                                      Author = book.Descendants("Author").ToList()[0].Value,
                                      Editor = book.Descendants("Editor").ToList()[0].Value,
                                      LikeStars = book.Descendants("Like").ToList()[0].Value,
-                                     Date = DateTime.Parse(book.Descendants("Date").ToList()[0].Value, new CultureInfo("en-US")),
+                                     Date = date,
                                      Summary = book.Descendants("Summary").ToList()[0].Value,
                                      Story = book.Descendants("Story").ToList()[0].Value,
                                      Id = int.Parse(book.Descendants("Id").ToList()[0].Value),
@@ -493,7 +517,7 @@ namespace MesLectures
                                      ImagePath = book.Descendants("ImagePath").ToList()[0].Value,
                                  });
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                 }
             }

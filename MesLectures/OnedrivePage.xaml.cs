@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Windows.Networking.Connectivity;
 using Windows.UI;
@@ -24,7 +25,8 @@ namespace MesLectures
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelperLoadState;
-            this.UploadPicturesToggle.IsOn = Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive) != null && (bool)Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive);
+            this.UploadPicturesToggle.IsOn = Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive) != null && (bool) Settings.GetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive);
+            this.OneDrivePage_OneDriveFolderNameTextBox.Text = Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName) == null ? Settings.GetRessource("OneDrive_FolderName") : (string) Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName);
         }
 
         public NavigationHelper NavigationHelper
@@ -63,7 +65,7 @@ namespace MesLectures
                 if (getOnedriveUserInfoTask.Result)
                 {
                     this.DisplayOnedriveUserInfos();
-                    
+
                     // Delay to display the image at the same time than the name
                     await Task.Delay(1000);
 
@@ -74,12 +76,13 @@ namespace MesLectures
                     this.LocalInfosTextBlock.Visibility = Visibility.Visible;
                     this.OnedriveInfosTextBlock.Visibility = Visibility.Visible;
                     this.UploadSection.Visibility = Visibility.Visible;
+                    this.OneDriveFolderNameSection.Visibility = Visibility.Visible;
                     this.SignOutButton.Visibility = Settings.CanLogout() ? Visibility.Visible : Visibility.Collapsed;
                 }
                 else
                 {
                     // No OneDrive credentials
-                    this.Frame.Navigate(typeof(Books));
+                    this.Frame.Navigate(typeof (Books));
                 }
             }
         }
@@ -96,7 +99,7 @@ namespace MesLectures
 
         private void UploadPicturesToggle_OnToggled(object toggleSwitch, RoutedEventArgs e)
         {
-            Settings.SetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive, ((ToggleSwitch)toggleSwitch).IsOn);
+            Settings.SetLocalSettings(LocalSettingsValue.uploadPicturesToOneDrive, ((ToggleSwitch) toggleSwitch).IsOn);
         }
 
         private void DisplayOnedriveUserInfos()
@@ -113,7 +116,8 @@ namespace MesLectures
 
             if (Settings.UserDataInfos != null)
             {
-                OnedriveInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_OneDriveCountFormat"), Settings.UserDataInfos.Number, Settings.UserDataInfos.LastUpdateDate.ToString("g"));
+                OnedriveInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_OneDriveCountFormat"),
+                    Settings.UserDataInfos.Number, Settings.UserDataInfos.LastUpdateDate.ToString("g"));
                 lastUpdateOneDriveTime = Settings.UserDataInfos.LastUpdateDate;
             }
             else
@@ -127,7 +131,8 @@ namespace MesLectures
         {
             if (infos != null)
             {
-                LocalInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_LocalCountFormat"), infos.Number, infos.LastUpdateDate.ToString("g"));
+                LocalInfosTextBlock.Text = string.Format(Settings.GetRessource("OneDrivePage_LocalCountFormat"),
+                    infos.Number, infos.LastUpdateDate.ToString("g"));
                 lastUpdateLocalTime = infos.LastUpdateDate;
             }
             else
@@ -141,7 +146,7 @@ namespace MesLectures
         private void SignOutButton_OnClick(object sender, RoutedEventArgs e)
         {
             Settings.Signout();
-            this.Frame.Navigate(typeof(Books));
+            this.Frame.Navigate(typeof (Books));
         }
 
         private async void UploadToOnedriveClick(object sender, RoutedEventArgs e)
@@ -176,6 +181,21 @@ namespace MesLectures
             this.UploadToOnedriveButton.IsEnabled = true;
             this.DownloadFromOnedriveButton.IsEnabled = true;
             this.UploadToOnedriveProgressRing.IsActive = false;
+        }
+
+        private void OneDrivePage_OneDriveFolderNameTextBox_OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (this.OneDrivePage_OneDriveFolderNameTextBox.Text.Any())
+            {
+                Settings.SetLocalSettings(LocalSettingsValue.onedriveFolderName, this.OneDrivePage_OneDriveFolderNameTextBox.Text);
+                this.UploadToOnedriveButton.IsEnabled = true;
+                this.DownloadFromOnedriveButton.IsEnabled = true;
+            }
+            else
+            {
+                this.UploadToOnedriveButton.IsEnabled = false;
+                this.DownloadFromOnedriveButton.IsEnabled = false;
+            }
         }
     }
 }

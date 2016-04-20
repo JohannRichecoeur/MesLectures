@@ -3,6 +3,7 @@
     public enum LocalSettingsValue
     {
         uploadPicturesToOneDrive,
-        sortOption
+        sortOption,
+        onedriveFolderName
     }
 }

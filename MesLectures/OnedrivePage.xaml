@@ -66,7 +66,7 @@
                         </Ellipse.Fill>
                     </Ellipse>
                     <StackPanel Margin="10,0,0,0" VerticalAlignment="Center" Orientation="Vertical">
-                        <TextBlock Name="UserName" Style="{StaticResource BaseTextBlockStyle}" VerticalAlignment="Center" />
+                        <TextBlock Name="UserName" Style="{StaticResource BaseTextBlockStyle}" VerticalAlignment="Center" Margin="0,0,0,5" />
                         <HyperlinkButton
                             x:Name="SignOutButton"
                             Click="SignOutButton_OnClick"
@@ -81,6 +81,11 @@
                 <StackPanel Margin="0,50,0,0">
                     <TextBlock Name="LocalInfosTextBlock" TextWrapping="Wrap" />
                     <TextBlock Name="OnedriveInfosTextBlock" TextWrapping="Wrap" />
+                </StackPanel>
+
+                <StackPanel Margin="0,50,0,0" Name="OneDriveFolderNameSection" Orientation="Horizontal" Visibility="Collapsed">
+                    <TextBlock x:Uid="OneDrivePage_OneDriveFolderName" TextWrapping="Wrap" Margin="0,0,10,0" VerticalAlignment="Center" />
+                    <TextBox Name="OneDrivePage_OneDriveFolderNameTextBox" TextChanged="OneDrivePage_OneDriveFolderNameTextBox_OnTextChanged" Width="200" TextWrapping="Wrap" />
                 </StackPanel>
 
                 <StackPanel Name="UploadSection" Margin="0,50,0,0" Visibility="Collapsed">

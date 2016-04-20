@@ -351,7 +351,7 @@
     <value>Uploading...</value>
   </data>
   <data name="OneDrive_FolderName" xml:space="preserve">
-    <value>MyReadings_WindowsApplication</value>
+    <value>My readings</value>
   </data>
   <data name="OneDrivePage_NoLocalBooksFound" xml:space="preserve">
     <value>You don't have any book saved locally.</value>
@@ -382,5 +382,8 @@
   </data>
   <data name="Book_Author.Text" xml:space="preserve">
     <value>Author:</value>
+  </data>
+  <data name="OneDrivePage_OneDriveFolderName.Text" xml:space="preserve">
+    <value>Folder name on OneDrive:</value>
   </data>
 </root>
