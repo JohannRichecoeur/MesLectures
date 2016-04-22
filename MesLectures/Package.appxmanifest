@@ -3,7 +3,7 @@
   <Identity Name="57101Jean-EricHourchon.Meslectures" Publisher="CN=048E22C3-4A5D-4258-A65C-660557469F36" Version="2.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="e576bdf7-c59f-4d1e-bc36-ee323f6dacd4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Mes lectures</DisplayName>
+    <DisplayName>ms-resource:AppTitle/Text</DisplayName>
     <PublisherDisplayName>Jean-Eric Hourchon</PublisherDisplayName>
     <Logo>Assets\200x200.jpg</Logo>
   </Properties>

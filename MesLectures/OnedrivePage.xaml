@@ -23,6 +23,11 @@
                         <Setter Target="OneDriveProgressRing.Width" Value="50" />
                         <Setter Target="OneDrivePageTitle.Style" Value="{StaticResource PageHeaderCompactTextStyle}" />
                         <Setter Target="OneDrivePageTitle.Margin" Value="50,-5,0,0" />
+                        <Setter Target="OneDriveFolderNameSection.Orientation" Value="Vertical" />
+                        <Setter Target="OneDrivePage_OneDriveFolderNameTextBox.HorizontalAlignment" Value="Left" />
+                        <Setter Target="InfosSection.Margin" Value="0,20,0,0" />
+                        <Setter Target="OneDriveFolderNameSection.Margin" Value="0,20,0,0" />
+                        <Setter Target="UploadSection.Margin" Value="0,20,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="DesktopView">
@@ -78,7 +83,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Margin="0,50,0,0">
+                <StackPanel Name="InfosSection" Margin="0,50,0,0">
                     <TextBlock Name="LocalInfosTextBlock" TextWrapping="Wrap" />
                     <TextBlock Name="OnedriveInfosTextBlock" TextWrapping="Wrap" />
                 </StackPanel>

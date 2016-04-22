@@ -120,24 +120,6 @@
   <data name="AddButton.Text" xml:space="preserve">
     <value>Add</value>
   </data>
-  <data name="AppBar_Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="AppBar_Delete" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="AppBar_Edit" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="AppBar_Infos" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="AppBar_Save" xml:space="preserve">
-    <value>Save</value>
-  </data>
-  <data name="AppBar_Search" xml:space="preserve">
-    <value>Search by ISBN</value>
-  </data>
   <data name="AppTitle.Text" xml:space="preserve">
     <value>My readings</value>
     <comment>Title of the app</comment>
