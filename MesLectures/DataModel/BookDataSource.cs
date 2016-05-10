@@ -46,31 +46,34 @@ namespace MesLectures.DataModel
             var search = searchQuery.ToLower();
             var list = new List<BookDataItem>();
             list.Clear();
-            list.AddRange(bookDataSource.AllGroups[0].Items.Where(t => t.Title.ToLower().Contains(search)));
+            if (bookDataSource.AllGroups.Any())
+            { 
+                list.AddRange(bookDataSource.AllGroups[0].Items.Where(t => t.Title.ToLower().Contains(search)));
 
-            foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Author.ToLower().Contains(search) && !list.Contains(t)))
-            {
-                list.Add(t);
-            }
+                foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Author.ToLower().Contains(search) && !list.Contains(t)))
+                {
+                    list.Add(t);
+                }
 
-            foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Editor.ToLower().Contains(search) && !list.Contains(t)))
-            {
-                list.Add(t);
-            }
+                foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Editor.ToLower().Contains(search) && !list.Contains(t)))
+                {
+                    list.Add(t);
+                }
 
-            foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Summary.ToLower().Contains(search) && !list.Contains(t)))
-            {
-                list.Add(t);
-            }
+                foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Summary.ToLower().Contains(search) && !list.Contains(t)))
+                {
+                    list.Add(t);
+                }
 
-            foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.MyOpinion.ToLower().Contains(search) && !list.Contains(t)))
-            {
-                list.Add(t);
-            }
+                foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.MyOpinion.ToLower().Contains(search) && !list.Contains(t)))
+                {
+                    list.Add(t);
+                }
 
-            foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Story.ToLower().Contains(search) && !list.Contains(t)))
-            {
-                list.Add(t);
+                foreach (var t in bookDataSource.AllGroups[0].Items.Where(t => t.Story.ToLower().Contains(search) && !list.Contains(t)))
+                {
+                    list.Add(t);
+                }
             }
 
             var group = new BookDataGroup(0, "");

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Windows.UI.Core;
 using MesLectures.Common;
 using MesLectures.DataModel;
-using Windows.UI.Popups;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
@@ -79,108 +76,6 @@ namespace MesLectures
             this.DefaultViewModel["Groups"] = this.dataGroup;
             this.DefaultViewModel["Items"] = this.dataGroup.Items;
         }
-
-        private async void ButtonAddClick(object sender, RoutedEventArgs e)
-        {
-            if (Window.Current.Bounds.Width > 500)
-            {
-                this.Frame.Navigate(typeof(EditionPage));
-            }
-            else
-            {
-                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
-                md.Commands.Add(new UICommand("OK"));
-                await md.ShowAsync();
-            }
-        }
-
-        private async void ButtonEditClick(object sender, RoutedEventArgs e)
-        {
-            if (Window.Current.Bounds.Width > 500)
-            {
-                var itemSelected = (BookDataItem)this.ItemGridView.SelectedItem;
-                if (itemSelected != null)
-                {
-                    this.Frame.Navigate(typeof(EditionPage), itemSelected.Id);
-                }
-            }
-            else
-            {
-                var md = new MessageDialog(Settings.GetRessource("Windows_IncreaseSize"));
-                md.Commands.Add(new UICommand("OK"));
-                await md.ShowAsync();
-            }
-        }
-
-        //private async void ButtonDeleteClick(object sender, RoutedEventArgs e)
-        //{
-        //    IUICommand response = new UICommand("initialize");
-        //    if (this.ItemGridView.SelectedItems.Count == 1)
-        //    {
-        //        var bookDataItem = (BookDataItem)this.ItemGridView.SelectedItem;
-        //        if (bookDataItem != null)
-        //        {
-        //            var md =
-        //                new MessageDialog(
-        //                    string.Format(Settings.GetRessource("Delete-Book"), bookDataItem.Title, bookDataItem.Author),
-        //                    Settings.GetRessource("AppTitle"));
-        //            md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
-        //            md.Commands.Add(new UICommand(Settings.GetRessource("No")));
-        //            response = await md.ShowAsync();
-        //        }
-        //    }
-        //    else if (this.ItemGridView.SelectedItems.Count > 1)
-        //    {
-        //        var md =
-        //            new MessageDialog(
-        //                string.Format(Settings.GetRessource("Delete-Books"), this.ItemGridView.SelectedItems.Count),
-        //                Settings.GetRessource("AppTitle"));
-        //        md.Commands.Add(new UICommand(Settings.GetRessource("Yes")));
-        //        md.Commands.Add(new UICommand(Settings.GetRessource("No")));
-        //        response = await md.ShowAsync();
-        //    }
-
-        //    if (response.Label == "Yes")
-        //    {
-        //        foreach (var selectedItem in this.ItemGridView.SelectedItems)
-        //        {
-        //            var selectedBook = Settings.BookList.First(x => x.Id == ((BookDataItem)selectedItem).Id);
-        //            if (selectedBook != null)
-        //            {
-        //                Settings.BookList.Remove(selectedBook);
-
-        //                // Delete old image
-        //                if (selectedBook.ImagePath != null)
-        //                {
-        //                    try
-        //                    {
-        //                        var deleteFile = selectedBook.ImagePath;
-        //                        await Settings.DeleteImage(deleteFile);
-        //                    }
-        //                    catch (Exception)
-        //                    {
-        //                        // we don't care if the old image is not deleted
-        //                    }
-        //                }
-        //            }
-        //        }
-
-        //        await Settings.SaveBookListToXml();
-        //        await BookDataSource.FillData();
-        //        var group = BookDataSource.GetGroup(this.dataGroup.GroupId);
-        //        if (group != null)
-        //        {
-        //            this.dataGroup = group;
-        //            this.DefaultViewModel["Group"] = group;
-        //            this.DefaultViewModel["Items"] = group.Items;
-        //            ItemGridView.SelectedIndex = -1;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        AppBar.IsOpen = true;
-        //    }
-        //}
 
         private void ItemViewClick(object sender, ItemClickEventArgs e)
         {

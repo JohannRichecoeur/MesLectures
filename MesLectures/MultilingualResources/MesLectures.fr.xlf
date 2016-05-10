@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="fr" original="MESLECTURES/STRINGS/EN/RESOURCES.RESW" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="MESLECTURES/STRINGS/EN/RESOURCES.RESW" datatype="resx">
+        <trans-unit id="AddButton.Text" translate="yes" xml:space="preserve">
+          <source>Add</source>
+          <target state="translated">Ajouter</target>
+        </trans-unit>
+        <trans-unit id="AppTitle.Text" translate="yes" xml:space="preserve">
+          <source>My readings</source>
+          <target state="translated">Mes lectures</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Title of the app</note>
+        </trans-unit>
+        <trans-unit id="AppTitleManifest" translate="yes" xml:space="preserve">
+          <source>My readings.</source>
+          <target state="translated">Mes lectures</target>
+        </trans-unit>
+        <trans-unit id="Bing_Search" translate="yes" xml:space="preserve">
+          <source>searching covers</source>
+          <target state="new">searching covers</target>
+        </trans-unit>
+        <trans-unit id="Book_Editor.Text" translate="yes" xml:space="preserve">
+          <source>Editor: </source>
+          <target state="translated">Editeur : </target>
+        </trans-unit>
+        <trans-unit id="Book_MyOpinion.Text" translate="yes" xml:space="preserve">
+          <source>My opinion: </source>
+          <target state="translated">Mon avis : </target>
+        </trans-unit>
+        <trans-unit id="Book_ReadingDate.Text" translate="yes" xml:space="preserve">
+          <source>Reading date: </source>
+          <target state="translated">Date de lecture : </target>
+        </trans-unit>
+        <trans-unit id="Book_Story.Text" translate="yes" xml:space="preserve">
+          <source>Story: </source>
+          <target state="translated">Histoire : </target>
+        </trans-unit>
+        <trans-unit id="Book_Summary.Text" translate="yes" xml:space="preserve">
+          <source>Summary: </source>
+          <target state="translated">Résumé : </target>
+        </trans-unit>
+        <trans-unit id="CancelButton" translate="yes" xml:space="preserve">
+          <source>Cancel</source>
+          <target state="translated">Annuler</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_BarCodeNotFound" translate="yes" xml:space="preserve">
+          <source>Sorry, we can't recognize the bar code.</source>
+          <target state="translated">Désolé, le code-barres n'a pas été reconnu.
+</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_ByISBN" translate="yes" xml:space="preserve">
+          <source>Search a book with its ISBN number</source>
+          <target state="translated">Rechercher un livre à partir de son numéro ISBN
+</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_Duplicate" translate="yes" xml:space="preserve">
+          <source>A book is already registered for this author with the same title</source>
+          <target state="translated">Un livre existe déjà pour cet auteur avec ce titre.</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_EnterISBN" translate="yes" xml:space="preserve">
+          <source>Enter ISBN</source>
+          <target state="translated">Entrer ISBN</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_ISBNFound" translate="yes" xml:space="preserve">
+          <source>We found this ISBN number:</source>
+          <target state="translated">Nous avons trouvé ce numéro ISBN :
+</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_ISBNFoundSearchBook" translate="yes" xml:space="preserve">
+          <source>Search corresponding book</source>
+          <target state="translated">Rechercher le livre correspondant</target>
+        </trans-unit>
+        <trans-unit id="CreateBook_Scan" translate="yes" xml:space="preserve">
+          <source>Scan the bar code</source>
+          <target state="translated">Scanner le code-barres</target>
+        </trans-unit>
+        <trans-unit id="Delete-Book" translate="yes" xml:space="preserve">
+          <source>Do you want to delete "{0}" from "{1}"?</source>
+          <target state="translated">Voulez-vous supprimer "{0}" de "{1}" ?</target>
+        </trans-unit>
+        <trans-unit id="Delete-Books" translate="yes" xml:space="preserve">
+          <source>Do you want to delete these {0} books?</source>
+          <target state="translated">Voulez-vous supprimer ces {0} livres ?</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_BingImageBook" translate="yes" xml:space="preserve">
+          <source>Search with Bing...</source>
+          <target state="translated">Chercher avec Bing...</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_DatePickerHeader" translate="yes" xml:space="preserve">
+          <source>Reading date</source>
+          <target state="translated">Date de lecture</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_LocalImageBook.Content" translate="yes" xml:space="preserve">
+          <source>Choose a picture</source>
+          <target state="translated">Choisir une photo</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_MyOpinion" translate="yes" xml:space="preserve">
+          <source>My opinion</source>
+          <target state="translated">Mon avis</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_Story" translate="yes" xml:space="preserve">
+          <source>Story</source>
+          <target state="translated">Histoire</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_Summary" translate="yes" xml:space="preserve">
+          <source>Summary</source>
+          <target state="translated">Résumé</target>
+        </trans-unit>
+        <trans-unit id="DetailBook_Title.Text" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Titre</target>
+        </trans-unit>
+        <trans-unit id="Infos_close" translate="yes" xml:space="preserve">
+          <source>Close</source>
+          <target state="translated">Fermer</target>
+        </trans-unit>
+        <trans-unit id="Infos_dev" translate="yes" xml:space="preserve">
+          <source>Developed by</source>
+          <target state="translated">Developpé par</target>
+        </trans-unit>
+        <trans-unit id="Infos_sendMail" translate="yes" xml:space="preserve">
+          <source>Send an email</source>
+          <target state="translated">Envoyer un email</target>
+        </trans-unit>
+        <trans-unit id="ISBNResult_HeaderTitle" translate="yes" xml:space="preserve">
+          <source>We found the following data</source>
+          <target state="translated">Nous avons trouvé les données suivantes
+</target>
+        </trans-unit>
+        <trans-unit id="ISBNResult_UseButton" translate="yes" xml:space="preserve">
+          <source>Use</source>
+          <target state="translated">Utiliser</target>
+        </trans-unit>
+        <trans-unit id="ISBNSearch_HeaderTitle" translate="yes" xml:space="preserve">
+          <source>Please enter an ISBN number</source>
+          <target state="translated">Entrez un numéro ISBN</target>
+        </trans-unit>
+        <trans-unit id="ISBNSearch_InvalidISBN" translate="yes" xml:space="preserve">
+          <source>Please enter a valid ISBN number</source>
+          <target state="translated">Merci d'entrer un numéro ISBN valide</target>
+        </trans-unit>
+        <trans-unit id="ISBNSearch_NoResults" translate="yes" xml:space="preserve">
+          <source>Sorry, we found no book for this ISBN number.</source>
+          <target state="translated">Désolé, nous n'avons trouvé aucun livre pour ce numéro ISBN.</target>
+        </trans-unit>
+        <trans-unit id="ISBNSearch_Searching" translate="yes" xml:space="preserve">
+          <source>Searching...</source>
+          <target state="translated">Recherche...</target>
+        </trans-unit>
+        <trans-unit id="Locale" translate="yes" xml:space="preserve">
+          <source>en-us</source>
+          <target state="translated">fr-fr</target>
+        </trans-unit>
+        <trans-unit id="No" translate="yes" xml:space="preserve">
+          <source>No</source>
+          <target state="translated">Non</target>
+        </trans-unit>
+        <trans-unit id="SearchButton" translate="yes" xml:space="preserve">
+          <source>Search</source>
+          <target state="translated">Recherche</target>
+        </trans-unit>
+        <trans-unit id="Search_Results" translate="yes" xml:space="preserve">
+          <source>Results for "{0}"</source>
+          <target state="translated">Résultats pour "{0}"</target>
+        </trans-unit>
+        <trans-unit id="Settings_AccountTitle" translate="yes" xml:space="preserve">
+          <source>Onedrive Account</source>
+          <target state="translated">Compte Onedrive</target>
+        </trans-unit>
+        <trans-unit id="Settings_Book_1" translate="yes" xml:space="preserve">
+          <source>book</source>
+          <target state="translated">livre</target>
+        </trans-unit>
+        <trans-unit id="Settings_Book_MoreThanOne" translate="yes" xml:space="preserve">
+          <source>books</source>
+          <target state="translated">livres</target>
+        </trans-unit>
+        <trans-unit id="SharedBook_Editor" translate="yes" xml:space="preserve">
+          <source>Editor: </source>
+          <target state="translated">Editeur : </target>
+        </trans-unit>
+        <trans-unit id="SharedBook_MyOpinion" translate="yes" xml:space="preserve">
+          <source>My opinion: </source>
+          <target state="translated">Mon avis : </target>
+        </trans-unit>
+        <trans-unit id="SharedBook_ReadingDate" translate="yes" xml:space="preserve">
+          <source>Reading date: </source>
+          <target state="translated">Date de lecture :</target>
+        </trans-unit>
+        <trans-unit id="SharedBook_Story" translate="yes" xml:space="preserve">
+          <source>Story: </source>
+          <target state="translated">Histoire : </target>
+        </trans-unit>
+        <trans-unit id="SharedBook_Summary" translate="yes" xml:space="preserve">
+          <source>Summary: </source>
+          <target state="translated">Résumé : </target>
+        </trans-unit>
+        <trans-unit id="Title_HeaderSection" translate="yes" xml:space="preserve">
+          <source>All my readings</source>
+          <target state="translated">Toutes mes lectures</target>
+        </trans-unit>
+        <trans-unit id="Welcome_Text" translate="yes" xml:space="preserve">
+          <source>You don't have created any book for now, start create one using the "Add" button in the left menu.</source>
+          <target state="translated">Vous n'avez créé aucun livre pour l'instant, créez-en un en utilisant le boutont "Ajouter" dans le menu de gauche.</target>
+        </trans-unit>
+        <trans-unit id="Welcome_Title" translate="yes" xml:space="preserve">
+          <source>Welcome !!</source>
+          <target state="translated">Bienvenue !!</target>
+        </trans-unit>
+        <trans-unit id="Yes" translate="yes" xml:space="preserve">
+          <source>Yes</source>
+          <target state="translated">Oui</target>
+        </trans-unit>
+        <trans-unit id="OneDriveButton.Text" translate="yes" xml:space="preserve">
+          <source>Onedrive</source>
+          <target state="new">Onedrive</target>
+        </trans-unit>
+        <trans-unit id="SettingsButton.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="UploadPicturesToggle.Header" translate="yes" xml:space="preserve">
+          <source>Include books pictures in OneDrive</source>
+          <target state="translated">Inclure les couvertures des livres dans OneDrive</target>
+        </trans-unit>
+        <trans-unit id="UploadToOnedrive.Content" translate="yes" xml:space="preserve">
+          <source>Upload to Onedrive</source>
+          <target state="translated">Télécharger sur Onedrive</target>
+        </trans-unit>
+        <trans-unit id="MyBooks.Text" translate="yes" xml:space="preserve">
+          <source>My books</source>
+          <target state="translated">Mes livres</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Title of the top left menu</note>
+        </trans-unit>
+        <trans-unit id="DownloadFromOnedrive.Content" translate="yes" xml:space="preserve">
+          <source>Dowload from Onedrive</source>
+          <target state="translated">Télécharger depuis Onedrive</target>
+        </trans-unit>
+        <trans-unit id="OneDriveNoInternetAccess" translate="yes" xml:space="preserve">
+          <source>You need to be connected to internet to access OneDrive</source>
+          <target state="translated">Vous devez être connectés à internet pour accéder à OneDrive</target>
+        </trans-unit>
+        <trans-unit id="OneDriveSignOutButton.Text" translate="yes" xml:space="preserve">
+          <source>Sign out</source>
+          <target state="translated">Se déconnecter</target>
+        </trans-unit>
+        <trans-unit id="OneDriveGetOneDriveInfos.Text" translate="yes" xml:space="preserve">
+          <source>We're retrieving your OneDrive information...</source>
+          <target state="translated">Nous recherchons vos informations OneDrive...
+</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_LocalCountFormat" translate="yes" xml:space="preserve">
+          <source>Locally, you have {0} books. Last update is from: {1}.</source>
+          <target state="translated">Localement, vous avez {0} livres. Dernière mise à jour : {1}.</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_OneDriveCountFormat" translate="yes" xml:space="preserve">
+          <source>On OneDrive, you have {0} books. Last update is from: {1}.</source>
+          <target state="translated">Sur OneDrive, vous avez {0} livres. Dernière mise à jour : {1}.</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_Download_Ongoing" translate="yes" xml:space="preserve">
+          <source>Downloading...</source>
+          <target state="translated">Récupération...</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_NoOneDriveFolderFound" translate="yes" xml:space="preserve">
+          <source>We didn't find any OneDrive backup for this application.</source>
+          <target state="translated">Nous n'avons trouvé aucune sauvegarde OneDrive pour cette application.
+</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_Transfer_Finishing" translate="yes" xml:space="preserve">
+          <source>Finishing...</source>
+          <target state="translated">C'est presque prêt...</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_Transfer_Preparing" translate="yes" xml:space="preserve">
+          <source>Preparing...</source>
+          <target state="translated">Préparation...</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_Upload_Ongoing" translate="yes" xml:space="preserve">
+          <source>Uploading...</source>
+          <target state="translated">Envoi en cours...</target>
+        </trans-unit>
+        <trans-unit id="OneDrive_FolderName" translate="yes" xml:space="preserve">
+          <source>My readings</source>
+          <target state="translated">Mes lectures</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_NoLocalBooksFound" translate="yes" xml:space="preserve">
+          <source>You don't have any book saved locally.</source>
+          <target state="translated">Vous n'avez aucun livre sur cet appareil.
+</target>
+        </trans-unit>
+        <trans-unit id="SettingsPageTitle.Text" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="translated">Paramètres</target>
+        </trans-unit>
+        <trans-unit id="AppVersion" translate="yes" xml:space="preserve">
+          <source>2.0</source>
+          <target state="new">2.0</target>
+        </trans-unit>
+        <trans-unit id="MyBooks_SortBy.Text" translate="yes" xml:space="preserve">
+          <source>Sort by:</source>
+          <target state="translated">Triés par:</target>
+        </trans-unit>
+        <trans-unit id="MyBooks_SortByAuthor" translate="yes" xml:space="preserve">
+          <source>Author</source>
+          <target state="translated">Auteur</target>
+        </trans-unit>
+        <trans-unit id="MyBooks_SortByDate" translate="yes" xml:space="preserve">
+          <source>Reading date</source>
+          <target state="translated">Date de lecture</target>
+        </trans-unit>
+        <trans-unit id="MyBooks_SortByLikes" translate="yes" xml:space="preserve">
+          <source>Likes</source>
+          <target state="translated">Préférence</target>
+        </trans-unit>
+        <trans-unit id="MyBooks_SortByTitle" translate="yes" xml:space="preserve">
+          <source>Title</source>
+          <target state="translated">Titre</target>
+        </trans-unit>
+        <trans-unit id="SearchBox.PlaceholderText" translate="yes" xml:space="preserve">
+          <source>Search...</source>
+          <target state="translated">Recherche...</target>
+        </trans-unit>
+        <trans-unit id="Book_Author.Text" translate="yes" xml:space="preserve">
+          <source>Author:</source>
+          <target state="translated">Auteur :</target>
+        </trans-unit>
+        <trans-unit id="OneDrivePage_OneDriveFolderName.Text" translate="yes" xml:space="preserve">
+          <source>Folder name on OneDrive:</source>
+          <target state="translated">Nom du dossier sur OneDrive :
+</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -235,17 +235,8 @@
   <data name="Search_Results" xml:space="preserve">
     <value>Results for "{0}"</value>
   </data>
-  <data name="Settings_AccountMessage_Format" xml:space="preserve">
-    <value>You're connected as {0}</value>
-  </data>
   <data name="Settings_AccountTitle" xml:space="preserve">
     <value>Onedrive Account</value>
-  </data>
-  <data name="Settings_Account_NotSignInMessage" xml:space="preserve">
-    <value>You're not signed in.</value>
-  </data>
-  <data name="Settings_Account_SignoutMessage" xml:space="preserve">
-    <value>Please connect to Onedrive to upload your readings.</value>
   </data>
   <data name="Settings_Book_1" xml:space="preserve">
     <value>book</value>
@@ -272,13 +263,10 @@
     <value>All my readings</value>
   </data>
   <data name="Welcome_Text" xml:space="preserve">
-    <value>You don't have created any book for now, start create one using the "Add" button at the right bottom</value>
+    <value>You don't have created any book for now, start create one using the "Add" button in the left menu.</value>
   </data>
   <data name="Welcome_Title" xml:space="preserve">
     <value>Welcome !!</value>
-  </data>
-  <data name="Windows_IncreaseSize" xml:space="preserve">
-    <value>Please increase the size of the window to perform this action</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>

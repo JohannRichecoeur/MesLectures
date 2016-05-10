@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddButton.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="AppTitle.Text" xml:space="preserve">
+    <value>Mes lectures</value>
+    <comment>Title of the app</comment>
+  </data>
+  <data name="AppTitleManifest" xml:space="preserve">
+    <value>Mes lectures</value>
+  </data>
+  <data name="Book_Editor.Text" xml:space="preserve">
+    <value>Editeur : </value>
+  </data>
+  <data name="Book_MyOpinion.Text" xml:space="preserve">
+    <value>Mon avis : </value>
+  </data>
+  <data name="Book_ReadingDate.Text" xml:space="preserve">
+    <value>Date de lecture : </value>
+  </data>
+  <data name="Book_Story.Text" xml:space="preserve">
+    <value>Histoire : </value>
+  </data>
+  <data name="Book_Summary.Text" xml:space="preserve">
+    <value>Résumé : </value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CreateBook_BarCodeNotFound" xml:space="preserve">
+    <value>Désolé, le code-barres n'a pas été reconnu.
+</value>
+  </data>
+  <data name="CreateBook_ByISBN" xml:space="preserve">
+    <value>Rechercher un livre à partir de son numéro ISBN
+</value>
+  </data>
+  <data name="CreateBook_Duplicate" xml:space="preserve">
+    <value>Un livre existe déjà pour cet auteur avec ce titre.</value>
+  </data>
+  <data name="CreateBook_EnterISBN" xml:space="preserve">
+    <value>Entrer ISBN</value>
+  </data>
+  <data name="CreateBook_ISBNFound" xml:space="preserve">
+    <value>Nous avons trouvé ce numéro ISBN :
+</value>
+  </data>
+  <data name="CreateBook_ISBNFoundSearchBook" xml:space="preserve">
+    <value>Rechercher le livre correspondant</value>
+  </data>
+  <data name="CreateBook_Scan" xml:space="preserve">
+    <value>Scanner le code-barres</value>
+  </data>
+  <data name="Delete-Book" xml:space="preserve">
+    <value>Voulez-vous supprimer "{0}" de "{1}" ?</value>
+  </data>
+  <data name="Delete-Books" xml:space="preserve">
+    <value>Voulez-vous supprimer ces {0} livres ?</value>
+  </data>
+  <data name="DetailBook_BingImageBook" xml:space="preserve">
+    <value>Chercher avec Bing...</value>
+  </data>
+  <data name="DetailBook_DatePickerHeader" xml:space="preserve">
+    <value>Date de lecture</value>
+  </data>
+  <data name="DetailBook_LocalImageBook.Content" xml:space="preserve">
+    <value>Choisir une photo</value>
+  </data>
+  <data name="DetailBook_MyOpinion" xml:space="preserve">
+    <value>Mon avis</value>
+  </data>
+  <data name="DetailBook_Story" xml:space="preserve">
+    <value>Histoire</value>
+  </data>
+  <data name="DetailBook_Summary" xml:space="preserve">
+    <value>Résumé</value>
+  </data>
+  <data name="DetailBook_Title.Text" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Infos_close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="Infos_dev" xml:space="preserve">
+    <value>Developpé par</value>
+  </data>
+  <data name="Infos_sendMail" xml:space="preserve">
+    <value>Envoyer un email</value>
+  </data>
+  <data name="ISBNResult_HeaderTitle" xml:space="preserve">
+    <value>Nous avons trouvé les données suivantes
+</value>
+  </data>
+  <data name="ISBNResult_UseButton" xml:space="preserve">
+    <value>Utiliser</value>
+  </data>
+  <data name="ISBNSearch_HeaderTitle" xml:space="preserve">
+    <value>Entrez un numéro ISBN</value>
+  </data>
+  <data name="ISBNSearch_InvalidISBN" xml:space="preserve">
+    <value>Merci d'entrer un numéro ISBN valide</value>
+  </data>
+  <data name="ISBNSearch_NoResults" xml:space="preserve">
+    <value>Désolé, nous n'avons trouvé aucun livre pour ce numéro ISBN.</value>
+  </data>
+  <data name="ISBNSearch_Searching" xml:space="preserve">
+    <value>Recherche...</value>
+  </data>
+  <data name="Locale" xml:space="preserve">
+    <value>fr-fr</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
+  <data name="Search_Results" xml:space="preserve">
+    <value>Résultats pour "{0}"</value>
+  </data>
+  <data name="Settings_AccountTitle" xml:space="preserve">
+    <value>Compte Onedrive</value>
+  </data>
+  <data name="Settings_Book_1" xml:space="preserve">
+    <value>livre</value>
+  </data>
+  <data name="Settings_Book_MoreThanOne" xml:space="preserve">
+    <value>livres</value>
+  </data>
+  <data name="SharedBook_Editor" xml:space="preserve">
+    <value>Editeur : </value>
+  </data>
+  <data name="SharedBook_MyOpinion" xml:space="preserve">
+    <value>Mon avis : </value>
+  </data>
+  <data name="SharedBook_ReadingDate" xml:space="preserve">
+    <value>Date de lecture :</value>
+  </data>
+  <data name="SharedBook_Story" xml:space="preserve">
+    <value>Histoire : </value>
+  </data>
+  <data name="SharedBook_Summary" xml:space="preserve">
+    <value>Résumé : </value>
+  </data>
+  <data name="Title_HeaderSection" xml:space="preserve">
+    <value>Toutes mes lectures</value>
+  </data>
+  <data name="Welcome_Text" xml:space="preserve">
+    <value>Vous n'avez créé aucun livre pour l'instant, créez-en un en utilisant le boutont "Ajouter" dans le menu de gauche.</value>
+  </data>
+  <data name="Welcome_Title" xml:space="preserve">
+    <value>Bienvenue !!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="SettingsButton.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="UploadPicturesToggle.Header" xml:space="preserve">
+    <value>Inclure les couvertures des livres dans OneDrive</value>
+  </data>
+  <data name="UploadToOnedrive.Content" xml:space="preserve">
+    <value>Télécharger sur Onedrive</value>
+  </data>
+  <data name="MyBooks.Text" xml:space="preserve">
+    <value>Mes livres</value>
+    <comment>Title of the top left menu</comment>
+  </data>
+  <data name="DownloadFromOnedrive.Content" xml:space="preserve">
+    <value>Télécharger depuis Onedrive</value>
+  </data>
+  <data name="OneDriveNoInternetAccess" xml:space="preserve">
+    <value>Vous devez être connectés à internet pour accéder à OneDrive</value>
+  </data>
+  <data name="OneDriveSignOutButton.Text" xml:space="preserve">
+    <value>Se déconnecter</value>
+  </data>
+  <data name="OneDriveGetOneDriveInfos.Text" xml:space="preserve">
+    <value>Nous recherchons vos informations OneDrive...
+</value>
+  </data>
+  <data name="OneDrivePage_LocalCountFormat" xml:space="preserve">
+    <value>Localement, vous avez {0} livres. Dernière mise à jour : {1}.</value>
+  </data>
+  <data name="OneDrivePage_OneDriveCountFormat" xml:space="preserve">
+    <value>Sur OneDrive, vous avez {0} livres. Dernière mise à jour : {1}.</value>
+  </data>
+  <data name="OneDrivePage_Download_Ongoing" xml:space="preserve">
+    <value>Récupération...</value>
+  </data>
+  <data name="OneDrivePage_NoOneDriveFolderFound" xml:space="preserve">
+    <value>Nous n'avons trouvé aucune sauvegarde OneDrive pour cette application.
+</value>
+  </data>
+  <data name="OneDrivePage_Transfer_Finishing" xml:space="preserve">
+    <value>C'est presque prêt...</value>
+  </data>
+  <data name="OneDrivePage_Transfer_Preparing" xml:space="preserve">
+    <value>Préparation...</value>
+  </data>
+  <data name="OneDrivePage_Upload_Ongoing" xml:space="preserve">
+    <value>Envoi en cours...</value>
+  </data>
+  <data name="OneDrive_FolderName" xml:space="preserve">
+    <value>Mes lectures</value>
+  </data>
+  <data name="OneDrivePage_NoLocalBooksFound" xml:space="preserve">
+    <value>Vous n'avez aucun livre sur cet appareil.
+</value>
+  </data>
+  <data name="SettingsPageTitle.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="MyBooks_SortBy.Text" xml:space="preserve">
+    <value>Triés par:</value>
+  </data>
+  <data name="MyBooks_SortByAuthor" xml:space="preserve">
+    <value>Auteur</value>
+  </data>
+  <data name="MyBooks_SortByDate" xml:space="preserve">
+    <value>Date de lecture</value>
+  </data>
+  <data name="MyBooks_SortByLikes" xml:space="preserve">
+    <value>Préférence</value>
+  </data>
+  <data name="MyBooks_SortByTitle" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="SearchBox.PlaceholderText" xml:space="preserve">
+    <value>Recherche...</value>
+  </data>
+  <data name="Book_Author.Text" xml:space="preserve">
+    <value>Auteur :</value>
+  </data>
+  <data name="OneDrivePage_OneDriveFolderName.Text" xml:space="preserve">
+    <value>Nom du dossier sur OneDrive :
+</value>
+  </data>
+</root>
