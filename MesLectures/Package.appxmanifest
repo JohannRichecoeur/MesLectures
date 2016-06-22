@@ -5,7 +5,7 @@
   <Properties>
     <DisplayName>ms-resource:AppTitle/Text</DisplayName>
     <PublisherDisplayName>Jean-Eric Hourchon</PublisherDisplayName>
-    <Logo>Assets\200x200.jpg</Logo>
+    <Logo>Assets\50x50.jpg</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -15,9 +15,12 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MesLectures.App">
-      <uap:VisualElements DisplayName="ms-resource:AppTitle/Text" Square150x150Logo="Assets\300x300.jpg" Square44x44Logo="Assets\200x200.jpg" Description="ms-resource:AppTitle/Text" BackgroundColor="#A08F7F">
-        <uap:LockScreen Notification="badge" BadgeLogo="Assets\96x96.jpg" />
-        <uap:DefaultTile Wide310x150Logo="Assets\310x150.jpg" Square71x71Logo="Assets\284x284.jpg" Square310x310Logo="Assets\310x310.jpg">
+      <uap:VisualElements DisplayName="ms-resource:AppTitle/Text" Square150x150Logo="Assets\150x150.jpg" Square44x44Logo="Assets\44x44.jpg" Description="ms-resource:AppTitle/Text" BackgroundColor="#A08F7F">
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\24x24.jpg" />
+        <uap:DefaultTile Wide310x150Logo="Assets\310x150.jpg" Square71x71Logo="Assets\71x71.jpg" Square310x310Logo="Assets\310x310.jpg">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\splash.jpg" BackgroundColor="#A08F7F" />
       </uap:VisualElements>

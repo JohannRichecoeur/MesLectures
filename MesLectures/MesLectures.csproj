@@ -20,6 +20,9 @@
     <PackageCertificateKeyFile>MesLectures_StoreKey.pfx</PackageCertificateKeyFile>
     <ApplicationInsightsResourceId />
     <PackageCertificateThumbprint>21F7428AB80388A9403DDDA9C5B11B3D0DA2FDD1</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -171,27 +174,35 @@
     <Content Include="Assets\5etoiles.png" />
     <Content Include="Assets\background.jpg" />
     <Content Include="Assets\default.jpg" />
+    <Content Include="Assets\en\150x150.jpg" />
     <Content Include="Assets\en\200x200.jpg" />
     <Content Include="Assets\en\200x200.scale-400.jpg" />
+    <Content Include="Assets\en\24x24.jpg" />
     <Content Include="Assets\en\284x284.jpg" />
     <Content Include="Assets\en\284x284.scale-100.jpg" />
     <Content Include="Assets\en\284x284.scale-400.jpg" />
     <Content Include="Assets\en\300x300.jpg" />
     <Content Include="Assets\en\310x150.jpg" />
     <Content Include="Assets\en\310x310.jpg" />
+    <Content Include="Assets\en\44x44.jpg" />
+    <Content Include="Assets\en\50x50.jpg" />
     <Content Include="Assets\en\71x71.jpg" />
     <Content Include="Assets\en\96x96.jpg" />
     <Content Include="Assets\en\splash.jpg" />
     <Content Include="Assets\etoile.png" />
     <Content Include="Assets\etoileContour.png" />
+    <Content Include="Assets\fr\150x150.jpg" />
     <Content Include="Assets\fr\200x200.jpg" />
     <Content Include="Assets\fr\200x200.scale-400.jpg" />
+    <Content Include="Assets\fr\24x24.jpg" />
     <Content Include="Assets\fr\284x284.jpg" />
     <Content Include="Assets\fr\284x284.scale-100.jpg" />
     <Content Include="Assets\fr\284x284.scale-400.jpg" />
     <Content Include="Assets\fr\300x300.jpg" />
     <Content Include="Assets\fr\310x150.jpg" />
     <Content Include="Assets\fr\310x310.jpg" />
+    <Content Include="Assets\fr\44x44.jpg" />
+    <Content Include="Assets\fr\50x50.jpg" />
     <Content Include="Assets\fr\71x71.jpg" />
     <Content Include="Assets\fr\96x96.jpg" />
     <Content Include="Assets\fr\splash.jpg" />
@@ -249,6 +260,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Data.OData">
       <HintPath>..\packages\Microsoft.Data.OData.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Data.OData.dll</HintPath>
     </Reference>
