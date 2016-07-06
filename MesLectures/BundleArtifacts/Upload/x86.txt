@@ -1,0 +1,1 @@
+MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\x86\Release\Upload\MesLectures_2.0.0.0_x86.appx

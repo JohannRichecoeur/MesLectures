@@ -48,7 +48,7 @@ namespace MesLectures
 #endif
 
             Frame rootFrame = Window.Current.Content as Frame;
-
+            
             // Do not repeat app initialization when the Window already has content,
             // just ensure that the window is active
             if (rootFrame == null)
@@ -74,6 +74,9 @@ namespace MesLectures
                 // parameter
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
             }
+            if (e.PrelaunchActivated)
+            { }
+
             // Ensure the current window is active
             Window.Current.Activate();
         }

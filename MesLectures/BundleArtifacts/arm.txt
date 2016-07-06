@@ -1,0 +1,3 @@
+MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.0.0_ARM.appx
+SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.0.0_Test\MesLectures_2.0.0.0_ARM.appxsym
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.0.0_language-fr.appx
