@@ -432,7 +432,7 @@ namespace MesLectures
             }
             else
             {
-                sender.Width = Window.Current.Bounds.Width * 0.56;
+                sender.Width = Window.Current.Bounds.Width * 0.50;
             }
         }
     }

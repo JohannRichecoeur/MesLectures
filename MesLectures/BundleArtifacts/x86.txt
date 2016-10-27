@@ -1,2 +1,2 @@
-MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\x86\Release\MesLectures_2.0.0.0_x86.appx
-SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.0.0_Test\MesLectures_2.0.0.0_x86.appxsym
+MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\x86\Release\MesLectures_2.0.1.0_x86.appx
+SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.1.0_Test\MesLectures_2.0.1.0_x86.appxsym

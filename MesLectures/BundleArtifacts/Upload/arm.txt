@@ -1,2 +1,11 @@
-MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\Upload\MesLectures_2.0.0.0_ARM.appx
+MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\Upload\MesLectures_2.0.1.0_ARM.appx
+SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.1.0\MesLectures_2.0.1.0_ARM.appxsym
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-de.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-es.appx
 ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-fr.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-it.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-ja.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-ko.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-ru.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-zh-hans.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\_language-zh-hant.appx

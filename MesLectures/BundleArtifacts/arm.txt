@@ -1,3 +1,11 @@
-MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.0.0_ARM.appx
-SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.0.0_Test\MesLectures_2.0.0.0_ARM.appxsym
-ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.0.0_language-fr.appx
+MainPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_ARM.appx
+SymbolPackage=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\AppPackages\MesLectures_2.0.1.0_Test\MesLectures_2.0.1.0_ARM.appxsym
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-de.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-es.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-fr.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-it.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-ja.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-ko.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-ru.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-zh-hans.appx
+ResourcePack=C:\Users\jrichec.EUROPE\Source\Repos\MesLectures\MesLectures\bin\ARM\Release\MesLectures_2.0.1.0_language-zh-hant.appx

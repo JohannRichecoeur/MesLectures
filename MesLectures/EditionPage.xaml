@@ -25,8 +25,8 @@
                         <Setter Target="TitleBox.FontSize" Value="20" />
                         <Setter Target="TitleBox.Margin" Value="40,0,0,50" />
                         <Setter Target="EditDeleteButtons.Margin" Value="0,0,0,50" />
-                        <Setter Target="BookMetadataScrollviewer.(Grid.Column)" Value="0" />
-                        <Setter Target="BookMetadataScrollviewer.(Grid.Row)" Value="1" />
+                        <Setter Target="GridMetadata.(Grid.Column)" Value="0" />
+                        <Setter Target="GridMetadata.(Grid.Row)" Value="1" />
                         <Setter Target="BookPictureBoxDesktop.Visibility" Value="Collapsed" />
                         <Setter Target="GridMetadata.Margin" Value="0" />
                         <Setter Target="BookReadingDate.Margin" Value="0,-30,10,0" />
@@ -95,15 +95,9 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-
                 <RichTextBlock
                     x:Name="BookPictureBoxDesktop"
                     Style="{StaticResource BodyRichTextBlockStyle}"
-                    Grid.Row="0"
                     Grid.Column="0"
                     Margin="40,0,10,20"
                     IsTextSelectionEnabled="True"
@@ -118,7 +112,6 @@
                                 Source="Assets/default.jpg"
                                 Stretch="Uniform" />
 
-
                         </InlineUIContainer>
                         <InlineUIContainer>
                             <Button
@@ -130,177 +123,166 @@
                         </InlineUIContainer>
                     </Paragraph>
                 </RichTextBlock>
-                <ScrollViewer x:Name="BookMetadataScrollviewer" Grid.Row="0" Grid.Column="1">
-                    <Grid
-                        x:Name="GridMetadata"
-                        Margin="10,0,160,20"
-                        HorizontalAlignment="Center"
-                        Loading="MetadataPlace_OnLoading">
+                <ScrollViewer
+                    x:Name="GridMetadata"
+                    Grid.Column="1"
+                    Margin="10,0,160,20"
+                    HorizontalAlignment="Center"
+                    Loading="MetadataPlace_OnLoading">
 
-                        <StackPanel>
-                            <RichTextBlock
-                                x:Name="BookPictureBoxPhone"
-                                Style="{StaticResource BodyRichTextBlockStyle}"
-                                Grid.Row="0"
-                                Grid.Column="0"
-                                HorizontalAlignment="Center"
-                                IsTextSelectionEnabled="True"
-                                Loading="PicturePlace_OnLoading">
-                                <Paragraph LineStackingStrategy="MaxHeight">
-                                    <InlineUIContainer>
-                                        <Image
-                                            x:Name="BookPicturePhone"
-                                            AutomationProperties.Name="{Binding Title}"
-                                            Height="Auto"
-                                            HorizontalAlignment="Center"
-                                            Source="Assets/default.jpg"
-                                            Stretch="Uniform" />
-
-
-                                    </InlineUIContainer>
-                                    <InlineUIContainer>
-                                        <Button
-                                            x:Uid="DetailBook_LocalImageBook"
-                                            Margin="0,10,0,0"
-                                            HorizontalAlignment="Left"
-                                            Click="LocalButtonClick"
-                                            FontSize="12" />
-                                    </InlineUIContainer>
-                                </Paragraph>
-                            </RichTextBlock>
+                    <StackPanel>
+                        <RichTextBlock
+                            x:Name="BookPictureBoxPhone"
+                            Style="{StaticResource BodyRichTextBlockStyle}"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            HorizontalAlignment="Center"
+                            IsTextSelectionEnabled="True"
+                            Loading="PicturePlace_OnLoading">
+                            <Paragraph LineStackingStrategy="MaxHeight">
+                                <InlineUIContainer>
+                                    <Image
+                                        x:Name="BookPicturePhone"
+                                        AutomationProperties.Name="{Binding Title}"
+                                        Height="Auto"
+                                        HorizontalAlignment="Center"
+                                        Source="Assets/default.jpg"
+                                        Stretch="Uniform" />
+                                </InlineUIContainer>
+                                <InlineUIContainer>
+                                    <Button
+                                        x:Uid="DetailBook_LocalImageBook"
+                                        Margin="0,10,0,0"
+                                        HorizontalAlignment="Left"
+                                        Click="LocalButtonClick"
+                                        FontSize="12" />
+                                </InlineUIContainer>
+                            </Paragraph>
+                        </RichTextBlock>
+                        <TextBlock
+                            x:Uid="Book_Author"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            FontWeight="SemiLight"
+                            Foreground="#A08F7F"
+                            Text="" />
+                        <TextBox
+                            Name="AuthorBox"
+                            Height="40"
+                            Margin="0,0,0,10"
+                            FontSize="20"
+                            FontWeight="Light" />
+                        <TextBlock
+                            x:Uid="Book_Editor"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            FontWeight="SemiLight"
+                            Foreground="#A08F7F"
+                            Text="" />
+                        <TextBox
+                            x:Name="EditorBox"
+                            Height="30"
+                            Margin="0,0,0,10"
+                            FontSize="15"
+                            FontWeight="Normal" />
+                        <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
                             <TextBlock
-                                x:Uid="Book_Author"
+                                x:Uid="Book_ReadingDate"
+                                x:Name="BookReadingDate"
+                                Margin="0,0,10,0"
                                 VerticalAlignment="Center"
                                 FontSize="16"
                                 FontWeight="SemiLight"
                                 Foreground="#A08F7F"
                                 Text="" />
-                            <TextBox
-                                Name="AuthorBox"
-                                Height="40"
-                                Margin="0,0,0,10"
-                                FontSize="20"
-                                FontWeight="Light" />
-                            <TextBlock
-                                x:Uid="Book_Editor"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                FontWeight="SemiLight"
-                                Foreground="#A08F7F"
-                                Text="" />
-                            <TextBox
-                                x:Name="EditorBox"
-                                Height="30"
-                                Margin="0,0,0,10"
-                                FontSize="15"
-                                FontWeight="Normal" />
-
-                            <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
-                                <TextBlock
-                                    x:Uid="Book_ReadingDate"
-                                    x:Name="BookReadingDate"
-                                    Margin="0,0,10,0"
-                                    VerticalAlignment="Center"
-                                    FontSize="16"
-                                    FontWeight="SemiLight"
-                                    Foreground="#A08F7F"
-                                    Text="" />
-                                <DatePicker x:Name="DatePickerForUser" DayVisible="False" MonthFormat="month.full" />
-                            </StackPanel>
-                            <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
-                                <Image
-                                    x:Name="ImageEtoile1"
-                                    Width="37"
-                                    Height="32"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Source="Assets/etoile.png"
-                                    Tapped="EtoileTapped" />
-                                <Image
-                                    x:Name="ImageEtoile2"
-                                    Width="37"
-                                    Height="32"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Source="Assets/etoileContour.png"
-                                    Tapped="EtoileTapped" />
-                                <Image
-                                    x:Name="ImageEtoile3"
-                                    Width="37"
-                                    Height="32"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Source="Assets/etoileContour.png"
-                                    Tapped="EtoileTapped" />
-                                <Image
-                                    x:Name="ImageEtoile4"
-                                    Width="37"
-                                    Height="32"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Source="Assets/etoileContour.png"
-                                    Tapped="EtoileTapped" />
-                                <Image
-                                    x:Name="ImageEtoile5"
-                                    Width="37"
-                                    Height="32"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Top"
-                                    Source="Assets/etoileContour.png"
-                                    Tapped="EtoileTapped" />
-                            </StackPanel>
-                            <TextBlock
-                                x:Uid="Book_Summary"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                FontWeight="SemiLight"
-                                Foreground="#A08F7F" />
-                            <TextBox
-                                x:Name="SummaryBox"
-                                Height="100"
-                                Margin="0,0,0,10"
-                                AcceptsReturn="True"
-                                FontSize="15"
-                                FontWeight="Normal"
-                                TextWrapping="Wrap" />
-
-
-                            <TextBlock
-                                x:Uid="Book_MyOpinion"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                FontWeight="SemiLight"
-                                Foreground="#A08F7F" />
-                            <TextBox
-                                x:Name="MyOpinionBox"
-                                Height="100"
-                                Margin="0,0,0,10"
-                                AcceptsReturn="True"
-                                FontSize="15"
-                                FontWeight="Normal"
-                                TextWrapping="Wrap" />
-
-
-                            <TextBlock
-                                x:Uid="Book_Story"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                FontWeight="SemiLight"
-                                Foreground="#A08F7F" />
-                            <TextBox
-                                x:Name="StoryBox"
-                                Height="208"
-                                AcceptsReturn="True"
-                                FontSize="15"
-                                FontWeight="Normal"
-                                TextWrapping="Wrap" />
-
+                            <DatePicker x:Name="DatePickerForUser" DayVisible="False" MonthFormat="month.full" />
                         </StackPanel>
-
-                    </Grid>
+                        <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
+                            <Image
+                                x:Name="ImageEtoile1"
+                                Width="37"
+                                Height="32"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="Assets/etoile.png"
+                                Tapped="EtoileTapped" />
+                            <Image
+                                x:Name="ImageEtoile2"
+                                Width="37"
+                                Height="32"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="Assets/etoileContour.png"
+                                Tapped="EtoileTapped" />
+                            <Image
+                                x:Name="ImageEtoile3"
+                                Width="37"
+                                Height="32"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="Assets/etoileContour.png"
+                                Tapped="EtoileTapped" />
+                            <Image
+                                x:Name="ImageEtoile4"
+                                Width="37"
+                                Height="32"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="Assets/etoileContour.png"
+                                Tapped="EtoileTapped" />
+                            <Image
+                                x:Name="ImageEtoile5"
+                                Width="37"
+                                Height="32"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                Source="Assets/etoileContour.png"
+                                Tapped="EtoileTapped" />
+                        </StackPanel>
+                        <TextBlock
+                            x:Uid="Book_Summary"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            FontWeight="SemiLight"
+                            Foreground="#A08F7F" />
+                        <TextBox
+                            x:Name="SummaryBox"
+                            Height="100"
+                            Margin="0,0,0,10"
+                            AcceptsReturn="True"
+                            FontSize="15"
+                            FontWeight="Normal"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Uid="Book_MyOpinion"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            FontWeight="SemiLight"
+                            Foreground="#A08F7F" />
+                        <TextBox
+                            x:Name="MyOpinionBox"
+                            Height="100"
+                            Margin="0,0,0,10"
+                            AcceptsReturn="True"
+                            FontSize="15"
+                            FontWeight="Normal"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Uid="Book_Story"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            FontWeight="SemiLight"
+                            Foreground="#A08F7F" />
+                        <TextBox
+                            x:Name="StoryBox"
+                            Height="208"
+                            AcceptsReturn="True"
+                            FontSize="15"
+                            FontWeight="Normal"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
                 </ScrollViewer>
             </Grid>
-
         </Grid>
     </Grid>
 </Page>
