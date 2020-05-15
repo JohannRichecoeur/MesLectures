@@ -52,6 +52,7 @@
                 Height="50"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
+                FontWeight="Light"
                 FontSize="28" />
             <StackPanel
                 x:Name="EditDeleteButtons"
@@ -171,7 +172,7 @@
                             Height="40"
                             Margin="0,0,0,10"
                             FontSize="20"
-                            FontWeight="Light" />
+                            FontWeight="SemiLight" />
                         <TextBlock
                             x:Uid="Book_Editor"
                             VerticalAlignment="Center"
@@ -181,10 +182,10 @@
                             Text="" />
                         <TextBox
                             x:Name="EditorBox"
-                            Height="30"
+                            Height="40"
                             Margin="0,0,0,10"
-                            FontSize="15"
-                            FontWeight="Normal" />
+                            FontSize="20"
+                            FontWeight="SemiLight" />
                         <StackPanel Margin="0,0,0,20" Orientation="Horizontal">
                             <TextBlock
                                 x:Uid="Book_ReadingDate"

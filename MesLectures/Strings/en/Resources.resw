@@ -353,7 +353,10 @@
   <data name="Book_Author.Text" xml:space="preserve">
     <value>Author:</value>
   </data>
-  <data name="OneDrivePage_OneDriveFolderName.Text" xml:space="preserve">
-    <value>Folder name on OneDrive:</value>
+  <data name="OneDriveSignInButton.Text" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="SignInText.Text" xml:space="preserve">
+    <value>You can sign in to OneDrive to save a copy of your readings. </value>
   </data>
 </root>

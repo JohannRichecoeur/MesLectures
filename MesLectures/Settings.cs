@@ -1,23 +1,21 @@
-﻿using System;
+﻿using Bing;
+using MesLectures.API;
+using MesLectures.DataModel;
+using MesLectures.ISBN;
+using Microsoft.OneDrive.Sdk;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
 using System.Net;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Bing;
-using MesLectures.API;
-using MesLectures.ISBN;
-using Microsoft.Live;
-using Newtonsoft.Json.Linq;
 using Windows.Storage;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-using MesLectures.DataModel;
 
 namespace MesLectures
 {
@@ -28,7 +26,11 @@ namespace MesLectures
 
         private const string DataFileName = "data.txt";
         private const string ZipFileName = "pictures.zip";
-        private static readonly string OneDriveFolderName = Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName) == null ? Settings.GetRessource("OneDrive_FolderName") : (string)Settings.GetLocalSettings(LocalSettingsValue.onedriveFolderName);
+
+        // boolean used for old users who could personalized on which folder on OneDrive data were saved
+        private static bool isCustomOnedriveFolderUsed = false;
+
+        private static IOneDriveClient _client;
 
         public static List<BookDataItem> BookList { get; set; }
 
@@ -52,10 +54,6 @@ namespace MesLectures
 
         public static InfosClass UserDataInfos { get; set; }
 
-        private static LiveConnectClient LiveConnectClient { get; set; }
-
-        private static LiveAuthClient LiveAuthClient { get; set;}
-
         public static void SetLocalSettings(LocalSettingsValue settings, object value)
         {
             LocalSettings.Values[settings.ToString()] = value;
@@ -77,13 +75,13 @@ namespace MesLectures
         }
         public static async Task SaveBookListToXml()
         {
-            var x = CreateBookXml(BookList.OrderBy(i => i.Id).ToList());
-            await CreateXmlFile(DataFileName, x);
+            var xmlBook = CreateBookXml(BookList.OrderBy(i => i.Id).ToList());
+            await CreateXmlFile(DataFileName, xmlBook);
         }
 
         public static bool CanLogout()
         {
-            return LiveAuthClient.CanLogout;
+            return _client.IsAuthenticated;
         }
 
         public static string GetRessource(string ressourceName)
@@ -203,9 +201,9 @@ namespace MesLectures
             await FileIO.WriteBytesAsync(file, allBytes.ToArray());
         }
 
-        public static void Signout()
+        public static async Task Signout()
         {
-            LiveAuthClient.Logout();
+            await _client.SignOutAsync();
         }
 
         public static async Task SaveImage(StorageFile imageFile, string fileName)
@@ -273,95 +271,114 @@ namespace MesLectures
             return random.Next().ToString();
         }
 
+        public static bool IsUserSignIn()
+        {
+            return _client != null && _client.IsAuthenticated;
+        }
+
+        private static async Task<string> GetToken()
+        {
+            // Initialize Graph
+            var scopes = new[]
+                {
+                      "onedrive.readwrite",
+                      "onedrive.appfolder",
+                      "wl.signin"
+                    };
+
+            // Sign in
+            _client = OneDriveClientExtensions.GetClientUsingOnlineIdAuthenticator(scopes);
+            var session = await _client.AuthenticateAsync();
+            return session.AccessToken;
+        }
+
+        private static async Task<XDocument> GetXMLFile()
+        {
+            Stream contentStream;
+            try
+            {
+                IItemRequestBuilder builder = _client.Drive.Special.AppRoot.ItemWithPath($"{DataFileName}");
+                contentStream = await builder.Content.Request().GetAsync();
+                isCustomOnedriveFolderUsed = false;
+            }
+            catch
+            {
+                try
+                {
+                    IItemRequestBuilder builder = _client.Drive.Root.ItemWithPath($"{getOneDriveFolderName()}/{DataFileName}");
+                    contentStream = await builder.Content.Request().GetAsync();
+                    isCustomOnedriveFolderUsed = true;
+                }
+                catch
+                {
+                    return null;
+                }
+            }
+
+            using (var reader = new StreamReader(contentStream))
+            {
+                var result = reader.ReadToEnd();
+                return XDocument.Parse(result);
+            }
+        }
+
         public static async Task<bool> GetOnedriveUserInfo()
         {
             try
             {
-                // Open Live Connect SDK client.
-                LiveAuthClient = new LiveAuthClient();
-                try
+                string accessToken = await GetToken();
+
+                // Get the profile info of the user.
+                var uri = new Uri($"https://apis.live.net/v5.0/me?access_token={accessToken}");
+                var httpClient = new System.Net.Http.HttpClient();
+                var result = await httpClient.GetAsync(uri);
+                string jsonUserInfo = await result.Content.ReadAsStringAsync();
+                if (jsonUserInfo != null)
                 {
-                    var loginResult = await LiveAuthClient.LoginAsync(new string[] { "wl.basic", "wl.offline_access", "wl.skydrive_update", "wl.skydrive" });
-
-                    if (loginResult.Status == LiveConnectSessionStatus.Connected)
-                    {
-                        // Create a client session to get the profile data.
-                        LiveConnectClient = new LiveConnectClient(LiveAuthClient.Session);
-                        
-                        // Get the profile info of the user.
-                        LiveOperationResult operationResultName = await LiveConnectClient.GetAsync("me");
-                        LiveOperationResult operationResultUserPicture = await LiveConnectClient.GetAsync("me/picture");
-                        dynamic resultName = operationResultName.Result;
-                        if (resultName != null)
-                        {
-                            // Update the text of the object passed in to the method. 
-                            UserName = resultName.name;
-                        }
-
-                        dynamic resultUserPicture = operationResultUserPicture.Result;
-                        if (resultUserPicture != null)
-                        {
-                            UserPictureUrl = resultUserPicture.location;
-                        }
-
-                        // Get the infos
-                        await GetOneDriveDataUserInfos();
-
-                        return true;
-                    }
-
-                    return false;
+                    var json = Newtonsoft.Json.Linq.JObject.Parse(jsonUserInfo);
+                    UserName = json["name"].ToString();
                 }
-                catch (LiveAuthException)
+
+
+                // Get proficle picture
+                string imgDataURL = "";
+                if (!String.IsNullOrEmpty(imgDataURL))
                 {
-                    return false;
+                    // UserPictureUrl = imgDataURL;
                 }
+
+                // Get the infos
+                await GetOneDriveDataUserInfos();
+
+
+                return true;
             }
-            catch (LiveAuthException)
-            {
-                return false;
-            }
-            catch (LiveConnectException)
+            catch (Exception e)
             {
                 return false;
             }
         }
 
+
+
         public static async Task UploadToOnedrive(bool uploadPictures, TextBlock uploadDownloadTextBlock)
         {
             uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Preparing");
-            // Get the list of folders
-            var rootFolders = JObject.Parse((await LiveConnectClient.GetAsync("/me/skydrive/files?filter=folders,albums")).RawResult);
-            var mesLecturesFolder = rootFolders["data"].FirstOrDefault(f => f.Value<string>("name").Equals(OneDriveFolderName, StringComparison.OrdinalIgnoreCase));
-            if (mesLecturesFolder == null)
-            {
-                // Create the folder
-                var folderData = new Dictionary<string, object>();
-                folderData.Add("name", OneDriveFolderName);
-                await LiveConnectClient.PostAsync("me/skydrive", folderData);
-                rootFolders = JObject.Parse((await LiveConnectClient.GetAsync("/me/skydrive/files?filter=folders,albums")).RawResult);
-                mesLecturesFolder = rootFolders["data"].FirstOrDefault(f => f.Value<string>("name").Equals(OneDriveFolderName, StringComparison.OrdinalIgnoreCase));
-            }
-            
-            if (!uploadPictures)
+
+            StorageFile dataTextFile = await LocalFolder.GetFileAsync(DataFileName);
+            uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Upload_Ongoing");
+
+            using (var stream = await dataTextFile.OpenStreamForReadAsync())
             {
                 // Upload the data file
-                var folderId = mesLecturesFolder.SelectToken("id").ToString();
-                var dataTextFile = await LocalFolder.GetFileAsync(DataFileName);
-                uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Upload_Ongoing");
-
-                var uploadDataProgress = new Progress<LiveOperationProgress>((p) =>
-                {
-                    var percentage = p.ProgressPercentage.ToString("0,0") + "%";
-                    uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Upload_Ongoing") + percentage;
-                });
-
-                await LiveConnectClient.BackgroundUploadAsync(folderId, DataFileName, dataTextFile, OverwriteOption.Overwrite, new CancellationToken(), uploadDataProgress);
+                await _client.Drive.Special.AppRoot
+                  .ItemWithPath(DataFileName)
+                  .Content.Request()
+                  .PutAsync<Item>(stream);
+                isCustomOnedriveFolderUsed = false;
             }
-            else
+            if (uploadPictures)
             {
-                var folderId = mesLecturesFolder.SelectToken("id").ToString();
-
                 // Copy all the images
                 var tempFolder = await LocalFolder.CreateFolderAsync("temp", CreationCollisionOption.ReplaceExisting);
                 foreach (var storageFile in await LocalFolder.GetFilesAsync())
@@ -371,35 +388,32 @@ namespace MesLectures
                         await storageFile.CopyAsync(tempFolder);
                     }
                 }
-                
+
                 if (await LocalFolder.TryGetItemAsync(ZipFileName) != null)
                 {
                     var oldZipFile = await LocalFolder.GetFileAsync(ZipFileName);
                     await oldZipFile.DeleteAsync();
                 }
 
-                var uploadFullProgress = new Progress<LiveOperationProgress>((p) =>
-                    {
-                        var percentage = p.ProgressPercentage.ToString("0,0") + "%";
-                        uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Upload_Ongoing") + percentage;
-                    });
-
-
                 ZipFile.CreateFromDirectory(tempFolder.Path, LocalFolder.Path + "\\" + ZipFileName);
                 StorageFile zipFile = await LocalFolder.GetFileAsync(ZipFileName);
-                var dataTextFile = await LocalFolder.GetFileAsync(DataFileName);
 
-                // Upload files
-                await LiveConnectClient.BackgroundUploadAsync(folderId, ZipFileName, zipFile, OverwriteOption.Overwrite, new CancellationToken(), uploadFullProgress);
-                await LiveConnectClient.BackgroundUploadAsync(folderId, DataFileName, dataTextFile, OverwriteOption.Overwrite);
+                using (var zipStream = await zipFile.OpenStreamForReadAsync())
+                {
+                    // Upload files
+                    await _client.Drive.Special.AppRoot
+                      .ItemWithPath(ZipFileName)
+                      .Content.Request()
+                      .PutAsync<Item>(zipStream);
+                }
 
                 // Delete temp items
-                uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
                 await tempFolder.DeleteAsync();
                 await zipFile.DeleteAsync();
             }
 
             uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
+
             // Update the user infos
             await GetOneDriveDataUserInfos();
             uploadDownloadTextBlock.Text = "";
@@ -407,64 +421,59 @@ namespace MesLectures
 
         public static async Task DownloadFromOnedrive(bool uploadPictures, TextBlock uploadDownloadTextBlock)
         {
-            uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Preparing");
-            var rootFolders = JObject.Parse((await LiveConnectClient.GetAsync("/me/skydrive/files?filter=folders,albums")).RawResult);
-            var mesLecturesFolder =
-                rootFolders["data"].FirstOrDefault(
-                    f => f.Value<string>("name").Equals(OneDriveFolderName, StringComparison.OrdinalIgnoreCase));
-            var folderId = mesLecturesFolder.SelectToken("id").ToString();
+            uploadDownloadTextBlock.Text = GetRessource("OneDrivePage_Transfer_Preparing");
 
-            // Get the data file
-            var mesLecturesFile = await LiveConnectClient.GetAsync(folderId + "/files");
-            var files = mesLecturesFile.Result["data"] as List<object>;
-            if (files != null && files.Count != 0)
+            IItemRequestBuilder builder = isCustomOnedriveFolderUsed ?
+                _client.Drive.Root.ItemWithPath($"{getOneDriveFolderName()}/{DataFileName}") :
+                _client.Drive.Special.AppRoot.ItemWithPath(DataFileName);
+
+            uploadDownloadTextBlock.Text = GetRessource("OneDrivePage_Download_Ongoing");
+            var dataFile = await LocalFolder.CreateFileAsync(DataFileName, CreationCollisionOption.ReplaceExisting);
+            using (var downloadStream = await builder.Content.Request().GetAsync())
             {
-                var selectedDataFile =
-                    files.Select(item => item as IDictionary<string, object>)
-                        .Where(file => file["name"].ToString() == DataFileName);
-                if (selectedDataFile.Count() != 0)
+                using (var downloadMemoryStream = new MemoryStream())
                 {
-                    var dataFileId = selectedDataFile.First()["id"].ToString();
-                    var dataFile = await LocalFolder.CreateFileAsync(DataFileName, CreationCollisionOption.ReplaceExisting);
-                    uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Download_Ongoing");
-                    await LiveConnectClient.BackgroundDownloadAsync(dataFileId + "/content", dataFile);
-                    await ReadFileForBookList(dataFile);
+                    // Get the data file
+                    await downloadStream.CopyToAsync(downloadMemoryStream);
+                    var fileBytes = downloadMemoryStream.ToArray();
+                    await FileIO.WriteBytesAsync(dataFile, fileBytes);
                 }
             }
+
+            await ReadFileForBookList(dataFile);
 
             if (uploadPictures)
             {
                 // Download pictures
-                var zipFileOnOnedrive = (files.Select(item => item as IDictionary<string, object>).Where(file => file["name"].ToString() == ZipFileName));
-                if (zipFileOnOnedrive.Any())
-                { 
-                    var picturesFileId = zipFileOnOnedrive.First()["id"].ToString();
-                    var picturesFile = await LocalFolder.CreateFileAsync(ZipFileName, CreationCollisionOption.ReplaceExisting);
-                    
-                    var downloadProgress = new Progress<LiveOperationProgress>((p) =>
+                var zipFile = await LocalFolder.CreateFileAsync(ZipFileName, CreationCollisionOption.ReplaceExisting);
+                IItemRequestBuilder zipFileBuilder = isCustomOnedriveFolderUsed ?
+                    _client.Drive.Root.ItemWithPath($"{getOneDriveFolderName()}/{ZipFileName}") :
+                    _client.Drive.Special.AppRoot.ItemWithPath(ZipFileName);
+
+                using (var downloadStream = await zipFileBuilder.Content.Request().GetAsync())
+                {
+                    using (var downloadMemoryStream = new MemoryStream())
                     {
-                        var percentage = p.ProgressPercentage.ToString("0,0") + "%";
-                        uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Download_Ongoing") + percentage;
-                    });
-                    
-                    await LiveConnectClient.BackgroundDownloadAsync(picturesFileId + "/content", picturesFile, new CancellationToken(), downloadProgress);
-                    
-                    var tempFolder = await LocalFolder.CreateFolderAsync("temp", CreationCollisionOption.ReplaceExisting);
-                    ZipFile.ExtractToDirectory(LocalFolder.Path + "\\" + ZipFileName, tempFolder.Path);
-                    // Copy all the images
-                    foreach (var storageFile in await tempFolder.GetFilesAsync())
-                    {
-                        if (storageFile.FileType == ".jpg" || storageFile.FileType == ".png" || storageFile.FileType == ".gif")
-                        {
-                            await storageFile.CopyAsync(LocalFolder, storageFile.DisplayName + storageFile.FileType, NameCollisionOption.ReplaceExisting);
-                        }
+                        await downloadStream.CopyToAsync(downloadMemoryStream);
+                        var fileBytes = downloadMemoryStream.ToArray();
+                        await FileIO.WriteBytesAsync(zipFile, fileBytes);
                     }
-                    
-                    uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
-                    // Delete temp items
-                    await tempFolder.DeleteAsync();
-                    await picturesFile.DeleteAsync();
                 }
+
+                var tempFolder = await LocalFolder.CreateFolderAsync("temp", CreationCollisionOption.ReplaceExisting);
+                ZipFile.ExtractToDirectory(LocalFolder.Path + "\\" + ZipFileName, tempFolder.Path);
+                // Copy all the images
+                foreach (var storageFile in await tempFolder.GetFilesAsync())
+                {
+                    if (storageFile.FileType == ".jpg" || storageFile.FileType == ".png" || storageFile.FileType == ".gif")
+                    {
+                        await storageFile.CopyAsync(LocalFolder, storageFile.DisplayName + storageFile.FileType, NameCollisionOption.ReplaceExisting);
+                    }
+                }
+
+                // Delete temp items
+                await tempFolder.DeleteAsync();
+                await zipFile.DeleteAsync();
             }
 
             uploadDownloadTextBlock.Text = Settings.GetRessource("OneDrivePage_Transfer_Finishing");
@@ -621,33 +630,31 @@ namespace MesLectures
         {
             // Reset OneDrive user infos
             UserDataInfos = null;
-            
-            var rootFolders = JObject.Parse((await LiveConnectClient.GetAsync("/me/skydrive/files?filter=folders,albums")).RawResult);
-            var mesLecturesFolder =
-                rootFolders["data"].FirstOrDefault(
-                    f => f.Value<string>("name").Equals(OneDriveFolderName, StringComparison.OrdinalIgnoreCase));
-            if (mesLecturesFolder != null)
+            string accessToken = await GetToken();
+
+            if (_client != null && _client.IsAuthenticated && accessToken != null && accessToken != "")
             {
-                var folderId = mesLecturesFolder.SelectToken("id").ToString();
-                var mesLecturesFile = await LiveConnectClient.GetAsync(folderId + "/files");
-                var files = mesLecturesFile.Result["data"] as List<object>;
-                if (files != null && files.Count != 0)
+                //User info
+                XDocument xmlFile = await GetXMLFile();
+                if (xmlFile != null)
                 {
-                    var selectedDataFile = files.Select(item => item as IDictionary<string, object>).Where(file => file["name"].ToString() == DataFileName);
-                    if (selectedDataFile.Count() != 0)
+                    var infosXml = xmlFile.Descendants("Infos").First();
+                    if (infosXml != null)
                     {
-                        var dataFileId = selectedDataFile.First()["id"].ToString();
-                        var tempFile =
-                            await LocalFolder.CreateFileAsync("dataTemp.txt", CreationCollisionOption.ReplaceExisting);
-                        await LiveConnectClient.BackgroundDownloadAsync(dataFileId + "/content", tempFile);
-
-                        UserDataInfos = await ReadFileForInfos(tempFile);
-
-                        // Delete temp file
-                        await tempFile.DeleteAsync();
+                        UserDataInfos = new InfosClass()
+                        {
+                            Number = int.Parse(infosXml.Descendants("Number").First().Value),
+                            LastUpdateDate = DateTime.Parse(infosXml.Descendants("Date").First().Value, new CultureInfo("en-US"))
+                        };
                     }
                 }
             }
+        }
+
+        private static string getOneDriveFolderName()
+        {
+            return GetLocalSettings(LocalSettingsValue.onedriveFolderName) == null ? GetRessource("OneDrive_FolderName") : (string)GetLocalSettings(LocalSettingsValue.onedriveFolderName);
+
         }
     }
 }

@@ -10,6 +10,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="CustomResources.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <x:String x:Key="ida:ClientID">5c6cba34-d797-4951-bbf1-bdc479245c7c</x:String>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

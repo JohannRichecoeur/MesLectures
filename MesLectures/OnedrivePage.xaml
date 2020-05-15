@@ -61,7 +61,7 @@
                 TextWrapping="Wrap" />
             <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
-                    <Ellipse
+                    <!--<Ellipse
                         Width="80"
                         Height="80"
                         HorizontalAlignment="Left"
@@ -69,8 +69,8 @@
                         <Ellipse.Fill>
                             <ImageBrush x:Name="UserPicture" ImageSource="Assets/LockScreenLogo.png" />
                         </Ellipse.Fill>
-                    </Ellipse>
-                    <StackPanel Margin="10,0,0,0" VerticalAlignment="Center" Orientation="Vertical">
+                    </Ellipse>-->
+                    <StackPanel Margin="0,0,0,0" VerticalAlignment="Center" Orientation="Vertical">
                         <TextBlock Name="UserName" Style="{StaticResource BaseTextBlockStyle}" VerticalAlignment="Center" Margin="0,0,0,5" />
                         <HyperlinkButton
                             x:Name="SignOutButton"
@@ -80,17 +80,21 @@
                             Visibility="Collapsed">
                             <TextBlock x:Uid="OneDriveSignOutButton" />
                         </HyperlinkButton>
+                        <TextBlock Name="SignInText" x:Uid="SignInText" VerticalAlignment="Center" Margin="0,0,0,5" />
+                        <HyperlinkButton
+                            x:Name="SignInButton"
+                            Click="SignInButton_OnClick"
+                            FontSize="12"
+                            Margin="0,-10,0,0"
+                            Visibility="Collapsed">
+                            <TextBlock x:Uid="OneDriveSignInButton" />
+                        </HyperlinkButton>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Name="InfosSection" Margin="0,50,0,0">
                     <TextBlock Name="LocalInfosTextBlock" TextWrapping="Wrap" />
                     <TextBlock Name="OnedriveInfosTextBlock" TextWrapping="Wrap" />
-                </StackPanel>
-
-                <StackPanel Margin="0,50,0,0" Name="OneDriveFolderNameSection" Orientation="Horizontal" Visibility="Collapsed">
-                    <TextBlock x:Uid="OneDrivePage_OneDriveFolderName" TextWrapping="Wrap" Margin="0,0,10,0" VerticalAlignment="Center" />
-                    <TextBox Name="OneDrivePage_OneDriveFolderNameTextBox" TextChanged="OneDrivePage_OneDriveFolderNameTextBox_OnTextChanged" Width="200" TextWrapping="Wrap" />
                 </StackPanel>
 
                 <StackPanel Name="UploadSection" Margin="0,50,0,0" Visibility="Collapsed">
